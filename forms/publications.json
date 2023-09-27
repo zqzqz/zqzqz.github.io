@@ -1,0 +1,74 @@
+[
+    {
+        "title": "On Data Fabrication in Collaborative Vehicular Perception: Attacks and Countermeasures",
+        "authors": ["<strong>Qingzhao Zhang</strong>", "Shuowei Jin", "Jiachen Sun", "Xumiao Zhang", "Ruiyang Zhu", "Qi Alfred Chen", "Z. Morley Mao"],
+        "conference": {
+            "name": "Proceedings of the 33nd USENIX Security Symposium (USENIX Security '24)",
+            "short": "USENIX Security '24"
+        },
+        "abstract": "Collaborative perception, which greatly enhances the sensing capability of connected and autonomous vehicles (CAVs) by incorporating data from external resources, also brings forth potential security risks. CAVs' driving decisions rely on remote untrusted data, making them susceptible to attacks carried out by malicious participants in the collaborative perception system. However, security analysis and countermeasures for such threats are absent. To understand the impact of the vulnerability, we break the ground by proposing various real-time data fabrication attacks in which the attacker delivers crafted malicious data to victims in order to perturb their perception results, leading to hard brakes or increased collision risks. Our attacks demonstrate a high success rate of over 86% on high-fidelity simulated scenarios and are realizable in real-world experiments. To mitigate the vulnerability, we present a systematic anomaly detection approach that enables benign vehicles to jointly reveal malicious fabrication. It detects 91.5% of attacks with a false positive rate of 3% in simulated scenarios and significantly mitigates attack impacts in real-world scenarios.",
+        "citation": "@inproceedings{zhang2024on, title={On Data Fabrication in Collaborative Vehicular Perception: Attacks and Countermeasures}, author={Zhang, Qingzhao and Jin, Shuowei and Sun, Jiachen and Zhang, Xumiao and Zhu, Ruiyang and Chen, Qi Alfred and Mao, Z Morley}, booktitle={33nd USENIX Security Symposium (USENIX Security 24)}, year={2024} }",
+        "linkToPaper": "https://arxiv.org/abs/2309.12955",
+        "linkToCode": ""
+    },
+    {
+        "title": "Robust Real-time Multi-vehicle Collaboration on Asynchronous Sensors",
+        "authors": ["<strong>Qingzhao Zhang</strong>*", "Xumiao Zhang*", "Ruiyang Zhu*", "Fan Bai", "Mohammad Naserian", "Z. Morley Mao"],
+        "conference": {
+            "name": "Proceedings of the 29th Annual International Conference on Mobile Computing and Networking (MobiCom '23)",
+            "short": "MobiCom '23"
+        },
+        "abstract": "Cooperative perception significantly enhances the perception performance of connected autonomous vehicles. Instead of purely relying on local sensors with limited range, it enables multiple vehicles and roadside infrastructures to share sensor data to perceive the environment collaboratively. Through our study, we realize that the performance of cooperative perception systems is limited in real-world deployment due to (1) out-of-sync sensor data during data fusion and (2) inaccurate localization of occluded areas. To address these challenges, we develop RAO, an innovative, effective, and lightweight cooperative perception system that merges asynchronous sensor data from different vehicles through our novel designs of motion-compensated occupancy flow prediction and on-demand data sharing, improving both the accuracy and coverage of the perception system. Our extensive evaluation, including real-world and emulation-based experiments, demonstrates that RAO outperforms state-of-the-art solutions by more than 34% in perception coverage and by up to 14% in perception accuracy, especially when asynchronous sensor data is present. RAO consistently performs well across a wide variety of map topologies and driving scenarios. RAO incurs negligible additional latency (8.5ms) and low data transmission overhead (10.9 KB per frame), making cooperative perception feasible.",
+        "citation": "@inproceedings{zhang2023robust, title={Robust Real-time Multi-vehicle Collaboration on Asynchronous Sensors}, author={Zhang, Qingzhao and Zhang, Xumiao and Zhu, Ruiyang and Bai, Fan and Naserian, Mohammad and Mao, Z Morley}, booktitle={Proceedings of the 29th Annual International Conference on Mobile Computing and Networking}, year={2023} }",
+        "linkToPaper": "",
+        "linkToCode": ""
+    },
+    {
+        "title": "On adversarial robustness of trajectory prediction for autonomous vehicles",
+        "authors": ["<strong>Qingzhao Zhang</strong>", "Shengtuo Hu", "Jiachen Sun", "Qi Alfred Chen", "Z. Morley Mao"],
+        "conference": {
+            "name": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR '22)",
+            "short": "CVPR '22"
+        },
+        "abstract": "Trajectory prediction is a critical component for autonomous vehicles (AVs) to perform safe planning and navigation. However, few studies have analyzed the adversarial robustness of trajectory prediction or investigated whether the worst-case prediction can still lead to safe planning. To bridge this gap, we study the adversarial robustness of trajectory prediction models by proposing a new adversarial attack that perturbs normal vehicle trajectories to maximize the prediction error. Our experiments on three models and three datasets show that the adversarial prediction increases the prediction error by more than 150%. Our case studies show that if an adversary drives a vehicle close to the target AV following the adversarial trajectory, the AV may make an inaccurate prediction and even make unsafe driving decisions. We also explore possible mitigation techniques via data augmentation and trajectory smoothing.",
+        "citation": "@inproceedings{zhang2022adversarial, title={On adversarial robustness of trajectory prediction for autonomous vehicles}, author={Zhang, Qingzhao and Hu, Shengtuo and Sun, Jiachen and Chen, Qi Alfred and Mao, Z Morley}, booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition}, pages={15159--15168}, year={2022} }",
+        "linkToPaper": "https://openaccess.thecvf.com/content/CVPR2022/papers/Zhang_On_Adversarial_Robustness_of_Trajectory_Prediction_for_Autonomous_Vehicles_CVPR_2022_paper.pdf",
+        "linkToCode": "https://github.com/zqzqz/AdvTrajectoryPrediction"
+    },
+    {
+        "title": "Automated Runtime Mitigation for Misconfiguration Vulnerabilities in Industrial Control Systems",
+        "authors": ["<strong>Qingzhao Zhang</strong>", "Xiao Zhu", "Mu Zhang", "Z. Morley Mao"],
+        "conference": {
+            "name": "Proceedings of the 25th International Symposium on Research in Attacks, Intrusions and Defenses (RAID '22)",
+            "short": "RAID '22"
+        },
+        "abstract": "Cyber-physical industrial control systems (ICS) commonly implement configuration parameters that can be remotely tuned by human-machine interfaces (HMI) at runtime. These parameters directly control the behaviors of ICSs thus they can be exploited by attackers to compromise the safety of ICSs, proved by real-world attacks worldwide. However, existing anomaly detection methods, which mostly focus on the programmable logic controller (PLC) programs or sensor signals, lack a comprehensive analysis of configuration’s impact on the entire system and thus cannot effectively detect improper parameters. A tool that automatically analyzes complicated control logic to determine the safety of configuration is absent. To fill this gap, we design SmtConf, a verification-based framework for detecting and mitigating improper parameters in ICSs at runtime. To understand the impact of configuration parameters on complicated control logic, we design a symbolic formal model representing behaviors of the ICS under any possible configuration parameters. Based on the model, SmtConf works as a monitoring system that detects safety violations in real-time when the improper configuration is injected. To further assist developers to determine the safe configuration, SmtConf recommends safe configuration parameters by solving an optimization problem. In 18 test cases collected from two production-level ICS testbeds, SmtConf detects all true violations caused by improper parameters in 0.41 seconds and correctly repairs the ICS with recommended safe parameters in 0.45 seconds.",
+        "citation": "@inproceedings{zhang2022automated, title={Automated Runtime Mitigation for Misconfiguration Vulnerabilities in Industrial Control Systems}, author={Zhang, Qingzhao and Zhu, Xiao and Zhang, Mu and Mao, Z Morley}, booktitle={Proceedings of the 25th International Symposium on Research in Attacks, Intrusions and Defenses}, pages={333--349}, year={2022} }",
+        "linkToPaper": "https://dl.acm.org/doi/pdf/10.1145/3545948.3545954",
+        "linkToCode": ""
+    },
+    {
+        "title": "A systematic framework to identify violations of scenario-dependent driving rules in autonomous vehicle software",
+        "authors": ["<strong>Qingzhao Zhang</strong>", "David Ke Hong", "Ze Zhang", "Qi Alfred Chen", "Scott Mahlke", "Z Morley Mao"],
+        "conference": {
+            "name": "Proceedings of the ACM on Measurement and Analysis of Computing Systems (SIGMETRICS '21)",
+            "short": "SIGMETRICS '21"
+        },
+        "abstract": "Safety compliance is paramount to the safe deployment of autonomous vehicle (AV) technologies in real-world transportation systems. As AVs will share road infrastructures with human drivers and pedestrians, it is an important requirement for AVs to obey standard driving rules. Existing AV software testing methods, including simulation and road testing, only check fundamental safety rules such as collision avoidance and safety distance. Scenario-dependent driving rules, including crosswalk and intersection rules, are more complicated because the expected driving behavior heavily depends on the surrounding circumstances. However, a testing framework is missing for checking scenario-dependent driving rules on various AV software. In this paper, we design and implement a systematic framework AVChecker for identifying violations of scenario-dependent driving rules in AV software using formal methods. AVChecker represents both the code logic of AV software and driving rules in proposed formal specifications and leverages satisfiability modulo theory (SMT) solvers to identify driving rule violations. To improve the automation of systematic rule-based checking, AVChecker provides a powerful user interface for writing driving rule specifications and applies static code analysis to extract rule-related code logic from the AV software codebase. Evaluations on two open-source AV software platforms, Baidu Apollo and Autoware, uncover 19 true violations out of 28 real-world driving rules covering crosswalks, traffic lights, stop signs, and intersections. Seven of the violations can lead to severe risks of a collision with pedestrians or blocking traffic.",
+        "citation": "@article{zhang2021systematic, title={A systematic framework to identify violations of scenario-dependent driving rules in autonomous vehicle software}, author={Zhang, Qingzhao and Hong, David Ke and Zhang, Ze and Chen, Qi Alfred and Mahlke, Scott and Mao, Z Morley}, journal={Proceedings of the ACM on Measurement and Analysis of Computing Systems}, volume={5}, number={2}, pages={1--25}, year={2021}, publisher={ACM New York, NY, USA} }",
+        "linkToPaper": "https://dl.acm.org/doi/pdf/10.1145/3460082",
+        "linkToCode": "https://github.com/zqzqz/AVChecker"
+    },
+    {
+        "title": "Ethploit: From fuzzing to efficient exploit generation against smart contracts",
+        "authors": ["<strong>Qingzhao Zhang</strong>*", "Yizhuo Wang*", "Juanru Li", "Siqi Ma"],
+        "conference": {
+            "name": "Proceedings of the ACM on Measurement and Analysis of Computing Systems (SIGMETRICS '21)",
+            "short": "SANER '20"
+        },
+        "abstract": "Smart contracts, programs running on blockchain systems, leverage diverse decentralized applications (DApps). Unfortunately, well-known smart contract platforms, Ethereum for example, face serious security problems. Exploits to contracts may cause enormous financial losses, which emphasize the importance of smart contract testing. However, current exploit generation tools have difficulty to solve hard constraints in execution paths and cannot simulate the blockchain behaviors very well. These problems cause a loss of coverage and accuracy of exploit generation. To overcome the problems, we design and implement EthPloit, a smart contract exploit generator based on fuzzing. EthPloit adopts static taint analysis to generate exploit-targeted transaction sequences, a dynamic seed strategy to pass hard constraints and an instrumented Ethereum Virtual Machine to simulate blockchain behaviors. We evaluate EthPloit on 45,308 smart contracts and discovered 554 exploitable contracts. EthPloit automatically generated 644 exploits without any false positive and 306 of them cannot be generated by previous exploit generation tools.",
+        "citation": "@inproceedings{zhang2020ethploit, title={Ethploit: From fuzzing to efficient exploit generation against smart contracts}, author={Zhang, Qingzhao and Wang, Yizhuo and Li, Juanru and Ma, Siqi}, booktitle={2020 IEEE 27th International Conference on Software Analysis, Evolution and Reengineering (SANER)}, pages={116--126}, year={2020}, organization={IEEE} }",
+        "linkToPaper": "https://ieeexplore.ieee.org/abstract/document/9054822",
+        "linkToCode": "https://github.com/zqzqz/contract-fuzzer"
+    }
+]

@@ -34,30 +34,29 @@ __        __   _
 
 <!-- PLEASE REMOVE THE FOLLOWING BLOCK FOR YOUR OWN USE -->
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-7Q1MZCZMVG"></script>
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-7Q1MZCZMVG"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-7Q1MZCZMVG');
-</script>
+</script> -->
 
 <!-- Default Statcounter code for Web.eecs.umich.edu ~xumiao
 http://web.eecs.umich.edu/~xumiao/ -->
-<script type="text/javascript">
+<!-- <script type="text/javascript">
 var sc_project=11814163; 
 var sc_invisible=1; 
 var sc_security="8f109c2a"; 
-</script>
-<script type="text/javascript"
+</script> -->
+<!-- <script type="text/javascript"
 src="https://www.statcounter.com/counter/counter.js"
-async></script>
-<noscript><div class="statcounter"><a title="Web Analytics"
+async></script> -->
+<!-- <noscript><div class="statcounter"><a title="Web Analytics"
 href="http://statcounter.com/" target="_blank"><img
 class="statcounter"
 src="//c.statcounter.com/11814163/0/8f109c2a/1/" alt="Web
-Analytics"></a></div></noscript>
+Analytics"></a></div></noscript> -->
 <!-- End of Statcounter Code -->
 
 <!-- Fixed navbar -->
@@ -65,7 +64,7 @@ Analytics"></a></div></noscript>
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse collapse-butten" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -130,218 +129,48 @@ Analytics"></a></div></noscript>
         <hr size="2" color="#800000">
         <div id="about">
             <p class="lead">I am a fifth-year Ph.D. student in <a target="_blank" href="https://cse.engin.umich.edu/">Computer Science and Engineering</a> at the <a target="_blank" href="https://umich.edu/">University of Michigan, Ann Arbor</a>, where I am advised by <a target="_blank" href="http://web.eecs.umich.edu/~zmao/">Prof. Z. Morley Mao</a>. I was software engineer intern at Google in 2022 summer and 2023 summer, worked on static analysis framework and formal verification of OS kernel.
-            <p class="lead">I am broadly interested in computer security. During my Ph.D. study, my research uncovers security rosks in cyber-physical systems (e.g., autonomous vehicles) via program analysis or adversarial machine learning. You can find my CV <a target="_blank" href="./files/resume.pdf">here</a>.
+            <p class="lead">I am broadly interested in computer security. During my Ph.D. study, my research uncovers security risks in cyber-physical systems (e.g., autonomous vehicles) via program analysis or adversarial machine learning. You can find my CV <a target="_blank" href="./files/resume.pdf">here</a>.
             <p class="lead"><font color="red">I am open for full-time research/engineer jobs.</font></p>
         </div>
  
         <hr size="1" color="#800000">
         <h2><b><a id="publications">Selected Publications</a></b> <small>(*: co-primary authors)</small></h2>
 
+        <template id="publication-template">
+            <tr>
+                <td>
+                    <span class="label label-primary">INDEX</span>
+                </td>
+                <td>
+                    <h4 class="list-group-item-heading title">
+                        TITLE
+                        <span class="badge conf-tag" target="_blank">CONFERENCE</span>
+                    </h4>
+                    <p class="author">
+                        AUTHORS<br>
+                        CONFERENCE<br>
+                    </p>
+                    <button type="button" class="btn btn-success btn-xs collapse-button" data-target="" data-toggle="collapse">Abstract</button>
+                    <button type="button" class="btn btn-info btn-xs collapse-button" data-target="" data-toggle="collapse">Bib</button>
+                    <button type="button" class="btn btn-primary btn-xs paper-button" data-target="_blank"><a target="_blank" class="conf paper-link" href="#">Paper</a></button>
+                    <button type="button" class="btn btn-warning btn-xs code-button" data-target="_blank"><a target="_blank" class="conf code-link" href="#">Code</a></button>
+                    <p></p>
+                    <div class="abs collapse">
+                        <info>
+                            ABSTRACT
+                        </info>
+                    </div>
+                    <div class="bib collapse">
+                        BIB
+                    </div>
+                </td>
+            </tr>
+        </template>
+
         <div class="panel panel-default">
             <!--<div class="panel-body">-->
             <table class="table table-hover">
-                <tbody>
-                <tr>
-                    <td>
-                        <span class="label label-primary">6</span>
-                    </td>
-                    <td>
-                        <h4 class="list-group-item-heading">
-                            On Data Fabrication in Collaborative Vehicular Perception: Attacks and Countermeasures
-                            <span class="badge"><a class="conf" target="_blank" href="https://www.usenix.org/conference/usenixsecurity24">USENIX Security '24</a></span>
-                        </h4>
-                        <p class="author">
-                            <strong>Qingzhao Zhang</strong>, Shuowei Jin, Jiachen Sun, Xumiao Zhang, Ruiyang Zhu, Qi Alfred Chen, Z. Morley Mao<br>
-                            Proceedings of the 33nd USENIX Security Symposium (USENIX Security '24)<br>
-                        </p>
-                        <button type="button" class="btn btn-success btn-xs" data-target="#cad-abs" data-toggle="collapse">Abstract</button>
-                        <button type="button" class="btn btn-info btn-xs" data-target="#cad-bib" data-toggle="collapse">Bib</button>
-                        <p></p>
-                        <div id="cad-abs" class="collapse">
-                            <info>
-                                Collaborative perception, which greatly enhances the sensing capability of connected and autonomous vehicles (CAVs) by incorporating data from external resources, also brings forth potential security risks. CAVs' driving decisions rely on remote untrusted data, making them susceptible to attacks carried out by malicious participants in the collaborative perception system. However, security analysis and countermeasures for such threats are absent. To understand the impact of the vulnerability, we break the ground by proposing various real-time data fabrication attacks in which the attacker delivers crafted malicious data to victims in order to perturb their perception results, leading to hard brakes or increased collision risks. Our attacks demonstrate a high success rate of over 86% on high-fidelity simulated scenarios and are realizable in real-world experiments. To mitigate the vulnerability, we present a systematic anomaly detection approach that enables benign vehicles to jointly reveal malicious fabrication. It detects 91.5% of attacks with a false positive rate of 3% in simulated scenarios and significantly mitigates attack impacts in real-world scenarios.
-                            </info>
-                        </div>
-                        <div id="cad-bib" class="collapse">
-                            @inproceedings{zhang2024on,
-                            title={On Data Fabrication in Collaborative Vehicular Perception: Attacks and Countermeasures},
-                            author={Zhang, Qingzhao and Jin, Shuowei and Sun, Jiachen and Zhang, Xumiao and Zhu, Ruiyang and Chen, Qi Alfred and Mao, Z Morley},
-                            booktitle={33nd USENIX Security Symposium (USENIX Security 24)},
-                            year={2024}
-                            }
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <span class="label label-primary">5</span>
-                    </td>
-                    <td>
-                        <h4 class="list-group-item-heading">
-                            Robust Real-time Multi-vehicle Collaboration on Asynchronous Sensors
-                            <span class="badge"><a class="conf" target="_blank" href="https://sigmobile.org/mobicom/2023/">MobiCom '23</a></span>
-                        </h4>
-                        <p class="author">
-                            <strong>Qingzhao Zhang*</strong>, Xumiao Zhang*, Ruiyang Zhu*, Fan Bai, Mohammad Naserian, Z. Morley Mao<br>
-                            Proceedings of the 29th Annual International Conference on Mobile Computing and Networking (MobiCom '23)<br>
-                        </p>
-                        <button type="button" class="btn btn-success btn-xs" data-target="#rao-abs" data-toggle="collapse">Abstract</button>
-                        <button type="button" class="btn btn-info btn-xs" data-target="#rao-bib" data-toggle="collapse">Bib</button>
-                        <p></p>
-                        <div id="rao-abs" class="collapse">
-                            <info>
-                                Cooperative perception significantly enhances the perception performance of connected autonomous vehicles. Instead of purely relying on local sensors with limited range, it enables multiple vehicles and roadside infrastructures to share sensor data to perceive the environment collaboratively. Through our study, we realize that the performance of cooperative perception systems is limited in real-world deployment due to (1) out-of-sync sensor data during data fusion and (2) inaccurate localization of occluded areas. To address these challenges, we develop RAO, an innovative, effective, and lightweight cooperative perception system that merges asynchronous sensor data from different vehicles through our novel designs of motion-compensated occupancy flow prediction and on-demand data sharing, improving both the accuracy and coverage of the perception system. Our extensive evaluation, including real-world and emulation-based experiments, demonstrates that RAO outperforms state-of-the-art solutions by more than 34% in perception coverage and by up to 14% in perception accuracy, especially when asynchronous sensor data is present. RAO consistently performs well across a wide variety of map topologies and driving scenarios. RAO incurs negligible additional latency (8.5ms) and low data transmission overhead (10.9 KB per frame), making cooperative perception feasible.
-                            </info>
-                        </div>
-                        <div id="rao-bib" class="collapse">
-                            @inproceedings{zhang2023robust,
-                            title={Robust Real-time Multi-vehicle Collaboration on Asynchronous Sensors},
-                            author={Zhang, Qingzhao and Zhang, Xumiao and Zhu, Ruiyang and Bai, Fan and Naserian, Mohammad and Mao, Z Morley},
-                            booktitle={Proceedings of the 29th Annual International Conference on Mobile Computing and Networking},
-                            year={2023}
-                            }
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <span class="label label-primary">4</span>
-                    </td>
-                    <td>
-                        <h4 class="list-group-item-heading">
-                            On adversarial robustness of trajectory prediction for autonomous vehicles
-                            <span class="badge"><a class="conf" target="_blank" href="https://cvpr2022.thecvf.com/">CVPR '22</a></span>
-                        </h4>
-                        <p class="author">
-                            <strong>Qingzhao Zhang</strong>, Shengtuo Hu, Jiachen Sun, Qi Alfred Chen, Z. Morley Mao<br>
-                            Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR '22)<br>
-                        </p>
-                        <button type="button" class="btn btn-success btn-xs" data-target="#cvpr22-abs" data-toggle="collapse">Abstract</button>
-                        <button type="button" class="btn btn-info btn-xs" data-target="#cvpr22-bib" data-toggle="collapse">Bib</button>
-                        <button type="button" class="btn btn-primary btn-xs"><a class="conf" target="_blank" href="https://openaccess.thecvf.com/content/CVPR2022/papers/Zhang_On_Adversarial_Robustness_of_Trajectory_Prediction_for_Autonomous_Vehicles_CVPR_2022_paper.pdf">PDF</a></button>
-                        <button type="button" class="btn btn-warning btn-xs"><a class="conf" target="_blank" href="https://github.com/zqzqz/AdvTrajectoryPrediction">Code</a></button>
-                        <p></p>
-                        <div id="cvpr22-abs" class="collapse">
-                            <info>
-                                Trajectory prediction is a critical component for autonomous vehicles (AVs) to perform safe planning and navigation. However, few studies have analyzed the adversarial robustness of trajectory prediction or investigated whether the worst-case prediction can still lead to safe planning. To bridge this gap, we study the adversarial robustness of trajectory prediction models by proposing a new adversarial attack that perturbs normal vehicle trajectories to maximize the prediction error. Our experiments on three models and three datasets show that the adversarial prediction increases the prediction error by more than 150%. Our case studies show that if an adversary drives a vehicle close to the target AV following the adversarial trajectory, the AV may make an inaccurate prediction and even make unsafe driving decisions. We also explore possible mitigation techniques via data augmentation and trajectory smoothing.
-                            </info>
-                        </div>
-                        <div id="cvpr22-bib" class="collapse">
-                            @inproceedings{zhang2022adversarial,
-                            title={On adversarial robustness of trajectory prediction for autonomous vehicles},
-                            author={Zhang, Qingzhao and Hu, Shengtuo and Sun, Jiachen and Chen, Qi Alfred and Mao, Z Morley},
-                            booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
-                            pages={15159--15168},
-                            year={2022}
-                            }
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <span class="label label-primary">3</span>
-                    </td>
-                    <td>
-                        <h4 class="list-group-item-heading">
-                            Automated Runtime Mitigation for Misconfiguration Vulnerabilities in Industrial Control Systems
-                            <span class="badge"><a class="conf" target="_blank" href="https://raid2022.cs.ucy.ac.cy/">RAID '22</a></span>
-                        </h4>
-                        <p class="author">
-                            <strong>Qingzhao Zhang</strong>, Xiao Zhu, Mu Zhang, Z. Morley Mao<br>
-                            Proceedings of the 25th International Symposium on Research in Attacks, Intrusions and Defenses (RAID '22)<br>
-                        </p>
-                        <button type="button" class="btn btn-success btn-xs" data-target="#raid22-abs" data-toggle="collapse">Abstract</button>
-                        <button type="button" class="btn btn-info btn-xs" data-target="#raid22-bib" data-toggle="collapse">Bib</button>
-                        <button type="button" class="btn btn-primary btn-xs"><a class="conf" target="_blank" href="https://dl.acm.org/doi/pdf/10.1145/3545948.3545954">PDF</a></button>
-                        <p></p>
-                        <div id="raid22-abs" class="collapse">
-                            <info>
-                                Cyber-physical industrial control systems (ICS) commonly implement configuration parameters that can be remotely tuned by human-machine interfaces (HMI) at runtime. These parameters directly control the behaviors of ICSs thus they can be exploited by attackers to compromise the safety of ICSs, proved by real-world attacks worldwide. However, existing anomaly detection methods, which mostly focus on the programmable logic controller (PLC) programs or sensor signals, lack a comprehensive analysis of configuration’s impact on the entire system and thus cannot effectively detect improper parameters. A tool that automatically analyzes complicated control logic to determine the safety of configuration is absent. To fill this gap, we design SmtConf, a verification-based framework for detecting and mitigating improper parameters in ICSs at runtime. To understand the impact of configuration parameters on complicated control logic, we design a symbolic formal model representing behaviors of the ICS under any possible configuration parameters. Based on the model, SmtConf works as a monitoring system that detects safety violations in real-time when the improper configuration is injected. To further assist developers to determine the safe configuration, SmtConf recommends safe configuration parameters by solving an optimization problem. In 18 test cases collected from two production-level ICS testbeds, SmtConf detects all true violations caused by improper parameters in 0.41 seconds and correctly repairs the ICS with recommended safe parameters in 0.45 seconds.
-                            </info>
-                        </div>
-                        <div id="raid22-bib" class="collapse">
-                            @inproceedings{zhang2022automated,
-                            title={Automated Runtime Mitigation for Misconfiguration Vulnerabilities in Industrial Control Systems},
-                            author={Zhang, Qingzhao and Zhu, Xiao and Zhang, Mu and Mao, Z Morley},
-                            booktitle={Proceedings of the 25th International Symposium on Research in Attacks, Intrusions and Defenses},
-                            pages={333--349},
-                            year={2022}
-                            }
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <span class="label label-primary">2</span>
-                    </td>
-                    <td>
-                        <h4 class="list-group-item-heading">
-                            A systematic framework to identify violations of scenario-dependent driving rules in autonomous vehicle software
-                            <span class="badge"><a class="conf" target="_blank" href="https://www.sigmetrics.org/sigmetrics2021/">SIGMETRICS '21</a></span>
-                        </h4>
-                        <p class="author">
-                            <strong>Qingzhao Zhang</strong>, David Ke Hong, Ze Zhang, Qi Alfred Chen, Scott Mahlke, Z Morley Mao<br>
-                            Proceedings of the ACM on Measurement and Analysis of Computing Systems (SIGMETRICS '21)<br>
-                        </p>
-                        <button type="button" class="btn btn-success btn-xs" data-target="#sigmetrics21-abs" data-toggle="collapse">Abstract</button>
-                        <button type="button" class="btn btn-info btn-xs" data-target="#sigmetrics21-bib" data-toggle="collapse">Bib</button>
-                        <button type="button" class="btn btn-primary btn-xs"><a class="conf" target="_blank" href="https://dl.acm.org/doi/pdf/10.1145/3460082">PDF</a></button>
-                        <button type="button" class="btn btn-warning btn-xs"><a class="conf" target="_blank" href="https://github.com/zqzqz/AVChecker">Code</a></button>
-                        <p></p>
-                        <div id="sigmetrics21-abs" class="collapse">
-                            <info>
-                                Safety compliance is paramount to the safe deployment of autonomous vehicle (AV) technologies in real-world transportation systems. As AVs will share road infrastructures with human drivers and pedestrians, it is an important requirement for AVs to obey standard driving rules. Existing AV software testing methods, including simulation and road testing, only check fundamental safety rules such as collision avoidance and safety distance. Scenario-dependent driving rules, including crosswalk and intersection rules, are more complicated because the expected driving behavior heavily depends on the surrounding circumstances. However, a testing framework is missing for checking scenario-dependent driving rules on various AV software. In this paper, we design and implement a systematic framework AVChecker for identifying violations of scenario-dependent driving rules in AV software using formal methods. AVChecker represents both the code logic of AV software and driving rules in proposed formal specifications and leverages satisfiability modulo theory (SMT) solvers to identify driving rule violations. To improve the automation of systematic rule-based checking, AVChecker provides a powerful user interface for writing driving rule specifications and applies static code analysis to extract rule-related code logic from the AV software codebase. Evaluations on two open-source AV software platforms, Baidu Apollo and Autoware, uncover 19 true violations out of 28 real-world driving rules covering crosswalks, traffic lights, stop signs, and intersections. Seven of the violations can lead to severe risks of a collision with pedestrians or blocking traffic.
-                            </info>
-                        </div>
-                        <div id="sigmetrics21-bib" class="collapse">
-                            @article{zhang2021systematic,
-                            title={A systematic framework to identify violations of scenario-dependent driving rules in autonomous vehicle software},
-                            author={Zhang, Qingzhao and Hong, David Ke and Zhang, Ze and Chen, Qi Alfred and Mahlke, Scott and Mao, Z Morley},
-                            journal={Proceedings of the ACM on Measurement and Analysis of Computing Systems},
-                            volume={5},
-                            number={2},
-                            pages={1--25},
-                            year={2021},
-                            publisher={ACM New York, NY, USA}
-                            }
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <span class="label label-primary">1</span>
-                    </td>
-                    <td>
-                        <h4 class="list-group-item-heading">
-                            Ethploit: From fuzzing to efficient exploit generation against smart contracts
-                            <span class="badge"><a class="conf" target="_blank" href="https://saner2020.csd.uwo.ca/">SANER '20</a></span>
-                        </h4>
-                        <p class="author">
-                            <strong>Qingzhao Zhang*</strong>, Yizhuo Wang*, Juanru Li, Siqi Ma<br>
-                            Proceedings of the ACM on Measurement and Analysis of Computing Systems (SIGMETRICS '21)<br>
-                        </p>
-                        <button type="button" class="btn btn-success btn-xs" data-target="#saner20-abs" data-toggle="collapse">Abstract</button>
-                        <button type="button" class="btn btn-info btn-xs" data-target="#saner20-bib" data-toggle="collapse">Bib</button>
-                        <button type="button" class="btn btn-primary btn-xs"><a class="conf" target="_blank" href="https://ieeexplore.ieee.org/abstract/document/9054822">PDF</a></button>
-                        <button type="button" class="btn btn-warning btn-xs"><a class="conf" target="_blank" href="https://github.com/zqzqz/contract-fuzzer">Code</a></button>
-                        <p></p>
-                        <div id="saner20-abs" class="collapse">
-                            <info>
-                                Smart contracts, programs running on blockchain systems, leverage diverse decentralized applications (DApps). Unfortunately, well-known smart contract platforms, Ethereum for example, face serious security problems. Exploits to contracts may cause enormous financial losses, which emphasize the importance of smart contract testing. However, current exploit generation tools have difficulty to solve hard constraints in execution paths and cannot simulate the blockchain behaviors very well. These problems cause a loss of coverage and accuracy of exploit generation. To overcome the problems, we design and implement EthPloit, a smart contract exploit generator based on fuzzing. EthPloit adopts static taint analysis to generate exploit-targeted transaction sequences, a dynamic seed strategy to pass hard constraints and an instrumented Ethereum Virtual Machine to simulate blockchain behaviors. We evaluate EthPloit on 45,308 smart contracts and discovered 554 exploitable contracts. EthPloit automatically generated 644 exploits without any false positive and 306 of them cannot be generated by previous exploit generation tools.
-                            </info>
-                        </div>
-                        <div id="saner20-bib" class="collapse">
-                            @inproceedings{zhang2020ethploit,
-                            title={Ethploit: From fuzzing to efficient exploit generation against smart contracts},
-                            author={Zhang, Qingzhao and Wang, Yizhuo and Li, Juanru and Ma, Siqi},
-                            booktitle={2020 IEEE 27th International Conference on Software Analysis, Evolution and Reengineering (SANER)},
-                            pages={116--126},
-                            year={2020},
-                            organization={IEEE}
-                            }
-                        </div>
-                    </td>
-                </tr>
+                <tbody id="publication-list">
                 </tbody>
             </table>
         </div>
@@ -368,11 +197,67 @@ Analytics"></a></div></noscript>
     </div>
 </div><!--/.container-->
 
+<footer class="footer">
+    <div class="container">
+        <p class="text-muted"><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"></a> © Qingzhao Zhang 2023 — <script>var d = new Date(); document.write(d.getFullYear())</script> </p>
+        <!-- PLEASE KEEP THIS LICENSE -->
+        <!-- Your use of the template of this website means that you agree to this license. -->
+        <small>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>. You are allowed to reuse the content or the template of this website, under these premises: (1) You must provide a link to the <a href="http://web.eecs.umich.edu/~xumiao">original website</a>; (2) Your reuse does not suggest in any way that the licensor, Mr. Qingzhao Zhang, endorses you or your use; (3) You must distribute your contributions under the same license as the original. This work is originally designed by <a href="http://web.eecs.umich.edu/~xumiao">Mr. Xumiao Zhang</a> and modified by Mr. Qingzhao Zhang.</small>
+        <br>
+        <small>Last Updated: September 2023</small>
+        <br>
+    </div>
+</footer>
+
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
 <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
 <script src="js/jquery/jquery-2.1.4.min.js"></script>
 <script src="js/bootstrap/bootstrap.min.js"></script>
+<script>
+$(document).ready(function() {
+    fetch('./forms/publications.json')
+    .then(response => response.json())
+    .then(publications => {
+        publications.forEach((pub, index) => {
+            // Clone the template
+            const $entry = $($("#publication-template").html());
+
+            // Fill in the data
+            $entry.find(".label-primary").text(index + 1);
+            $entry.find(".title").contents().filter(function() {
+                // Check if it's a text node
+                return this.nodeType === 3; // Node.TEXT_NODE
+            }).first().replaceWith(" " + pub.title + " ");
+            
+            $entry.find(".conf-tag").text(pub.conference.short);
+            
+            $entry.find(".author").html(pub.authors.join(', ') + '<br>' + pub.conference.name);
+            
+            $entry.find(".abs").attr('id', 'abs-' + index).find('info').text(pub.abstract);
+            $entry.find(".bib").attr('id', 'bib-' + index).text(pub.citation);
+            
+            $entry.find(".btn-success").attr('data-target', '#abs-' + index);
+            $entry.find(".btn-info").attr('data-target', '#bib-' + index);
+            
+            if (pub.linkToPaper) {
+                $entry.find(".paper-link").attr('href', pub.linkToPaper);
+            } else {
+                $entry.find(".paper-button").remove();
+            }
+
+            if (pub.linkToCode) {
+                $entry.find(".code-link").attr('href', pub.linkToCode);
+            } else {
+                $entry.find(".code-button").remove();
+            }
+
+            // Append the filled entry to the publication list
+            $("#publication-list").append($entry);
+        });
+    });
+});
+</script>
 </body>
 </html>
