@@ -1,7 +1,7 @@
 [
     {
         "title": "On Data Fabrication in Collaborative Vehicular Perception: Attacks and Countermeasures",
-        "authors": ["<strong>Qingzhao Zhang</strong>", "Shuowei Jin", "Jiachen Sun", "Xumiao Zhang", "Ruiyang Zhu", "Qi Alfred Chen", "Z. Morley Mao"],
+        "authors": ["<strong>Qingzhao Zhang</strong>", "Shuowei Jin", "Ruiyang Zhu", "Jiachen Sun", "Xumiao Zhang", "Qi Alfred Chen", "Z. Morley Mao"],
         "conference": {
             "name": "Proceedings of the 33nd USENIX Security Symposium (USENIX Security '24)",
             "short": "USENIX Security '24"
