@@ -13,6 +13,9 @@
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
     <link href="css/homepage.css" rel="stylesheet">
+
+    <script src="js/jquery/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -60,42 +63,12 @@ Analytics"></a></div></noscript> -->
 <!-- End of Statcounter Code -->
 
 <!-- Fixed navbar -->
-
-<nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse collapse-butten" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Qingzhao Zhang</a>
-        </div>
-        <div id="navbar" class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
-                <li class="active">
-                    <a href="#">Home</a>
-                </li>
-                <li>
-                    <a href="#about">About</a>
-                </li>
-                <li>
-                    <a href="#publications">Publications</a>
-                </li>
-                <li>
-                    <a href="#services">Services</a>
-                </li>
-                <li>
-                    <a target="_blank" href="./files/resume.pdf">CV</a>
-                </li>
-                <!-- <li>
-                    <a href="#contact">Contact</a>
-                </li> -->
-            </ul>
-        </div><!--/.nav-collapse -->
-    </div>
-</nav><!-- Fixed navbar-collapse -->
+<div id="navbar"></div>
+<script>
+$(document).ready(function() {
+    $("#navbar").load("navigation.html");
+})
+</script>
 
 <!-- Begin page content -->
 <div class="container">
@@ -213,8 +186,6 @@ Analytics"></a></div></noscript> -->
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
 <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
-<script src="js/jquery/jquery-2.1.4.min.js"></script>
-<script src="js/bootstrap/bootstrap.min.js"></script>
 <script>
 $(document).ready(function() {
     fetch('./forms/publications.json')
