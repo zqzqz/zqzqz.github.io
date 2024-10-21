@@ -63,55 +63,57 @@ Analytics"></a></div></noscript> -->
 <!-- End of Statcounter Code -->
 
 <!-- Fixed navbar -->
-<nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse collapse-butten" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="/index.html">Qingzhao Zhang</a>
-        </div>
-        <div id="navbar" class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
-                <li class="active">
-                    <a href="/">Home</a>
-                </li>
-                <li>
-                    <a href="/index.html#about">About</a>
-                </li>
-                <li>
-                    <a href="/index.html#publications">Publications</a>
-                </li>
-                <li>
-                    <a href="/index.html#services">Services</a>
-                </li>
-                <li>
-                    <a href="/files/resume.pdf">CV</a>
-                </li>
-                <li>
-                    <a href="/documents.html">Other documents</a>
-                </li>
-                <!-- <li>
-                    <a href="#contact">Contact</a>
-                </li> -->
-            </ul>
-        </div><!--/.nav-collapse -->
-    </div>
-</nav><!-- Fixed navbar-collapse -->
-
+<div id="navbar"></div>
 <script>
 $(document).ready(function() {
-    // Add an event listener to all nav links
-    $('.navbar-nav li a').click(function() {
-        // Remove 'active' class from all nav items
-        $('.navbar-nav li').removeClass('active');
-        // Add 'active' class to the clicked nav item
-        $(this).parent().addClass('active');
+    $("#navbar").load("navigation.html");
+})
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Select all the nav links
+        const navLinks = document.querySelectorAll('.navbar-nav li a');
+        
+        // Function to update the active class based on the URL hash
+        function setActiveNav() {
+            // Get current hash (after # in the URL)
+            const currentHash = window.location.hash;
+
+            // If there is a hash in the URL, find the corresponding link
+            if (currentHash) {
+                // Remove 'active' class from all nav items
+                navLinks.forEach(link => link.parentElement.classList.remove('active'));
+
+                // Find the link that matches the hash
+                const activeLink = document.querySelector(`.navbar-nav li a[href="${currentHash}"]`);
+                if (activeLink) {
+                    activeLink.parentElement.classList.add('active');
+                }
+            } else {
+                // Default to home if no hash
+                navLinks.forEach(link => link.parentElement.classList.remove('active'));
+                document.querySelector('.navbar-nav li:first-child').classList.add('active');
+            }
+        }
+
+        // Set the active link based on the current hash when the page loads
+        setActiveNav();
+
+        // Update the active link whenever a nav link is clicked
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                // Remove 'active' class from all nav items
+                navLinks.forEach(link => link.parentElement.classList.remove('active'));
+
+                // Add 'active' class to the clicked nav item
+                this.parentElement.classList.add('active');
+            });
+        });
+
+        // Update the active link when the hash changes (e.g., back/forward navigation)
+        window.addEventListener('hashchange', setActiveNav);
     });
-});
 </script>
 
 <!-- Begin page content -->
