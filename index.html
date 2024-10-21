@@ -63,11 +63,55 @@ Analytics"></a></div></noscript> -->
 <!-- End of Statcounter Code -->
 
 <!-- Fixed navbar -->
-<div id="navbar"></div>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse collapse-butten" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/index.html">Qingzhao Zhang</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active">
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <a href="/index.html#about">About</a>
+                </li>
+                <li>
+                    <a href="/index.html#publications">Publications</a>
+                </li>
+                <li>
+                    <a href="/index.html#services">Services</a>
+                </li>
+                <li>
+                    <a href="/files/resume.pdf">CV</a>
+                </li>
+                <li>
+                    <a href="/documents.html">Other documents</a>
+                </li>
+                <!-- <li>
+                    <a href="#contact">Contact</a>
+                </li> -->
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</nav><!-- Fixed navbar-collapse -->
+
 <script>
 $(document).ready(function() {
-    $("#navbar").load("navigation.html");
-})
+    // Add an event listener to all nav links
+    $('.navbar-nav li a').click(function() {
+        // Remove 'active' class from all nav items
+        $('.navbar-nav li').removeClass('active');
+        // Add 'active' class to the clicked nav item
+        $(this).parent().addClass('active');
+    });
+});
 </script>
 
 <!-- Begin page content -->
