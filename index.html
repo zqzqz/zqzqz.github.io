@@ -70,52 +70,6 @@ $(document).ready(function() {
 })
 </script>
 
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        // Select all the nav links
-        const navLinks = document.querySelectorAll('.navbar-nav li a');
-        
-        // Function to update the active class based on the URL hash
-        function setActiveNav() {
-            // Get current hash (after # in the URL)
-            const currentHash = window.location.hash;
-
-            // If there is a hash in the URL, find the corresponding link
-            if (currentHash) {
-                // Remove 'active' class from all nav items
-                navLinks.forEach(link => link.parentElement.classList.remove('active'));
-
-                // Find the link that matches the hash
-                const activeLink = document.querySelector(`.navbar-nav li a[href="${currentHash}"]`);
-                if (activeLink) {
-                    activeLink.parentElement.classList.add('active');
-                }
-            } else {
-                // Default to home if no hash
-                navLinks.forEach(link => link.parentElement.classList.remove('active'));
-                document.querySelector('.navbar-nav li:first-child').classList.add('active');
-            }
-        }
-
-        // Set the active link based on the current hash when the page loads
-        setActiveNav();
-
-        // Update the active link whenever a nav link is clicked
-        navLinks.forEach(link => {
-            link.addEventListener('click', function() {
-                // Remove 'active' class from all nav items
-                navLinks.forEach(link => link.parentElement.classList.remove('active'));
-
-                // Add 'active' class to the clicked nav item
-                this.parentElement.classList.add('active');
-            });
-        });
-
-        // Update the active link when the hash changes (e.g., back/forward navigation)
-        window.addEventListener('hashchange', setActiveNav);
-    });
-</script>
-
 <!-- Begin page content -->
 <div class="container">
 
