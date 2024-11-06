@@ -13,6 +13,7 @@
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
     <link href="css/homepage.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
 
     <script src="js/jquery/jquery-2.1.4.min.js"></script>
     <script src="js/bootstrap/bootstrap.min.js"></script>
@@ -85,14 +86,19 @@ $(document).ready(function() {
                     Qingzhao Zhang<br>
                     <small>Ph.D. student at University of Michigan</small>
                 </h1>
-                <p>Contacts:</p>
-                <ul>
-                    <li><a href="https://www.linkedin.com/in/qingzhao-zhang-zqzqz/">LinkedIn</a></li>
-                    <li><a href="https://github.com/zqzqz">GitHub</a></li>
-                    <li><a href="https://scholar.google.com/citations?user=ZSXIPHgAAAAJ&hl=en">Google Scholar</a></li>
-                </ul>
 
                 <p>Email: <code>qzzhang [at] umich.edu</code></p>
+                <p style="padding-top: 10px">
+                    <a href="https://scholar.google.com/citations?user=ZSXIPHgAAAAJ" target="_blank" style="margin-right: 10px; text-decoration: none">
+                        <i class="fa-brands fa-google-scholar fa-2xl"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/qingzhao-zhang-zqzqz/" target="_blank" style="margin-right: 10px; text-decoration: none">
+                        <i class="fa-brands fa-linkedin fa-2xl"></i>
+                    </a>
+                    <a href="https://github.com/zqzqz" target="_blank" style="margin-right: 10px; text-decoration: none">
+                        <i class="fa-brands fa-github fa-2xl"></i>
+                    </a>
+                </p>
             </div>
             <!-- <div class="col-xs-2 col-sm-1"></div> -->
             <!-- <br> -->
@@ -107,7 +113,7 @@ $(document).ready(function() {
         </div>
  
         <hr size="1" color="#800000">
-        <h2><b><a id="publications">Selected Publications</a></b> <small>(*: co-primary authors)</small></h2>
+        <h2><b><a id="publications">Publications</a></b> <small>(*: co-primary authors)</small></h2>
 
         <template id="publication-template">
             <tr>
@@ -140,25 +146,58 @@ $(document).ready(function() {
             </tr>
         </template>
 
+        <h3><b><a id="publications-conferences">Conference papers</a></b></h2>
         <div class="panel panel-default">
             <!--<div class="panel-body">-->
             <table class="table table-hover">
-                <tbody id="publication-list">
+                <tbody id="publications-conferences-list">
                 </tbody>
             </table>
         </div>
+        <h3><b><a id="publications-journals">Journal papers</a></b></h2>
+        <div class="panel panel-default">
+            <!--<div class="panel-body">-->
+            <table class="table table-hover">
+                <tbody id="publications-journals-list">
+                </tbody>
+            </table>
+        </div>
+        <h3><b><a id="publications-preprints">Preprints</a></b></h2>
+        <div class="panel panel-default">
+            <!--<div class="panel-body">-->
+            <table class="table table-hover">
+                <tbody id="publications-preprints-list">
+                </tbody>
+            </table>
+        </div>
+        <h3><b><a id="publications-workshops">Workshop papers</a></b></h2>
+            <div class="panel panel-default">
+                <!--<div class="panel-body">-->
+                <table class="table table-hover">
+                    <tbody id="publications-workshops-list">
+                    </tbody>
+                </table>
+            </div>
 
         <hr size="1" color="#800000">
         <h2><b><a id="services">Services</a></b></h2>
         <ul>
             <li style="font-size:18px";><strong>Reviewer</strong>:
-                IEEE Intelligent Transportation Systems Magazine, IEEE Transactions on Intelligent Vehicles (IV), 5G/6G Precise Positioning on C-ITS and CAV, Workshop on Re-design Industrial Control Systems with Security (RICSS), Transactions on Dependable and Secure Computing (TDSC) 
+                ICLR 2025, ICRA 2025, ACM Multimedia 2024, IEEE Internet of Things Journal, IEEE Intelligent Transportation Systems Magazine, IEEE Transactions on Intelligent Vehicles (IV), 5G/6G Precise Positioning on C-ITS and CAV, Workshop on Re-design Industrial Control Systems with Security (RICSS), Transactions on Dependable and Secure Computing (TDSC) 
             </li>
             <li style="font-size:18px";><strong>Artifact Evaluation Reviewer</strong>:
                 Usenix Security 2022
             </li>
-            <li style="font-size:18px";><strong>Undergraduate Supervisor</strong>:
-                Multidisciplinary Design Program, University of Michigan
+            <li style="font-size:18px";><strong>Pre-Review Task Force</strong>:
+                NSDI 2025
+            </li>
+        </ul>
+
+        <hr size="1" color="#800000">
+        <h2><b><a id="teaching">Teaching</a></b></h2>
+        <ul>
+            <li style="font-size:18px";>
+                Multidisciplinary Design Program, University of Michigan, 2022-2023
             </li>
         </ul>
 
@@ -191,42 +230,44 @@ $(document).ready(function() {
     fetch('./forms/publications.json')
     .then(response => response.json())
     .then(publications => {
-        publications.forEach((pub, index) => {
-            // Clone the template
-            const $entry = $($("#publication-template").html());
+        for (const category in publications) {
+            publications[category].forEach((pub, index) => {
+                // Clone the template
+                const $entry = $($("#publication-template").html());
 
-            // Fill in the data
-            $entry.find(".label-primary").text(index + 1);
-            $entry.find(".title").contents().filter(function() {
-                // Check if it's a text node
-                return this.nodeType === 3; // Node.TEXT_NODE
-            }).first().replaceWith(" " + pub.title + " ");
-            
-            $entry.find(".conf-tag").text(pub.conference.short);
-            
-            $entry.find(".author").html(pub.authors.join(', ') + '<br>' + pub.conference.name);
-            
-            $entry.find(".abs").attr('id', 'abs-' + index).find('info').text(pub.abstract);
-            $entry.find(".bib").attr('id', 'bib-' + index).text(pub.citation);
-            
-            $entry.find(".btn-success").attr('data-target', '#abs-' + index);
-            $entry.find(".btn-info").attr('data-target', '#bib-' + index);
-            
-            if (pub.linkToPaper) {
-                $entry.find(".paper-link").attr('href', pub.linkToPaper);
-            } else {
-                $entry.find(".paper-button").remove();
-            }
+                // Fill in the data
+                $entry.find(".label-primary").text(index + 1);
+                $entry.find(".title").contents().filter(function() {
+                    // Check if it's a text node
+                    return this.nodeType === 3; // Node.TEXT_NODE
+                }).first().replaceWith(" " + pub.title + " ");
+                
+                $entry.find(".conf-tag").text(pub.conference.short);
+                
+                $entry.find(".author").html(pub.authors.join(', ') + '<br>' + pub.conference.name);
+                
+                $entry.find(".abs").attr('id', 'abs-' + index).find('info').text(pub.abstract);
+                $entry.find(".bib").attr('id', 'bib-' + index).text(pub.citation);
+                
+                $entry.find(".btn-success").attr('data-target', '#abs-' + index);
+                $entry.find(".btn-info").attr('data-target', '#bib-' + index);
+                
+                if (pub.linkToPaper) {
+                    $entry.find(".paper-link").attr('href', pub.linkToPaper);
+                } else {
+                    $entry.find(".paper-button").remove();
+                }
 
-            if (pub.linkToCode) {
-                $entry.find(".code-link").attr('href', pub.linkToCode);
-            } else {
-                $entry.find(".code-button").remove();
-            }
+                if (pub.linkToCode) {
+                    $entry.find(".code-link").attr('href', pub.linkToCode);
+                } else {
+                    $entry.find(".code-button").remove();
+                }
 
-            // Append the filled entry to the publication list
-            $("#publication-list").append($entry);
-        });
+                // Append the filled entry to the publication list
+                $("#publications-"+category+"-list").append($entry);
+            });
+        }
     });
 });
 </script>

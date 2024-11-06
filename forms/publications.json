@@ -1,74 +1,262 @@
-[
-    {
-        "title": "On Data Fabrication in Collaborative Vehicular Perception: Attacks and Countermeasures",
-        "authors": ["<strong>Qingzhao Zhang</strong>", "Shuowei Jin", "Ruiyang Zhu", "Jiachen Sun", "Xumiao Zhang", "Qi Alfred Chen", "Z. Morley Mao"],
-        "conference": {
-            "name": "Proceedings of the 33nd USENIX Security Symposium (USENIX Security '24)",
-            "short": "USENIX Security '24"
+{
+    "conferences": [
+        {
+            "title": "CALICO: Self-Supervised Camera-LiDAR Contrastive Pre-training for BEV Perception",
+            "authors": ["Jiachen Sun", "Haizhong Zheng", "<strong>Qingzhao Zhang</strong>", "Atul Prakash", "Z. Morley Mao", "Chaowei Xiao"],
+            "conference": {
+                "name": "The International Conference on Learning Representations (ICLR 2024)",
+                "short": "ICLR '24"
+            },
+            "abstract": "Perception is crucial in the realm of autonomous driving systems, where bird's eye view (BEV)-based architectures have recently reached state-of-the-art performance. The desirability of self-supervised representation learning stems from the expensive and laborious process of annotating 2D and 3D data. Although previous research has investigated pretraining methods for both LiDAR and camera-based 3D object detection, a unified pretraining framework for multimodal BEV perception is missing. In this study, we introduce CALICO, a novel framework that applies contrastive objectives to both LiDAR and camera backbones. Specifically, CALICO incorporates two stages: point-region contrast (PRC) and region-aware distillation (RAD). PRC better balances the region- and scene-level representation learning on the LiDAR modality and offers significant performance improvement compared to existing methods. RAD effectively achieves contrastive distillation on our self-trained teacher model. CALICO's efficacy is substantiated by extensive evaluations on 3D object detection and BEV map segmentation tasks, where it delivers significant performance improvements. Notably, CALICO outperforms the baseline method by 10.5% and 8.6% on NDS and mAP. Moreover, CALICO boosts the robustness of multimodal 3D object detection against adversarial attacks and corruption. Additionally, our framework can be tailored to different backbones and heads, positioning it as a promising approach for multimodal BEV perception.",
+            "citation": "@article{sun2023calico,title={CALICO: Self-Supervised Camera-LiDAR Contrastive Pre-training for BEV Perception},author={Sun, Jiachen and Zheng, Haizhong and Zhang, Qingzhao and Prakash, Atul and Mao, Z Morley and Xiao, Chaowei},journal={arXiv preprint arXiv:2306.00349},year={2023}}",
+            "linkToPaper": "https://arxiv.org/abs/2306.00349",
+            "linkToCode": ""
         },
-        "abstract": "Collaborative perception, which greatly enhances the sensing capability of connected and autonomous vehicles (CAVs) by incorporating data from external resources, also brings forth potential security risks. CAVs' driving decisions rely on remote untrusted data, making them susceptible to attacks carried out by malicious participants in the collaborative perception system. However, security analysis and countermeasures for such threats are absent. To understand the impact of the vulnerability, we break the ground by proposing various real-time data fabrication attacks in which the attacker delivers crafted malicious data to victims in order to perturb their perception results, leading to hard brakes or increased collision risks. Our attacks demonstrate a high success rate of over 86% on high-fidelity simulated scenarios and are realizable in real-world experiments. To mitigate the vulnerability, we present a systematic anomaly detection approach that enables benign vehicles to jointly reveal malicious fabrication. It detects 91.5% of attacks with a false positive rate of 3% in simulated scenarios and significantly mitigates attack impacts in real-world scenarios.",
-        "citation": "@inproceedings{zhang2024on, title={On Data Fabrication in Collaborative Vehicular Perception: Attacks and Countermeasures}, author={Zhang, Qingzhao and Jin, Shuowei and Sun, Jiachen and Zhang, Xumiao and Zhu, Ruiyang and Chen, Qi Alfred and Mao, Z Morley}, booktitle={33nd USENIX Security Symposium (USENIX Security 24)}, year={2024} }",
-        "linkToPaper": "https://arxiv.org/abs/2309.12955",
-        "linkToCode": "https://github.com/zqzqz/AdvCollaborativePerception"
-    },
-    {
-        "title": "Robust Real-time Multi-vehicle Collaboration on Asynchronous Sensors",
-        "authors": ["<strong>Qingzhao Zhang</strong>*", "Xumiao Zhang*", "Ruiyang Zhu*", "Fan Bai", "Mohammad Naserian", "Z. Morley Mao"],
-        "conference": {
-            "name": "Proceedings of the 29th Annual International Conference on Mobile Computing and Networking (MobiCom '23)",
-            "short": "MobiCom '23"
+        {
+            "title": "On Data Fabrication in Collaborative Vehicular Perception: Attacks and Countermeasures",
+            "authors": ["<strong>Qingzhao Zhang</strong>", "Shuowei Jin", "Ruiyang Zhu", "Jiachen Sun", "Xumiao Zhang", "Qi Alfred Chen", "Z. Morley Mao"],
+            "conference": {
+                "name": "Proceedings of the 33nd USENIX Security Symposium (USENIX Security '24)",
+                "short": "USENIX Security '24"
+            },
+            "abstract": "Collaborative perception, which greatly enhances the sensing capability of connected and autonomous vehicles (CAVs) by incorporating data from external resources, also brings forth potential security risks. CAVs' driving decisions rely on remote untrusted data, making them susceptible to attacks carried out by malicious participants in the collaborative perception system. However, security analysis and countermeasures for such threats are absent. To understand the impact of the vulnerability, we break the ground by proposing various real-time data fabrication attacks in which the attacker delivers crafted malicious data to victims in order to perturb their perception results, leading to hard brakes or increased collision risks. Our attacks demonstrate a high success rate of over 86% on high-fidelity simulated scenarios and are realizable in real-world experiments. To mitigate the vulnerability, we present a systematic anomaly detection approach that enables benign vehicles to jointly reveal malicious fabrication. It detects 91.5% of attacks with a false positive rate of 3% in simulated scenarios and significantly mitigates attack impacts in real-world scenarios.",
+            "citation": "@inproceedings{zhang2024on, title={On Data Fabrication in Collaborative Vehicular Perception: Attacks and Countermeasures}, author={Zhang, Qingzhao and Jin, Shuowei and Sun, Jiachen and Zhang, Xumiao and Zhu, Ruiyang and Chen, Qi Alfred and Mao, Z Morley}, booktitle={33nd USENIX Security Symposium (USENIX Security 24)}, year={2024} }",
+            "linkToPaper": "https://arxiv.org/abs/2309.12955",
+            "linkToCode": "https://github.com/zqzqz/AdvCollaborativePerception"
         },
-        "abstract": "Cooperative perception significantly enhances the perception performance of connected autonomous vehicles. Instead of purely relying on local sensors with limited range, it enables multiple vehicles and roadside infrastructures to share sensor data to perceive the environment collaboratively. Through our study, we realize that the performance of cooperative perception systems is limited in real-world deployment due to (1) out-of-sync sensor data during data fusion and (2) inaccurate localization of occluded areas. To address these challenges, we develop RAO, an innovative, effective, and lightweight cooperative perception system that merges asynchronous sensor data from different vehicles through our novel designs of motion-compensated occupancy flow prediction and on-demand data sharing, improving both the accuracy and coverage of the perception system. Our extensive evaluation, including real-world and emulation-based experiments, demonstrates that RAO outperforms state-of-the-art solutions by more than 34% in perception coverage and by up to 14% in perception accuracy, especially when asynchronous sensor data is present. RAO consistently performs well across a wide variety of map topologies and driving scenarios. RAO incurs negligible additional latency (8.5ms) and low data transmission overhead (10.9 KB per frame), making cooperative perception feasible.",
-        "citation": "@inproceedings{zhang2023robust, title={Robust Real-time Multi-vehicle Collaboration on Asynchronous Sensors}, author={Zhang, Qingzhao and Zhang, Xumiao and Zhu, Ruiyang and Bai, Fan and Naserian, Mohammad and Mao, Z Morley}, booktitle={Proceedings of the 29th Annual International Conference on Mobile Computing and Networking}, year={2023} }",
-        "linkToPaper": "https://dl.acm.org/doi/10.1145/3570361.3613271",
-        "linkToCode": ""
-    },
-    {
-        "title": "On adversarial robustness of trajectory prediction for autonomous vehicles",
-        "authors": ["<strong>Qingzhao Zhang</strong>", "Shengtuo Hu", "Jiachen Sun", "Qi Alfred Chen", "Z. Morley Mao"],
-        "conference": {
-            "name": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR '22)",
-            "short": "CVPR '22"
+        {
+            "title": "Robust Real-time Multi-vehicle Collaboration on Asynchronous Sensors",
+            "authors": ["<strong>Qingzhao Zhang</strong>*", "Xumiao Zhang*", "Ruiyang Zhu*", "Fan Bai", "Mohammad Naserian", "Z. Morley Mao"],
+            "conference": {
+                "name": "Proceedings of the 29th Annual International Conference on Mobile Computing and Networking (MobiCom '23)",
+                "short": "MobiCom '23"
+            },
+            "abstract": "Cooperative perception significantly enhances the perception performance of connected autonomous vehicles. Instead of purely relying on local sensors with limited range, it enables multiple vehicles and roadside infrastructures to share sensor data to perceive the environment collaboratively. Through our study, we realize that the performance of cooperative perception systems is limited in real-world deployment due to (1) out-of-sync sensor data during data fusion and (2) inaccurate localization of occluded areas. To address these challenges, we develop RAO, an innovative, effective, and lightweight cooperative perception system that merges asynchronous sensor data from different vehicles through our novel designs of motion-compensated occupancy flow prediction and on-demand data sharing, improving both the accuracy and coverage of the perception system. Our extensive evaluation, including real-world and emulation-based experiments, demonstrates that RAO outperforms state-of-the-art solutions by more than 34% in perception coverage and by up to 14% in perception accuracy, especially when asynchronous sensor data is present. RAO consistently performs well across a wide variety of map topologies and driving scenarios. RAO incurs negligible additional latency (8.5ms) and low data transmission overhead (10.9 KB per frame), making cooperative perception feasible.",
+            "citation": "@inproceedings{zhang2023robust, title={Robust Real-time Multi-vehicle Collaboration on Asynchronous Sensors}, author={Zhang, Qingzhao and Zhang, Xumiao and Zhu, Ruiyang and Bai, Fan and Naserian, Mohammad and Mao, Z Morley}, booktitle={Proceedings of the 29th Annual International Conference on Mobile Computing and Networking}, year={2023} }",
+            "linkToPaper": "https://dl.acm.org/doi/10.1145/3570361.3613271",
+            "linkToCode": ""
         },
-        "abstract": "Trajectory prediction is a critical component for autonomous vehicles (AVs) to perform safe planning and navigation. However, few studies have analyzed the adversarial robustness of trajectory prediction or investigated whether the worst-case prediction can still lead to safe planning. To bridge this gap, we study the adversarial robustness of trajectory prediction models by proposing a new adversarial attack that perturbs normal vehicle trajectories to maximize the prediction error. Our experiments on three models and three datasets show that the adversarial prediction increases the prediction error by more than 150%. Our case studies show that if an adversary drives a vehicle close to the target AV following the adversarial trajectory, the AV may make an inaccurate prediction and even make unsafe driving decisions. We also explore possible mitigation techniques via data augmentation and trajectory smoothing.",
-        "citation": "@inproceedings{zhang2022adversarial, title={On adversarial robustness of trajectory prediction for autonomous vehicles}, author={Zhang, Qingzhao and Hu, Shengtuo and Sun, Jiachen and Chen, Qi Alfred and Mao, Z Morley}, booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition}, pages={15159--15168}, year={2022} }",
-        "linkToPaper": "https://openaccess.thecvf.com/content/CVPR2022/papers/Zhang_On_Adversarial_Robustness_of_Trajectory_Prediction_for_Autonomous_Vehicles_CVPR_2022_paper.pdf",
-        "linkToCode": "https://github.com/zqzqz/AdvTrajectoryPrediction"
-    },
-    {
-        "title": "Automated Runtime Mitigation for Misconfiguration Vulnerabilities in Industrial Control Systems",
-        "authors": ["<strong>Qingzhao Zhang</strong>", "Xiao Zhu", "Mu Zhang", "Z. Morley Mao"],
-        "conference": {
-            "name": "Proceedings of the 25th International Symposium on Research in Attacks, Intrusions and Defenses (RAID '22)",
-            "short": "RAID '22"
+        {
+            "title": "On adversarial robustness of trajectory prediction for autonomous vehicles",
+            "authors": ["<strong>Qingzhao Zhang</strong>", "Shengtuo Hu", "Jiachen Sun", "Qi Alfred Chen", "Z. Morley Mao"],
+            "conference": {
+                "name": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR '22)",
+                "short": "CVPR '22"
+            },
+            "abstract": "Trajectory prediction is a critical component for autonomous vehicles (AVs) to perform safe planning and navigation. However, few studies have analyzed the adversarial robustness of trajectory prediction or investigated whether the worst-case prediction can still lead to safe planning. To bridge this gap, we study the adversarial robustness of trajectory prediction models by proposing a new adversarial attack that perturbs normal vehicle trajectories to maximize the prediction error. Our experiments on three models and three datasets show that the adversarial prediction increases the prediction error by more than 150%. Our case studies show that if an adversary drives a vehicle close to the target AV following the adversarial trajectory, the AV may make an inaccurate prediction and even make unsafe driving decisions. We also explore possible mitigation techniques via data augmentation and trajectory smoothing.",
+            "citation": "@inproceedings{zhang2022adversarial, title={On adversarial robustness of trajectory prediction for autonomous vehicles}, author={Zhang, Qingzhao and Hu, Shengtuo and Sun, Jiachen and Chen, Qi Alfred and Mao, Z Morley}, booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition}, pages={15159--15168}, year={2022} }",
+            "linkToPaper": "https://openaccess.thecvf.com/content/CVPR2022/papers/Zhang_On_Adversarial_Robustness_of_Trajectory_Prediction_for_Autonomous_Vehicles_CVPR_2022_paper.pdf",
+            "linkToCode": "https://github.com/zqzqz/AdvTrajectoryPrediction"
         },
-        "abstract": "Cyber-physical industrial control systems (ICS) commonly implement configuration parameters that can be remotely tuned by human-machine interfaces (HMI) at runtime. These parameters directly control the behaviors of ICSs thus they can be exploited by attackers to compromise the safety of ICSs, proved by real-world attacks worldwide. However, existing anomaly detection methods, which mostly focus on the programmable logic controller (PLC) programs or sensor signals, lack a comprehensive analysis of configuration’s impact on the entire system and thus cannot effectively detect improper parameters. A tool that automatically analyzes complicated control logic to determine the safety of configuration is absent. To fill this gap, we design SmtConf, a verification-based framework for detecting and mitigating improper parameters in ICSs at runtime. To understand the impact of configuration parameters on complicated control logic, we design a symbolic formal model representing behaviors of the ICS under any possible configuration parameters. Based on the model, SmtConf works as a monitoring system that detects safety violations in real-time when the improper configuration is injected. To further assist developers to determine the safe configuration, SmtConf recommends safe configuration parameters by solving an optimization problem. In 18 test cases collected from two production-level ICS testbeds, SmtConf detects all true violations caused by improper parameters in 0.41 seconds and correctly repairs the ICS with recommended safe parameters in 0.45 seconds.",
-        "citation": "@inproceedings{zhang2022automated, title={Automated Runtime Mitigation for Misconfiguration Vulnerabilities in Industrial Control Systems}, author={Zhang, Qingzhao and Zhu, Xiao and Zhang, Mu and Mao, Z Morley}, booktitle={Proceedings of the 25th International Symposium on Research in Attacks, Intrusions and Defenses}, pages={333--349}, year={2022} }",
-        "linkToPaper": "https://dl.acm.org/doi/pdf/10.1145/3545948.3545954",
-        "linkToCode": ""
-    },
-    {
-        "title": "A systematic framework to identify violations of scenario-dependent driving rules in autonomous vehicle software",
-        "authors": ["<strong>Qingzhao Zhang</strong>", "David Ke Hong", "Ze Zhang", "Qi Alfred Chen", "Scott Mahlke", "Z Morley Mao"],
-        "conference": {
-            "name": "Proceedings of the ACM on Measurement and Analysis of Computing Systems (SIGMETRICS '21)",
-            "short": "SIGMETRICS '21"
+        {
+            "title": "Automated Runtime Mitigation for Misconfiguration Vulnerabilities in Industrial Control Systems",
+            "authors": ["<strong>Qingzhao Zhang</strong>", "Xiao Zhu", "Mu Zhang", "Z. Morley Mao"],
+            "conference": {
+                "name": "Proceedings of the 25th International Symposium on Research in Attacks, Intrusions and Defenses (RAID '22)",
+                "short": "RAID '22"
+            },
+            "abstract": "Cyber-physical industrial control systems (ICS) commonly implement configuration parameters that can be remotely tuned by human-machine interfaces (HMI) at runtime. These parameters directly control the behaviors of ICSs thus they can be exploited by attackers to compromise the safety of ICSs, proved by real-world attacks worldwide. However, existing anomaly detection methods, which mostly focus on the programmable logic controller (PLC) programs or sensor signals, lack a comprehensive analysis of configuration’s impact on the entire system and thus cannot effectively detect improper parameters. A tool that automatically analyzes complicated control logic to determine the safety of configuration is absent. To fill this gap, we design SmtConf, a verification-based framework for detecting and mitigating improper parameters in ICSs at runtime. To understand the impact of configuration parameters on complicated control logic, we design a symbolic formal model representing behaviors of the ICS under any possible configuration parameters. Based on the model, SmtConf works as a monitoring system that detects safety violations in real-time when the improper configuration is injected. To further assist developers to determine the safe configuration, SmtConf recommends safe configuration parameters by solving an optimization problem. In 18 test cases collected from two production-level ICS testbeds, SmtConf detects all true violations caused by improper parameters in 0.41 seconds and correctly repairs the ICS with recommended safe parameters in 0.45 seconds.",
+            "citation": "@inproceedings{zhang2022automated, title={Automated Runtime Mitigation for Misconfiguration Vulnerabilities in Industrial Control Systems}, author={Zhang, Qingzhao and Zhu, Xiao and Zhang, Mu and Mao, Z Morley}, booktitle={Proceedings of the 25th International Symposium on Research in Attacks, Intrusions and Defenses}, pages={333--349}, year={2022} }",
+            "linkToPaper": "https://dl.acm.org/doi/pdf/10.1145/3545948.3545954",
+            "linkToCode": ""
         },
-        "abstract": "Safety compliance is paramount to the safe deployment of autonomous vehicle (AV) technologies in real-world transportation systems. As AVs will share road infrastructures with human drivers and pedestrians, it is an important requirement for AVs to obey standard driving rules. Existing AV software testing methods, including simulation and road testing, only check fundamental safety rules such as collision avoidance and safety distance. Scenario-dependent driving rules, including crosswalk and intersection rules, are more complicated because the expected driving behavior heavily depends on the surrounding circumstances. However, a testing framework is missing for checking scenario-dependent driving rules on various AV software. In this paper, we design and implement a systematic framework AVChecker for identifying violations of scenario-dependent driving rules in AV software using formal methods. AVChecker represents both the code logic of AV software and driving rules in proposed formal specifications and leverages satisfiability modulo theory (SMT) solvers to identify driving rule violations. To improve the automation of systematic rule-based checking, AVChecker provides a powerful user interface for writing driving rule specifications and applies static code analysis to extract rule-related code logic from the AV software codebase. Evaluations on two open-source AV software platforms, Baidu Apollo and Autoware, uncover 19 true violations out of 28 real-world driving rules covering crosswalks, traffic lights, stop signs, and intersections. Seven of the violations can lead to severe risks of a collision with pedestrians or blocking traffic.",
-        "citation": "@article{zhang2021systematic, title={A systematic framework to identify violations of scenario-dependent driving rules in autonomous vehicle software}, author={Zhang, Qingzhao and Hong, David Ke and Zhang, Ze and Chen, Qi Alfred and Mahlke, Scott and Mao, Z Morley}, journal={Proceedings of the ACM on Measurement and Analysis of Computing Systems}, volume={5}, number={2}, pages={1--25}, year={2021}, publisher={ACM New York, NY, USA} }",
-        "linkToPaper": "https://dl.acm.org/doi/pdf/10.1145/3460082",
-        "linkToCode": "https://github.com/zqzqz/AVChecker"
-    },
-    {
-        "title": "Ethploit: From fuzzing to efficient exploit generation against smart contracts",
-        "authors": ["<strong>Qingzhao Zhang</strong>*", "Yizhuo Wang*", "Juanru Li", "Siqi Ma"],
-        "conference": {
-            "name": "IEEE 27th International Conference on Software Analysis, Evolution and Reengineering (SANER '20)",
-            "short": "SANER '20"
+        {
+            "title": "GateKeeper: A Gateway-based Broadcast Authentication Protocol for the In-vehicle Ethernet",
+            "authors": ["Shengtuo Hu", "<strong>Qingzhao Zhang</strong>", "André Weimerskirch", "Z. Morley Mao"],
+            "conference": {
+                "name": "Proceedings of the ACM on Asia Conference on Computer and Communications Security (AsiaCCS 2022)",
+                "short": "AsiaCCS '22"
+            },
+            "abstract": "Automotive Ethernet is considered to be the next-generation in-vehicle network, because of its high bandwidth, high throughput, and low cost characteristics. However, no common standard has been established for the security protocol of Automotive Ethernet. While there are a few candidates, including MACsec, IPsec, and TLS, there is no widely favored candidate. Most importantly, existing candidates cannot fully satisfy the requirements of in-vehicle communication, specifically source authentication for broadcast/multicast communication. In this paper, we conduct a comprehensive analysis in both security and performance of existing security protocol candidates and identify source authentication and Denial-of-Service (DoS) prevention as two essential but missing properties in these candidates. We propose Gatekeeper, a gateway-based broadcast authentication protocol to ensure source authentication. In general, Gatekeeper introduces an on-path authenticator, which co-locates with the in-vehicle gateway or domain controllers and helps receivers to verify the sender's identity. To defend against DoS threats, we further integrate the time-lock puzzle with Gatekeeper to slow down malicious traffic. Our performance evaluation results show that Gatekeeper only results in 0.03 ms latency overhead for CAN data transmission and outperforms TESLA on both CAN and LiDAR transmission scenarios, highlighting the effectiveness and efficiency of Gatekeeper.",
+            "citation": "@inproceedings{hu2022gatekeeper,title={Gatekeeper: A gateway-based broadcast authentication protocol for the in-vehicle Ethernet},author={Hu, Shengtuo and Zhang, Qingzhao and Weimerskirch, Andre and Mao, Z Morley},booktitle={Proceedings of the 2022 ACM on Asia Conference on Computer and Communications Security},pages={494--507},year={2022}}",
+            "linkToPaper": "https://dl.acm.org/doi/abs/10.1145/3488932.3517396",
+            "linkToCode": ""
         },
-        "abstract": "Smart contracts, programs running on blockchain systems, leverage diverse decentralized applications (DApps). Unfortunately, well-known smart contract platforms, Ethereum for example, face serious security problems. Exploits to contracts may cause enormous financial losses, which emphasize the importance of smart contract testing. However, current exploit generation tools have difficulty to solve hard constraints in execution paths and cannot simulate the blockchain behaviors very well. These problems cause a loss of coverage and accuracy of exploit generation. To overcome the problems, we design and implement EthPloit, a smart contract exploit generator based on fuzzing. EthPloit adopts static taint analysis to generate exploit-targeted transaction sequences, a dynamic seed strategy to pass hard constraints and an instrumented Ethereum Virtual Machine to simulate blockchain behaviors. We evaluate EthPloit on 45,308 smart contracts and discovered 554 exploitable contracts. EthPloit automatically generated 644 exploits without any false positive and 306 of them cannot be generated by previous exploit generation tools.",
-        "citation": "@inproceedings{zhang2020ethploit, title={Ethploit: From fuzzing to efficient exploit generation against smart contracts}, author={Zhang, Qingzhao and Wang, Yizhuo and Li, Juanru and Ma, Siqi}, booktitle={2020 IEEE 27th International Conference on Software Analysis, Evolution and Reengineering (SANER)}, pages={116--126}, year={2020}, organization={IEEE} }",
-        "linkToPaper": "https://ieeexplore.ieee.org/abstract/document/9054822",
-        "linkToCode": "https://github.com/zqzqz/contract-fuzzer"
-    }
-]
+        {
+            "title": "AVMaestro: A Centralized Policy Enforcement Framework for Safe Autonomous-driving Environments",
+            "authors": ["Ze Zhang", "Sanjay Sri Vallabh Singapuram", "<strong>Qingzhao Zhang</strong>", "David Ke Hong", "Brandon Nguyen", "Z. Morley Mao", "Scott Mahlke", "Qi Alfred Chen"],
+            "conference": {
+                "name": "IEEE Intelligent Vehicles Symposium (IV 2022)",
+                "short": "IV '22"
+            },
+            "abstract": "Automotive Ethernet is considered to be the next-generation in-vehicle network, because of its high bandwidth, high throughput, and low cost characteristics. However, no common standard has been established for the security protocol of Automotive Ethernet. While there are a few candidates, including MACsec, IPsec, and TLS, there is no widely favored candidate. Most importantly, existing candidates cannot fully satisfy the requirements of in-vehicle communication, specifically source authentication for broadcast/multicast communication. In this paper, we conduct a comprehensive analysis in both security and performance of existing security protocol candidates and identify source authentication and Denial-of-Service (DoS) prevention as two essential but missing properties in these candidates. We propose Gatekeeper, a gateway-based broadcast authentication protocol to ensure source authentication. In general, Gatekeeper introduces an on-path authenticator, which co-locates with the in-vehicle gateway or domain controllers and helps receivers to verify the sender's identity. To defend against DoS threats, we further integrate the time-lock puzzle with Gatekeeper to slow down malicious traffic. Our performance evaluation results show that Gatekeeper only results in 0.03 ms latency overhead for CAN data transmission and outperforms TESLA on both CAN and LiDAR transmission scenarios, highlighting the effectiveness and efficiency of Gatekeeper.",
+            "citation": "@inproceedings{zhang2022avmaestro,title={Avmaestro: A centralized policy enforcement framework for safe autonomous-driving environments},author={Zhang, Ze and Singapuram, Sanjay Sri Vallabh and Zhang, Qingzhao and Hong, David Ke and Nguyen, Brandon and Mao, Z Morley and Mahlke, Scott and Chen, Qi Alfred},booktitle={2022 IEEE Intelligent Vehicles Symposium (IV)},pages={1333--1339},year={2022},organization={IEEE}}",
+            "linkToPaper": "https://ieeexplore.ieee.org/abstract/document/9827092",
+            "linkToCode": ""
+        },
+        {
+            "title": "A systematic framework to identify violations of scenario-dependent driving rules in autonomous vehicle software",
+            "authors": ["<strong>Qingzhao Zhang</strong>", "David Ke Hong", "Ze Zhang", "Qi Alfred Chen", "Scott Mahlke", "Z Morley Mao"],
+            "conference": {
+                "name": "Proceedings of the ACM on Measurement and Analysis of Computing Systems (SIGMETRICS '21)",
+                "short": "SIGMETRICS '21"
+            },
+            "abstract": "Safety compliance is paramount to the safe deployment of autonomous vehicle (AV) technologies in real-world transportation systems. As AVs will share road infrastructures with human drivers and pedestrians, it is an important requirement for AVs to obey standard driving rules. Existing AV software testing methods, including simulation and road testing, only check fundamental safety rules such as collision avoidance and safety distance. Scenario-dependent driving rules, including crosswalk and intersection rules, are more complicated because the expected driving behavior heavily depends on the surrounding circumstances. However, a testing framework is missing for checking scenario-dependent driving rules on various AV software. In this paper, we design and implement a systematic framework AVChecker for identifying violations of scenario-dependent driving rules in AV software using formal methods. AVChecker represents both the code logic of AV software and driving rules in proposed formal specifications and leverages satisfiability modulo theory (SMT) solvers to identify driving rule violations. To improve the automation of systematic rule-based checking, AVChecker provides a powerful user interface for writing driving rule specifications and applies static code analysis to extract rule-related code logic from the AV software codebase. Evaluations on two open-source AV software platforms, Baidu Apollo and Autoware, uncover 19 true violations out of 28 real-world driving rules covering crosswalks, traffic lights, stop signs, and intersections. Seven of the violations can lead to severe risks of a collision with pedestrians or blocking traffic.",
+            "citation": "@article{zhang2021systematic, title={A systematic framework to identify violations of scenario-dependent driving rules in autonomous vehicle software}, author={Zhang, Qingzhao and Hong, David Ke and Zhang, Ze and Chen, Qi Alfred and Mahlke, Scott and Mao, Z Morley}, journal={Proceedings of the ACM on Measurement and Analysis of Computing Systems}, volume={5}, number={2}, pages={1--25}, year={2021}, publisher={ACM New York, NY, USA} }",
+            "linkToPaper": "https://dl.acm.org/doi/pdf/10.1145/3460082",
+            "linkToCode": "https://github.com/zqzqz/AVChecker"
+        },
+        {
+            "title": "Ethploit: From fuzzing to efficient exploit generation against smart contracts",
+            "authors": ["<strong>Qingzhao Zhang</strong>*", "Yizhuo Wang*", "Juanru Li", "Siqi Ma"],
+            "conference": {
+                "name": "IEEE 27th International Conference on Software Analysis, Evolution and Reengineering (SANER '20)",
+                "short": "SANER '20"
+            },
+            "abstract": "Smart contracts, programs running on blockchain systems, leverage diverse decentralized applications (DApps). Unfortunately, well-known smart contract platforms, Ethereum for example, face serious security problems. Exploits to contracts may cause enormous financial losses, which emphasize the importance of smart contract testing. However, current exploit generation tools have difficulty to solve hard constraints in execution paths and cannot simulate the blockchain behaviors very well. These problems cause a loss of coverage and accuracy of exploit generation. To overcome the problems, we design and implement EthPloit, a smart contract exploit generator based on fuzzing. EthPloit adopts static taint analysis to generate exploit-targeted transaction sequences, a dynamic seed strategy to pass hard constraints and an instrumented Ethereum Virtual Machine to simulate blockchain behaviors. We evaluate EthPloit on 45,308 smart contracts and discovered 554 exploitable contracts. EthPloit automatically generated 644 exploits without any false positive and 306 of them cannot be generated by previous exploit generation tools.",
+            "citation": "@inproceedings{zhang2020ethploit, title={Ethploit: From fuzzing to efficient exploit generation against smart contracts}, author={Zhang, Qingzhao and Wang, Yizhuo and Li, Juanru and Ma, Siqi}, booktitle={2020 IEEE 27th International Conference on Software Analysis, Evolution and Reengineering (SANER)}, pages={116--126}, year={2020}, organization={IEEE} }",
+            "linkToPaper": "https://ieeexplore.ieee.org/abstract/document/9054822",
+            "linkToCode": "https://github.com/zqzqz/contract-fuzzer"
+        },
+        {
+            "title": "Ringct 3.0 for blockchain confidential transaction: Shorter size and stronger security",
+            "authors": ["Tsz Hon Yuen", "Shi-feng Sun", "Joseph K Liu", "Man Ho Au", "Muhammed F Esgin", "<strong>Qingzhao Zhang</strong>", "Dawu Gu"],
+            "conference": {
+                "name": "Financial Cryptography and Data Security: 24th International Conference (FC 2020)",
+                "short": "FC '20"
+            },
+            "abstract": "In this paper, we propose the most efficient blockchain ring confidential transaction protocol (RingCT3.0) for protecting the privacy of the sender’s identity, the recipient’s identity and the confidentiality of the transaction amount. For a typical 2-input transaction with a ring size of 1024, the ring signature size of our RingCT3.0 protocol is 98% less than the ring signature size of the original RingCT1.0 protocol used in Monero. Taking the advantage of our compact RingCT3.0 transcript size, privacy-preserving cryptocurrencies can enjoy a much lower transaction fee which will have a significant impact on the crypto-economy.\n\nIn addition to the significant improvement in terms of efficiency, our scheme is proven secure in a stronger security model. We remove the trusted setup assumption used in RingCT2.0. Our scheme is anonymous against non-signing users who are included in the ring, while we show that the RingCT1.0 is not secure in this improved model. Our implementation result shows that our protocol outperforms existing solutions, in terms of efficiency and security.",
+            "citation": "@inproceedings{yuen2020ringct,title={Ringct 3.0 for blockchain confidential transaction: Shorter size and stronger security},author={Yuen, Tsz Hon and Sun, Shi-feng and Liu, Joseph K and Au, Man Ho and Esgin, Muhammed F and Zhang, Qingzhao and Gu, Dawu},booktitle={Financial Cryptography and Data Security: 24th International Conference, FC 2020, Kota Kinabalu, Malaysia, February 10--14, 2020 Revised Selected Papers 24},pages={464--483},year={2020},organization={Springer}}",
+            "linkToPaper": "https://link.springer.com/chapter/10.1007/978-3-030-51280-4_25",
+            "linkToCode": ""
+        }
+    ],
+    "journals": [
+        {
+            "title": "PBT: A New Privacy-Preserving Payment Protocol for Blockchain Transactions",
+            "authors": ["Yanxue Jia", "Shi-Feng Sun", "Yuncong Zhang", "<strong>Qingzhao Zhang</strong>", "Ning Ding", "Zhiqiang Liu", "Joseph K Liu", "Dawu Gu"],
+            "conference": {
+                "name": "IEEE Transactions on Dependable and Secure Computing",
+                "short": "TDSC"
+            },
+            "abstract": "Ring confidential transaction (RingCT) protocol is widely used in cryptocurrency to protect the privacy of both users’ identities and transaction amounts. Most recently, a new RingCT protocol (called RingCT 2.0) was proposed by leveraging cryptographic accumulators, which can achieve a constant-size output theoretically but still far from being practical due to the heavy zero-knowledge associated with the accumulator. In this article, we revisit the design of ring confidential transaction protocol and put forward a more efficient privacy-preserving payment protocol, which is built upon an extended version of one-out-of-many proof and a special multi-signature. Compared with previous works, the new protocol is not only more practical, but also does not suffer from a trusted setup. Besides, we show that the protocol satisfies the security requirements provided that the underlying cryptographic primitives are secure in the random oracle model. We implement our new payment protocol in Java, and the experimental results show that it is efficient enough to be used in practice.",
+            "citation": "@article{jia2020sf,title={PBT: A new privacy-preserving payment protocol for blockchain transactions},author={Jia, Yanxue and Sun, Shi-Feng and Zhang, Yuncong and Zhang, Qingzhao and Ding, Ning and Liu, Zhiqiang and Liu, Joseph K and Gu, Dawu},journal={IEEE Transactions on Dependable and Secure Computing},volume={19},number={1},pages={647--662},year={2020},publisher={IEEE}}",
+            "linkToPaper": "https://ieeexplore.ieee.org/document/9103944",
+            "linkToCode": ""
+        }
+    ],
+    "preprints": [
+        {
+            "title": "Cocoon: Robust Multi-Modal Perception with Uncertainty-Aware Sensor Fusion",
+            "authors": ["Minkyoung Cho", "Yulong Cao", "Jiachen Sun", "<strong>Qingzhao Zhang</strong>", "Marco Pavone", "Jeong Joon Park", "Heng Yang", "Z. Morley Mao"],
+            "conference": {
+                "name": "arXiv.org e-Print archive",
+                "short": "Arxiv"
+            },
+            "abstract": "An important paradigm in 3D object detection is the use of multiple modalities to enhance accuracy in both normal and challenging conditions, particularly for long-tail scenarios. To address this, recent studies have explored two directions of adaptive approaches: MoE-based adaptive fusion, which struggles with uncertainties arising from distinct object configurations, and late fusion for output-level adaptive fusion, which relies on separate detection pipelines and limits comprehensive understanding. In this work, we introduce Cocoon, an object- and feature-level uncertainty-aware fusion framework. The key innovation lies in uncertainty quantification for heterogeneous representations, enabling fair comparison across modalities through the introduction of a feature aligner and a learnable surrogate ground truth, termed feature impression. We also define a training objective to ensure that their relationship provides a valid metric for uncertainty quantification. Cocoon consistently outperforms existing static and adaptive methods in both normal and challenging conditions, including those with natural and artificial corruptions. Furthermore, we show the validity and efficacy of our uncertainty metric across diverse datasets.",
+            "citation": "@article{cho2024cocoon,title={Cocoon: Robust Multi-Modal Perception with Uncertainty-Aware Sensor Fusion},author={Cho, Minkyoung and Cao, Yulong and Sun, Jiachen and Zhang, Qingzhao and Pavone, Marco and Park, Jeong Joon and Yang, Heng and Mao, Z Morley},journal={arXiv preprint arXiv:2410.12592},year={2024}}",
+            "linkToPaper": "https://arxiv.org/abs/2410.12592",
+            "linkToCode": ""
+        },
+        {
+            "title": "Safeguard is a Double-edged Sword: Denial-of-service Attack on Large Language Models",
+            "authors": ["<strong>Qingzhao Zhang</strong>", "Ziyang Xiong", "Z. Morley Mao"],
+            "conference": {
+                "name": "arXiv.org e-Print archive",
+                "short": "Arxiv"
+            },
+            "abstract": "Safety is a paramount concern of large language models (LLMs) in their open deployment. To this end, safeguard methods aim to enforce the ethical and responsible use of LLMs through safety alignment or guardrail mechanisms. However, we found that the malicious attackers could exploit false positives of safeguards, i.e., fooling the safeguard model to block safe content mistakenly, leading to a new denial-of-service (DoS) attack on LLMs. Specifically, by software or phishing attacks on user client software, attackers insert a short, seemingly innocuous adversarial prompt into to user prompt templates in configuration files; thus, this prompt appears in final user requests without visibility in the user interface and is not trivial to identify. By designing an optimization process that utilizes gradient and attention information, our attack can automatically generate seemingly safe adversarial prompts, approximately only 30 characters long, that universally block over 97% of user requests on Llama Guard 3. The attack presents a new dimension of evaluating LLM safeguards focusing on false positives, fundamentally different from the classic jailbreak.",
+            "citation": "@article{zhang2024safeguard,title={Safeguard is a Double-edged Sword: Denial-of-service Attack on Large Language Models},author={Zhang, Qingzhao and Xiong, Ziyang and Mao, Z Morley},journal={arXiv preprint arXiv:2410.02916},year={2024}}",
+            "linkToPaper": "https://arxiv.org/abs/2410.02916",
+            "linkToCode": "https://github.com/zqzqz/AdvLLM"
+        },
+        {
+            "title": "Compute Or Load KV Cache? Why Not Both?",
+            "authors": ["Shuowei Jin", "Xueshen Liu", "<strong>Qingzhao Zhang</strong>", "Z. Morley Mao"],
+            "conference": {
+                "name": "arXiv.org e-Print archive",
+                "short": "Arxiv"
+            },
+            "abstract": "Recent advancements in Large Language Models (LLMs) have significantly increased context window sizes, enabling sophisticated applications but also introducing substantial computational overheads, particularly computing key-value (KV) cache in the prefill stage. Prefix caching has emerged to save GPU power in this scenario, which saves KV cache at disks and reuse them across multiple queries. However, traditional prefix caching mechanisms often suffer from substantial latency because the speed of loading KV cache from disks to GPU memory is bottlenecked by the throughput of I/O devices. To optimize the latency of long-context prefill, we propose Cake, a novel KV cache loader, which employs a bidirectional parallelized KV cache generation strategy. Upon receiving a prefill task, Cake simultaneously and dynamically loads saved KV cache from prefix cache locations and computes KV cache on local GPUs, maximizing the utilization of available computation and I/O bandwidth resources. Additionally, Cake automatically adapts to diverse system statuses without manual parameter. tuning. In experiments on various prompt datasets, GPUs, and I/O devices, Cake offers up to 68.1% Time To First Token (TTFT) reduction compare with compute-only method and 94.6% TTFT reduction compare with I/O-only method.",
+            "citation": "@article{jin2024compute,title={Compute Or Load KV Cache? Why Not Both?},author={Jin, Shuowei and Liu, Xueshen and Zhang, Qingzhao and Mao, Z Morley},journal={arXiv preprint arXiv:2410.03065},year={2024}}",
+            "linkToPaper": "https://arxiv.org/abs/2410.03065",
+            "linkToCode": ""
+        },
+        {
+            "title": "Adaptive Skeleton Graph Decoding",
+            "authors": ["Shuowei Jin", "Yongji Wu", "Haizhong Zheng", "<strong>Qingzhao Zhang</strong>", "Matthew Lentz", "Z Morley Mao", "Atul Prakash", "Feng Qian", "Danyang Zhuo"],
+            "conference": {
+                "name": "arXiv.org e-Print archive",
+                "short": "Arxiv"
+            },
+            "abstract": "Large language models (LLMs) have seen significant adoption for natural language tasks, owing their success to massive numbers of model parameters (e.g., 70B+); however, LLM inference incurs significant computation and memory costs. Recent approaches propose parallel decoding strategies, such as Skeleton-of-Thought (SoT), to improve performance by breaking prompts down into sub-problems that can be decoded in parallel; however, they often suffer from reduced response quality. Our key insight is that we can request additional information, specifically dependencies and difficulty, when generating the sub-problems to improve both response quality and performance. In this paper, we propose Skeleton Graph Decoding (SGD), which uses dependencies exposed between sub-problems to support information forwarding between dependent sub-problems for improved quality while exposing parallelization opportunities for decoding independent sub-problems. Additionally, we leverage difficulty estimates for each sub-problem to select an appropriately-sized model, improving performance without significantly reducing quality. Compared to standard autoregressive generation and SoT, SGD achieves a 1.69x speedup while improving quality by up to 51%.",
+            "citation": "@article{jin2024adaptive,title={Adaptive skeleton graph decoding},author={Jin, Shuowei and Wu, Yongji and Zheng, Haizhong and Zhang, Qingzhao and Lentz, Matthew and Mao, Z Morley and Prakash, Atul and Qian, Feng and Zhuo, Danyang},journal={arXiv preprint arXiv:2402.12280},year={2024}}",
+            "linkToPaper": "https://arxiv.org/abs/2402.12280",
+            "linkToCode": ""
+        },
+        {
+            "title": "Exploring the Limits of ChatGPT in Software Security Applications",
+            "authors": ["Fangzhou Wu", "<strong>Qingzhao Zhang</strong>", "Ati Priya Bajaj", "Tiffany Bao", "Ning Zhang", "Ruoyu Wang", "Chaowei Xiao"],
+            "conference": {
+                "name": "arXiv.org e-Print archive",
+                "short": "Arxiv"
+            },
+            "abstract": "Large language models (LLMs) have undergone rapid evolution and achieved remarkable results in recent times. OpenAI's ChatGPT, backed by GPT-3.5 or GPT-4, has gained instant popularity due to its strong capability across a wide range of tasks, including natural language tasks, coding, mathematics, and engaging conversations. However, the impacts and limits of such LLMs in system security domain are less explored. In this paper, we delve into the limits of LLMs (i.e., ChatGPT) in seven software security applications including vulnerability detection/repair, debugging, debloating, decompilation, patching, root cause analysis, symbolic execution, and fuzzing. Our exploration reveals that ChatGPT not only excels at generating code, which is the conventional application of language models, but also demonstrates strong capability in understanding user-provided commands in natural languages, reasoning about control and data flows within programs, generating complex data structures, and even decompiling assembly code. Notably, GPT-4 showcases significant improvements over GPT-3.5 in most security tasks. Also, certain limitations of ChatGPT in security-related tasks are identified, such as its constrained ability to process long code contexts.",
+            "citation": "@article{wu2023exploring,title={Exploring the Limits of ChatGPT in Software Security Applications},author={Wu, Fangzhou and Zhang, Qingzhao and Bajaj, Ati Priya and Bao, Tiffany and Zhang, Ning and Wang, Ruoyu and Xiao, Chaowei and others},journal={arXiv preprint arXiv:2312.05275},year={2023}}",
+            "linkToPaper": "https://arxiv.org/abs/2312.05275",
+            "linkToCode": ""
+        },
+        {
+            "title": "Partial-Information, Longitudinal Cyber Attacks on LiDAR in Autonomous Vehicles",
+            "authors": ["R. Spencer Hallyburton", "<strong>Qingzhao Zhang</strong>", "Z. Morley Mao", "Miroslav Pajic"],
+            "conference": {
+                "name": "arXiv.org e-Print archive",
+                "short": "Arxiv"
+            },
+            "abstract": "What happens to an autonomous vehicle (AV) if its data are adversarially compromised? Prior security studies have addressed this question through mostly unrealistic threat models, with limited practical relevance, such as white-box adversarial learning or nanometer-scale laser aiming and spoofing. With growing evidence that cyber threats pose real, imminent danger to AVs and cyber-physical systems (CPS) in general, we present and evaluate a novel AV threat model: a cyber-level attacker capable of disrupting sensor data but lacking any situational awareness. We demonstrate that even though the attacker has minimal knowledge and only access to raw data from a single sensor (i.e., LiDAR), she can design several attacks that critically compromise perception and tracking in multi-sensor AVs. To mitigate vulnerabilities and advance secure architectures in AVs, we introduce two improvements for security-aware fusion: a probabilistic data-asymmetry monitor and a scalable track-to-track fusion of 3D LiDAR and monocular detections (T2T-3DLM); we demonstrate that the approaches significantly reduce attack effectiveness. To support objective safety and security evaluations in AVs, we release our security evaluation platform, AVsec, which is built on security-relevant metrics to benchmark AVs on gold-standard longitudinal AV datasets and AV simulators.",
+            "citation": "@article{hallyburton2023partial,title={Partial-Information, Longitudinal Cyber Attacks on LiDAR in Autonomous Vehicles},author={Hallyburton, R Spencer and Zhang, Qingzhao and Mao, Z Morley and Pajic, Miroslav},journal={arXiv preprint arXiv:2303.03470},year={2023}}",
+            "linkToPaper": "https://arxiv.org/abs/2303.03470",
+            "linkToCode": ""
+        },
+        {
+            "title": "Benchmarking Robustness of 3D Point Cloud Recognition Against Common Corruptions",
+            "authors": ["Jiachen Sun", "<strong>Qingzhao Zhang</strong>", "Bhavya Kailkhura", "Zhiding Yu", "Chaowei Xiao", "Z. Morley Mao"],
+            "conference": {
+                "name": "arXiv.org e-Print archive",
+                "short": "Arxiv"
+            },
+            "abstract": "Deep neural networks on 3D point cloud data have been widely used in the real world, especially in safety-critical applications. However, their robustness against corruptions is less studied. In this paper, we present ModelNet40-C, the first comprehensive benchmark on 3D point cloud corruption robustness, consisting of 15 common and realistic corruptions. Our evaluation shows a significant gap between the performances on ModelNet40 and ModelNet40-C for state-of-the-art (SOTA) models. To reduce the gap, we propose a simple but effective method by combining PointCutMix-R and TENT after evaluating a wide range of augmentation and test-time adaptation strategies. We identify a number of critical insights for future studies on corruption robustness in point cloud recognition. For instance, we unveil that Transformer-based architectures with proper training recipes achieve the strongest robustness. We hope our in-depth analysis will motivate the development of robust training strategies or architecture designs in the 3D point cloud domain.",
+            "citation": "@article{sun2022benchmarking,title={Benchmarking robustness of 3d point cloud recognition against common corruptions},author={Sun, Jiachen and Zhang, Qingzhao and Kailkhura, Bhavya and Yu, Zhiding and Xiao, Chaowei and Mao, Z Morley},journal={arXiv preprint arXiv:2201.12296},year={2022}}",
+            "linkToPaper": "https://arxiv.org/abs/2201.12296",
+            "linkToCode": "https://github.com/jiachens/ModelNet40-C"
+        }
+    ],
+    "workshops": [
+        {
+            "title": "Stealthy Data Fabrication in Collaborative Vehicular Perception",
+            "authors": ["<strong>Qingzhao Zhang</strong>", "Z. Morley Mao"],
+            "conference": {
+                "name": "the 6th Workshop on CPS and IoT Security (co-located with ACM CCS 2024)",
+                "short": "CPSIoTSec '24"
+            },
+            "abstract": "Collaborative perception enables multiple connected and autonomous vehicles (CAVs) to collectively perform perception tasks through the efficient exchange of data. It also introduces critical security vulnerabilities due to the potential manipulation of shared data by malicious entities. Existing research demonstrates attacks whereby an adversary could fabricate fake objects or erase real objects from a targeted CAV's perception. Yet, the practicality of such attacks as a realistic threat remains inadequately addressed. Firstly, current attacks have not been refined to circumvent established anomaly detection frameworks. Secondly, the demonstration of attack effectiveness predominantly relies on manually defined scenarios, raising questions about the feasibility of such attacks in dynamic, real-world situations. To address these shortcomings, our research revisits data fabrication in collaborative perception and introduces a novel attack methodology that is realistic, stealthy, and scenario-aware. This approach aims to minimize required data perturbations and exploits error propagation within the autonomous driving software pipeline to trigger critical safety hazards. Our proposed attack encompasses a comprehensive end-to-end workflow, determining attack strategies based on dynamic environmental conditions at runtime. Through high-fidelity simulations, we demonstrate the efficacy of our proposed attack, underscoring its potential to significantly undermine existing defense mechanisms.",
+            "citation": "",
+            "linkToPaper": "",
+            "linkToCode": ""
+        },
+        {
+            "title": "ModelNet40-C: a robustness benchmark for 3D point cloud recognition under corruption",
+            "authors": ["Jiachen Sun", "<strong>Qingzhao Zhang</strong>", "Bhavya Kailkhura", "Zhiding Yu", "Chaowei Xiao", "Z. Morley Mao"],
+            "conference": {
+                "name": "Workshop on Socially Responsible Machine Learning (co-located with ICLR 2022)",
+                "short": "SRML '22"
+            },
+            "abstract": "Deep neural networks on 3D point cloud data have been widely used in the real world, especially in safety-critical applications. However, their robustness against corruptions is less studied. In this paper, we present ModelNet40-C, the first comprehensive benchmark on 3D point cloud corruption robustness, consisting of 15 common and realistic corruptions. Our evaluation shows a significant gap between the performances on ModelNet40 and ModelNet40-C for state-of-the-art (SOTA) models. We also demonstrate the effectiveness of different data augmentation strategies in enhancing robustness for different corruption types. We hope our in-depth analysis will motivate the development of robust training strategies or architecture designs in the 3D point cloud domain. Our codebase and dataset are included in https://github. com/jiachens/ModelNet40-C.",
+            "citation": "@inproceedings{sun2022modelnet40,title={ModelNet40-C: a robustness benchmark for 3D point cloud recognition under corruption},author={Sun, Jiachen and Zhang, Qingzhao and Kailkhura, Bhavya and Yu, Zhiding and Xiao, Chaowei and Mao, Z Morley},booktitle={ICLR 2022 Workshop on Socially Responsible Machine Learning},volume={7},year={2022}}",
+            "linkToPaper": "https://iclrsrml.github.io/files/jiachen.pdf",
+            "linkToCode": "https://github.com/jiachens/ModelNet40-C"
+        },
+        {
+            "title": "Automatic Feature Isolation in Network Protocol Software Implementations",
+            "authors": ["Ze Zhang", "<strong>Qingzhao Zhang</strong>", "Brandon Nguyen", "Sanjay Sri Vallabh Singapuram", "Z Morley Mao", "Scott Mahlke"],
+            "conference": {
+                "name": "Proceedings of the 2020 ACM Workshop on Forming an Ecosystem Around Software Transformation (co-located with ACM CCS 2020)",
+                "short": "FEAST '20"
+            },
+            "abstract": "Common vulnerabilities and exposures (CVEs) usually exploit design or implementation flaws of specific features in widely used network protocols. Feature isolation as a general protocol customization practice is shown to be highly promising to reduce attack surfaces in these protocols. In this work-in-progress paper, we present two program analysis based methods targeting different feature granularity to automatically identify and isolate unnecessary features in a software protocol implementation. In addition, we develop a semantic reconstruction mechanism to enforce user-specified feature access control policies. Preliminary case studies confirm that our proposed techniques can be effectively applied on real-world protocol vulnerabilities.",
+            "citation": "@inproceedings{zhang2020automatic,title={Automatic Feature Isolation in Network Protocol Software Implementations},author={Zhang, Ze and Zhang, Qingzhao and Nguyen, Brandon and Singapuram, Sanjay Sri Vallabh and Mao, Z Morley and Mahlke, Scott},booktitle={Proceedings of the 2020 ACM Workshop on Forming an Ecosystem Around Software Transformation},pages={29--34},year={2020}}",
+            "linkToPaper": "https://dl.acm.org/doi/abs/10.1145/3411502.3418425",
+            "linkToCode": ""
+        }
+    ]
+}
