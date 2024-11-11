@@ -246,11 +246,12 @@ $(document).ready(function() {
                 
                 $entry.find(".author").html(pub.authors.join(', ') + '<br>' + pub.conference.name);
                 
-                $entry.find(".abs").attr('id', 'abs-' + index).find('info').text(pub.abstract);
-                $entry.find(".bib").attr('id', 'bib-' + index).text(pub.citation);
-                
-                $entry.find(".btn-success").attr('data-target', '#abs-' + index);
-                $entry.find(".btn-info").attr('data-target', '#bib-' + index);
+		abs_label = 'abs-' + category + '-' + index
+		bib_label = 'bib-' + category + '-' + index
+                $entry.find(".abs").attr('id', abs_label).find('info').text(pub.abstract);
+                $entry.find(".bib").attr('id', bib_label).text(pub.citation);
+                $entry.find(".btn-success").attr('data-target', '#' + abs_label);
+                $entry.find(".btn-info").attr('data-target', '#' + bib_label);
                 
                 if (pub.linkToPaper) {
                     $entry.find(".paper-link").attr('href', pub.linkToPaper);
