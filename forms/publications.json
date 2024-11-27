@@ -230,8 +230,8 @@
                 "short": "CPSIoTSec '24"
             },
             "abstract": "Collaborative perception enables multiple connected and autonomous vehicles (CAVs) to collectively perform perception tasks through the efficient exchange of data. It also introduces critical security vulnerabilities due to the potential manipulation of shared data by malicious entities. Existing research demonstrates attacks whereby an adversary could fabricate fake objects or erase real objects from a targeted CAV's perception. Yet, the practicality of such attacks as a realistic threat remains inadequately addressed. Firstly, current attacks have not been refined to circumvent established anomaly detection frameworks. Secondly, the demonstration of attack effectiveness predominantly relies on manually defined scenarios, raising questions about the feasibility of such attacks in dynamic, real-world situations. To address these shortcomings, our research revisits data fabrication in collaborative perception and introduces a novel attack methodology that is realistic, stealthy, and scenario-aware. This approach aims to minimize required data perturbations and exploits error propagation within the autonomous driving software pipeline to trigger critical safety hazards. Our proposed attack encompasses a comprehensive end-to-end workflow, determining attack strategies based on dynamic environmental conditions at runtime. Through high-fidelity simulations, we demonstrate the efficacy of our proposed attack, underscoring its potential to significantly undermine existing defense mechanisms.",
-            "citation": "",
-            "linkToPaper": "",
+            "citation": "@inproceedings{zhang2024stealthy,title={Stealthy Data Fabrication in Collaborative Vehicular Perception},author={Zhang, Qingzhao and Mao, Z Morley},booktitle={Proceedings of the Sixth Workshop on CPS\&IoT Security and Privacy},pages={142--149},year={2024}}",
+            "linkToPaper": "https://dl.acm.org/doi/abs/10.1145/3690134.3694822",
             "linkToCode": ""
         },
         {
