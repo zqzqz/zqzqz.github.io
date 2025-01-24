@@ -1,18 +1,18 @@
 {
     "conferences": [
         {
-            "title": "CALICO: Self-Supervised Camera-LiDAR Contrastive Pre-training for BEV Perception",
-            "authors": ["Jiachen Sun", "Haizhong Zheng", "<strong>Qingzhao Zhang</strong>", "Atul Prakash", "Z. Morley Mao", "Chaowei Xiao"],
+            "title": "Cocoon: Robust Multi-Modal Perception with Uncertainty-Aware Sensor Fusion",
+            "authors": ["Minkyoung Cho", "Yulong Cao", "Jiachen Sun", "<strong>Qingzhao Zhang</strong>", "Marco Pavone", "Jeong Joon Park", "Heng Yang", "Z. Morley Mao"],
             "conference": {
                 "name": "The International Conference on Learning Representations (ICLR 2024)",
-                "short": "ICLR '24"
+                "short": "ICLR '25"
             },
-            "abstract": "Perception is crucial in the realm of autonomous driving systems, where bird's eye view (BEV)-based architectures have recently reached state-of-the-art performance. The desirability of self-supervised representation learning stems from the expensive and laborious process of annotating 2D and 3D data. Although previous research has investigated pretraining methods for both LiDAR and camera-based 3D object detection, a unified pretraining framework for multimodal BEV perception is missing. In this study, we introduce CALICO, a novel framework that applies contrastive objectives to both LiDAR and camera backbones. Specifically, CALICO incorporates two stages: point-region contrast (PRC) and region-aware distillation (RAD). PRC better balances the region- and scene-level representation learning on the LiDAR modality and offers significant performance improvement compared to existing methods. RAD effectively achieves contrastive distillation on our self-trained teacher model. CALICO's efficacy is substantiated by extensive evaluations on 3D object detection and BEV map segmentation tasks, where it delivers significant performance improvements. Notably, CALICO outperforms the baseline method by 10.5% and 8.6% on NDS and mAP. Moreover, CALICO boosts the robustness of multimodal 3D object detection against adversarial attacks and corruption. Additionally, our framework can be tailored to different backbones and heads, positioning it as a promising approach for multimodal BEV perception.",
-            "citation": "@article{sun2023calico,title={CALICO: Self-Supervised Camera-LiDAR Contrastive Pre-training for BEV Perception},author={Sun, Jiachen and Zheng, Haizhong and Zhang, Qingzhao and Prakash, Atul and Mao, Z Morley and Xiao, Chaowei},journal={arXiv preprint arXiv:2306.00349},year={2023}}",
-            "linkToPaper": "https://arxiv.org/abs/2306.00349",
+            "abstract": "An important paradigm in 3D object detection is the use of multiple modalities to enhance accuracy in both normal and challenging conditions, particularly for long-tail scenarios. To address this, recent studies have explored two directions of adaptive approaches: MoE-based adaptive fusion, which struggles with uncertainties arising from distinct object configurations, and late fusion for output-level adaptive fusion, which relies on separate detection pipelines and limits comprehensive understanding. In this work, we introduce Cocoon, an object- and feature-level uncertainty-aware fusion framework. The key innovation lies in uncertainty quantification for heterogeneous representations, enabling fair comparison across modalities through the introduction of a feature aligner and a learnable surrogate ground truth, termed feature impression. We also define a training objective to ensure that their relationship provides a valid metric for uncertainty quantification. Cocoon consistently outperforms existing static and adaptive methods in both normal and challenging conditions, including those with natural and artificial corruptions. Furthermore, we show the validity and efficacy of our uncertainty metric across diverse datasets.",
+            "citation": "@article{cho2024cocoon,title={Cocoon: Robust Multi-Modal Perception with Uncertainty-Aware Sensor Fusion},author={Cho, Minkyoung and Cao, Yulong and Sun, Jiachen and Zhang, Qingzhao and Pavone, Marco and Park, Jeong Joon and Yang, Heng and Mao, Z Morley},journal={arXiv preprint arXiv:2410.12592},year={2024}}",
+            "linkToPaper": "https://arxiv.org/abs/2410.12592",
             "linkToCode": ""
         },
-        {
+	{
             "title": "On Data Fabrication in Collaborative Vehicular Perception: Attacks and Countermeasures",
             "authors": ["<strong>Qingzhao Zhang</strong>", "Shuowei Jin", "Ruiyang Zhu", "Jiachen Sun", "Xumiao Zhang", "Qi Alfred Chen", "Z. Morley Mao"],
             "conference": {
@@ -23,6 +23,18 @@
             "citation": "@inproceedings{zhang2024on, title={On Data Fabrication in Collaborative Vehicular Perception: Attacks and Countermeasures}, author={Zhang, Qingzhao and Jin, Shuowei and Sun, Jiachen and Zhang, Xumiao and Zhu, Ruiyang and Chen, Qi Alfred and Mao, Z Morley}, booktitle={33nd USENIX Security Symposium (USENIX Security 24)}, year={2024} }",
             "linkToPaper": "https://arxiv.org/abs/2309.12955",
             "linkToCode": "https://github.com/zqzqz/AdvCollaborativePerception"
+        },
+        {
+            "title": "CALICO: Self-Supervised Camera-LiDAR Contrastive Pre-training for BEV Perception",
+            "authors": ["Jiachen Sun", "Haizhong Zheng", "<strong>Qingzhao Zhang</strong>", "Atul Prakash", "Z. Morley Mao", "Chaowei Xiao"],
+            "conference": {
+                "name": "The International Conference on Learning Representations (ICLR 2024)",
+                "short": "ICLR '24"
+            },
+            "abstract": "Perception is crucial in the realm of autonomous driving systems, where bird's eye view (BEV)-based architectures have recently reached state-of-the-art performance. The desirability of self-supervised representation learning stems from the expensive and laborious process of annotating 2D and 3D data. Although previous research has investigated pretraining methods for both LiDAR and camera-based 3D object detection, a unified pretraining framework for multimodal BEV perception is missing. In this study, we introduce CALICO, a novel framework that applies contrastive objectives to both LiDAR and camera backbones. Specifically, CALICO incorporates two stages: point-region contrast (PRC) and region-aware distillation (RAD). PRC better balances the region- and scene-level representation learning on the LiDAR modality and offers significant performance improvement compared to existing methods. RAD effectively achieves contrastive distillation on our self-trained teacher model. CALICO's efficacy is substantiated by extensive evaluations on 3D object detection and BEV map segmentation tasks, where it delivers significant performance improvements. Notably, CALICO outperforms the baseline method by 10.5% and 8.6% on NDS and mAP. Moreover, CALICO boosts the robustness of multimodal 3D object detection against adversarial attacks and corruption. Additionally, our framework can be tailored to different backbones and heads, positioning it as a promising approach for multimodal BEV perception.",
+            "citation": "@article{sun2023calico,title={CALICO: Self-Supervised Camera-LiDAR Contrastive Pre-training for BEV Perception},author={Sun, Jiachen and Zheng, Haizhong and Zhang, Qingzhao and Prakash, Atul and Mao, Z Morley and Xiao, Chaowei},journal={arXiv preprint arXiv:2306.00349},year={2023}}",
+            "linkToPaper": "https://arxiv.org/abs/2306.00349",
+            "linkToCode": ""
         },
         {
             "title": "Robust Real-time Multi-vehicle Collaboration on Asynchronous Sensors",
@@ -136,18 +148,6 @@
         }
     ],
     "preprints": [
-        {
-            "title": "Cocoon: Robust Multi-Modal Perception with Uncertainty-Aware Sensor Fusion",
-            "authors": ["Minkyoung Cho", "Yulong Cao", "Jiachen Sun", "<strong>Qingzhao Zhang</strong>", "Marco Pavone", "Jeong Joon Park", "Heng Yang", "Z. Morley Mao"],
-            "conference": {
-                "name": "arXiv.org e-Print archive",
-                "short": "arXiv"
-            },
-            "abstract": "An important paradigm in 3D object detection is the use of multiple modalities to enhance accuracy in both normal and challenging conditions, particularly for long-tail scenarios. To address this, recent studies have explored two directions of adaptive approaches: MoE-based adaptive fusion, which struggles with uncertainties arising from distinct object configurations, and late fusion for output-level adaptive fusion, which relies on separate detection pipelines and limits comprehensive understanding. In this work, we introduce Cocoon, an object- and feature-level uncertainty-aware fusion framework. The key innovation lies in uncertainty quantification for heterogeneous representations, enabling fair comparison across modalities through the introduction of a feature aligner and a learnable surrogate ground truth, termed feature impression. We also define a training objective to ensure that their relationship provides a valid metric for uncertainty quantification. Cocoon consistently outperforms existing static and adaptive methods in both normal and challenging conditions, including those with natural and artificial corruptions. Furthermore, we show the validity and efficacy of our uncertainty metric across diverse datasets.",
-            "citation": "@article{cho2024cocoon,title={Cocoon: Robust Multi-Modal Perception with Uncertainty-Aware Sensor Fusion},author={Cho, Minkyoung and Cao, Yulong and Sun, Jiachen and Zhang, Qingzhao and Pavone, Marco and Park, Jeong Joon and Yang, Heng and Mao, Z Morley},journal={arXiv preprint arXiv:2410.12592},year={2024}}",
-            "linkToPaper": "https://arxiv.org/abs/2410.12592",
-            "linkToCode": ""
-        },
         {
             "title": "Safeguard is a Double-edged Sword: Denial-of-service Attack on Large Language Models",
             "authors": ["<strong>Qingzhao Zhang</strong>", "Ziyang Xiong", "Z. Morley Mao"],
