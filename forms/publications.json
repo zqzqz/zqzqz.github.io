@@ -1,6 +1,18 @@
 {
     "conferences": [
         {
+            "title": "Compute Or Load KV Cache? Why Not Both?",
+            "authors": ["Shuowei Jin", "Xueshen Liu", "<strong>Qingzhao Zhang</strong>", "Z. Morley Mao"],
+            "conference": {
+                "name": "Forty-Second International Conference on Machine Learning (ICML 2025)",
+                "short": "ICML '25"
+            },
+            "abstract": "Recent advancements in Large Language Models (LLMs) have significantly increased context window sizes, enabling sophisticated applications but also introducing substantial computational overheads, particularly computing key-value (KV) cache in the prefill stage. Prefix caching has emerged to save GPU power in this scenario, which saves KV cache at disks and reuse them across multiple queries. However, traditional prefix caching mechanisms often suffer from substantial latency because the speed of loading KV cache from disks to GPU memory is bottlenecked by the throughput of I/O devices. To optimize the latency of long-context prefill, we propose Cake, a novel KV cache loader, which employs a bidirectional parallelized KV cache generation strategy. Upon receiving a prefill task, Cake simultaneously and dynamically loads saved KV cache from prefix cache locations and computes KV cache on local GPUs, maximizing the utilization of available computation and I/O bandwidth resources. Additionally, Cake automatically adapts to diverse system statuses without manual parameter. tuning. In experiments on various prompt datasets, GPUs, and I/O devices, Cake offers up to 68.1% Time To First Token (TTFT) reduction compare with compute-only method and 94.6% TTFT reduction compare with I/O-only method.",
+            "citation": "@article{jin2024compute,title={Compute Or Load KV Cache? Why Not Both?},author={Jin, Shuowei and Liu, Xueshen and Zhang, Qingzhao and Mao, Z Morley},journal={arXiv preprint arXiv:2410.03065},year={2024}}",
+            "linkToPaper": "https://arxiv.org/abs/2410.03065",
+            "linkToCode": ""
+        },
+	{
             "title": "Cocoon: Robust Multi-Modal Perception with Uncertainty-Aware Sensor Fusion",
             "authors": ["Minkyoung Cho", "Yulong Cao", "Jiachen Sun", "<strong>Qingzhao Zhang</strong>", "Marco Pavone", "Jeong Joon Park", "Heng Yang", "Z. Morley Mao"],
             "conference": {
@@ -159,18 +171,6 @@
             "citation": "@article{zhang2024safeguard,title={Safeguard is a Double-edged Sword: Denial-of-service Attack on Large Language Models},author={Zhang, Qingzhao and Xiong, Ziyang and Mao, Z Morley},journal={arXiv preprint arXiv:2410.02916},year={2024}}",
             "linkToPaper": "https://arxiv.org/abs/2410.02916",
             "linkToCode": "https://github.com/zqzqz/AdvLLM"
-        },
-        {
-            "title": "Compute Or Load KV Cache? Why Not Both?",
-            "authors": ["Shuowei Jin", "Xueshen Liu", "<strong>Qingzhao Zhang</strong>", "Z. Morley Mao"],
-            "conference": {
-                "name": "arXiv.org e-Print archive",
-                "short": "arXiv"
-            },
-            "abstract": "Recent advancements in Large Language Models (LLMs) have significantly increased context window sizes, enabling sophisticated applications but also introducing substantial computational overheads, particularly computing key-value (KV) cache in the prefill stage. Prefix caching has emerged to save GPU power in this scenario, which saves KV cache at disks and reuse them across multiple queries. However, traditional prefix caching mechanisms often suffer from substantial latency because the speed of loading KV cache from disks to GPU memory is bottlenecked by the throughput of I/O devices. To optimize the latency of long-context prefill, we propose Cake, a novel KV cache loader, which employs a bidirectional parallelized KV cache generation strategy. Upon receiving a prefill task, Cake simultaneously and dynamically loads saved KV cache from prefix cache locations and computes KV cache on local GPUs, maximizing the utilization of available computation and I/O bandwidth resources. Additionally, Cake automatically adapts to diverse system statuses without manual parameter. tuning. In experiments on various prompt datasets, GPUs, and I/O devices, Cake offers up to 68.1% Time To First Token (TTFT) reduction compare with compute-only method and 94.6% TTFT reduction compare with I/O-only method.",
-            "citation": "@article{jin2024compute,title={Compute Or Load KV Cache? Why Not Both?},author={Jin, Shuowei and Liu, Xueshen and Zhang, Qingzhao and Mao, Z Morley},journal={arXiv preprint arXiv:2410.03065},year={2024}}",
-            "linkToPaper": "https://arxiv.org/abs/2410.03065",
-            "linkToCode": ""
         },
         {
             "title": "Adaptive Skeleton Graph Decoding",
