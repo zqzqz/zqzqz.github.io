@@ -2,7 +2,7 @@
     "conferences": [
         {
             "title": "Compute Or Load KV Cache? Why Not Both?",
-            "authors": ["Shuowei Jin", "Xueshen Liu", "<strong>Qingzhao Zhang</strong>", "Z. Morley Mao"],
+            "authors": ["Shuowei Jin*", "Xueshen Liu*", "<strong>Qingzhao Zhang</strong>", "Z. Morley Mao"],
             "conference": {
                 "name": "Forty-Second International Conference on Machine Learning (ICML 2025)",
                 "short": "ICML '25"
