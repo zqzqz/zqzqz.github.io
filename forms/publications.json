@@ -1,6 +1,18 @@
 {
     "conferences": [
-        {
+      {
+            "title": "Adaptive Skeleton Graph Decoding",
+            "authors": ["Shuowei Jin", "Yongji Wu", "Haizhong Zheng", "<strong>Qingzhao Zhang</strong>", "Matthew Lentz", "Z Morley Mao", "Atul Prakash", "Feng Qian", "Danyang Zhuo"],
+            "conference": {
+                "name": "Conference on Language Modeling (COLM 2025)",
+                "short": "COLM '25"
+            },
+            "abstract": "Large language models (LLMs) have seen significant adoption for natural language tasks, owing their success to massive numbers of model parameters (e.g., 70B+); however, LLM inference incurs significant computation and memory costs. Recent approaches propose parallel decoding strategies, such as Skeleton-of-Thought (SoT), to improve performance by breaking prompts down into sub-problems that can be decoded in parallel; however, they often suffer from reduced response quality. Our key insight is that we can request additional information, specifically dependencies and difficulty, when generating the sub-problems to improve both response quality and performance. In this paper, we propose Skeleton Graph Decoding (SGD), which uses dependencies exposed between sub-problems to support information forwarding between dependent sub-problems for improved quality while exposing parallelization opportunities for decoding independent sub-problems. Additionally, we leverage difficulty estimates for each sub-problem to select an appropriately-sized model, improving performance without significantly reducing quality. Compared to standard autoregressive generation and SoT, SGD achieves a 1.69x speedup while improving quality by up to 51%.",
+            "citation": "@article{jin2024adaptive,title={Adaptive skeleton graph decoding},author={Jin, Shuowei and Wu, Yongji and Zheng, Haizhong and Zhang, Qingzhao and Lentz, Matthew and Mao, Z Morley and Prakash, Atul and Qian, Feng and Zhuo, Danyang},journal={arXiv preprint arXiv:2402.12280},year={2024}}",
+            "linkToPaper": "https://arxiv.org/abs/2402.12280",
+            "linkToCode": ""
+      },
+      {
             "title": "Compute Or Load KV Cache? Why Not Both?",
             "authors": ["Shuowei Jin*", "Xueshen Liu*", "<strong>Qingzhao Zhang</strong>", "Z. Morley Mao"],
             "conference": {
@@ -161,30 +173,6 @@
     ],
     "preprints": [
         {
-            "title": "Safeguard is a Double-edged Sword: Denial-of-service Attack on Large Language Models",
-            "authors": ["<strong>Qingzhao Zhang</strong>", "Ziyang Xiong", "Z. Morley Mao"],
-            "conference": {
-                "name": "arXiv.org e-Print archive",
-                "short": "arXiv"
-            },
-            "abstract": "Safety is a paramount concern of large language models (LLMs) in their open deployment. To this end, safeguard methods aim to enforce the ethical and responsible use of LLMs through safety alignment or guardrail mechanisms. However, we found that the malicious attackers could exploit false positives of safeguards, i.e., fooling the safeguard model to block safe content mistakenly, leading to a new denial-of-service (DoS) attack on LLMs. Specifically, by software or phishing attacks on user client software, attackers insert a short, seemingly innocuous adversarial prompt into to user prompt templates in configuration files; thus, this prompt appears in final user requests without visibility in the user interface and is not trivial to identify. By designing an optimization process that utilizes gradient and attention information, our attack can automatically generate seemingly safe adversarial prompts, approximately only 30 characters long, that universally block over 97% of user requests on Llama Guard 3. The attack presents a new dimension of evaluating LLM safeguards focusing on false positives, fundamentally different from the classic jailbreak.",
-            "citation": "@article{zhang2024safeguard,title={Safeguard is a Double-edged Sword: Denial-of-service Attack on Large Language Models},author={Zhang, Qingzhao and Xiong, Ziyang and Mao, Z Morley},journal={arXiv preprint arXiv:2410.02916},year={2024}}",
-            "linkToPaper": "https://arxiv.org/abs/2410.02916",
-            "linkToCode": "https://github.com/zqzqz/AdvLLM"
-        },
-        {
-            "title": "Adaptive Skeleton Graph Decoding",
-            "authors": ["Shuowei Jin", "Yongji Wu", "Haizhong Zheng", "<strong>Qingzhao Zhang</strong>", "Matthew Lentz", "Z Morley Mao", "Atul Prakash", "Feng Qian", "Danyang Zhuo"],
-            "conference": {
-                "name": "arXiv.org e-Print archive",
-                "short": "arXiv"
-            },
-            "abstract": "Large language models (LLMs) have seen significant adoption for natural language tasks, owing their success to massive numbers of model parameters (e.g., 70B+); however, LLM inference incurs significant computation and memory costs. Recent approaches propose parallel decoding strategies, such as Skeleton-of-Thought (SoT), to improve performance by breaking prompts down into sub-problems that can be decoded in parallel; however, they often suffer from reduced response quality. Our key insight is that we can request additional information, specifically dependencies and difficulty, when generating the sub-problems to improve both response quality and performance. In this paper, we propose Skeleton Graph Decoding (SGD), which uses dependencies exposed between sub-problems to support information forwarding between dependent sub-problems for improved quality while exposing parallelization opportunities for decoding independent sub-problems. Additionally, we leverage difficulty estimates for each sub-problem to select an appropriately-sized model, improving performance without significantly reducing quality. Compared to standard autoregressive generation and SoT, SGD achieves a 1.69x speedup while improving quality by up to 51%.",
-            "citation": "@article{jin2024adaptive,title={Adaptive skeleton graph decoding},author={Jin, Shuowei and Wu, Yongji and Zheng, Haizhong and Zhang, Qingzhao and Lentz, Matthew and Mao, Z Morley and Prakash, Atul and Qian, Feng and Zhuo, Danyang},journal={arXiv preprint arXiv:2402.12280},year={2024}}",
-            "linkToPaper": "https://arxiv.org/abs/2402.12280",
-            "linkToCode": ""
-        },
-        {
             "title": "Exploring the Limits of ChatGPT in Software Security Applications",
             "authors": ["Fangzhou Wu", "<strong>Qingzhao Zhang</strong>", "Ati Priya Bajaj", "Tiffany Bao", "Ning Zhang", "Ruoyu Wang", "Chaowei Xiao"],
             "conference": {
@@ -223,6 +211,18 @@
     ],
     "workshops": [
         {
+            "title": "Safeguard is a Double-edged Sword: Denial-of-service Attack on Large Language Models",
+            "authors": ["<strong>Qingzhao Zhang</strong>", "Ziyang Xiong", "Z. Morley Mao"],
+            "conference": {
+                "name": "2nd ACM Workshop on Large AI Systems and Models with Privacy and Safey Analysis",
+                "short": "LAMPS '25"
+            },
+            "abstract": "Safety is a paramount concern of large language models (LLMs) in their open deployment. To this end, safeguard methods aim to enforce the ethical and responsible use of LLMs through safety alignment or guardrail mechanisms. However, we found that the malicious attackers could exploit false positives of safeguards, i.e., fooling the safeguard model to block safe content mistakenly, leading to a new denial-of-service (DoS) attack on LLMs. Specifically, by software or phishing attacks on user client software, attackers insert a short, seemingly innocuous adversarial prompt into to user prompt templates in configuration files; thus, this prompt appears in final user requests without visibility in the user interface and is not trivial to identify. By designing an optimization process that utilizes gradient and attention information, our attack can automatically generate seemingly safe adversarial prompts, approximately only 30 characters long, that universally block over 97% of user requests on Llama Guard 3. The attack presents a new dimension of evaluating LLM safeguards focusing on false positives, fundamentally different from the classic jailbreak.",
+            "citation": "@article{zhang2024safeguard,title={Safeguard is a Double-edged Sword: Denial-of-service Attack on Large Language Models},author={Zhang, Qingzhao and Xiong, Ziyang and Mao, Z Morley},journal={arXiv preprint arXiv:2410.02916},year={2024}}",
+            "linkToPaper": "https://arxiv.org/abs/2410.02916",
+            "linkToCode": "https://github.com/zqzqz/AdvLLM"
+        },
+	{
             "title": "Stealthy Data Fabrication in Collaborative Vehicular Perception",
             "authors": ["<strong>Qingzhao Zhang</strong>", "Z. Morley Mao"],
             "conference": {
