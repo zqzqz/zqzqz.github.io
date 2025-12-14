@@ -1,0 +1,25 @@
+[
+    {
+      "date": "Dec 2025",
+      "text": "I am attending the 2025 NSF SaTC Aspiring PI Workshop at Washington DC!"
+    },
+    {
+      "date": "Dec 2025",
+      "text": "One workshop paper about LLM-assisted CPS software vetting was accepted by LLM4Code@ICSE 2026."
+    },
+    {
+      "date": "Oct 2025",
+      "text": "One paper (Plato) improving efficiency and performance of LLM generation is accepted by COLM 2025."
+    },
+    {
+      "date": "Aug 2025",
+      "text": "We released a Systematization of Knowledge (SoK) on autonomous vehicle sensor attacks on arXiv, providing an in-depth, end-to-end analysis of how sensor attacks propagate errors through autonomous systems.",
+      "links": {
+        "arXiv": "https://arxiv.org/abs/2509.11120"
+      }
+    },
+    {
+      "date": "Aug 2025",
+      "text": "I joined the University of Arizona as an Assistant Professor."
+    }
+]
