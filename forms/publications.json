@@ -1,6 +1,5 @@
 {
-    "conferences": [
-      {
+    "conferences": [{
             "title": "Plato: Plan to Efficiently Decode for Large Language Model Inference",
             "authors": ["Shuowei Jin", "Yongji Wu", "Haizhong Zheng", "<strong>Qingzhao Zhang</strong>", "Matthew Lentz", "Z Morley Mao", "Atul Prakash", "Feng Qian", "Danyang Zhuo"],
             "conference": {
@@ -12,8 +11,8 @@
             "linkToPaper": "https://arxiv.org/abs/2402.12280",
             "linkToCode": "",
             "star": true
-      },
-      {
+        },
+        {
             "title": "Compute Or Load KV Cache? Why Not Both?",
             "authors": ["Shuowei Jin*", "Xueshen Liu*", "<strong>Qingzhao Zhang</strong>", "Z. Morley Mao"],
             "conference": {
@@ -26,7 +25,7 @@
             "linkToCode": "",
             "star": true
         },
-	{
+        {
             "title": "Cocoon: Robust Multi-Modal Perception with Uncertainty-Aware Sensor Fusion",
             "authors": ["Minkyoung Cho", "Yulong Cao", "Jiachen Sun", "<strong>Qingzhao Zhang</strong>", "Marco Pavone", "Jeong Joon Park", "Heng Yang", "Z. Morley Mao"],
             "conference": {
@@ -39,7 +38,7 @@
             "linkToCode": "",
             "star": true
         },
-	{
+        {
             "title": "On Data Fabrication in Collaborative Vehicular Perception: Attacks and Countermeasures",
             "authors": ["<strong>Qingzhao Zhang</strong>", "Shuowei Jin", "Ruiyang Zhu", "Jiachen Sun", "Xumiao Zhang", "Qi Alfred Chen", "Z. Morley Mao"],
             "conference": {
@@ -166,21 +165,30 @@
             "linkToCode": ""
         }
     ],
-    "journals": [
-        {
-            "title": "PBT: A New Privacy-Preserving Payment Protocol for Blockchain Transactions",
-            "authors": ["Yanxue Jia", "Shi-Feng Sun", "Yuncong Zhang", "<strong>Qingzhao Zhang</strong>", "Ning Ding", "Zhiqiang Liu", "Joseph K Liu", "Dawu Gu"],
+    "journals": [{
+        "title": "PBT: A New Privacy-Preserving Payment Protocol for Blockchain Transactions",
+        "authors": ["Yanxue Jia", "Shi-Feng Sun", "Yuncong Zhang", "<strong>Qingzhao Zhang</strong>", "Ning Ding", "Zhiqiang Liu", "Joseph K Liu", "Dawu Gu"],
+        "conference": {
+            "name": "IEEE Transactions on Dependable and Secure Computing",
+            "short": "TDSC"
+        },
+        "abstract": "Ring confidential transaction (RingCT) protocol is widely used in cryptocurrency to protect the privacy of both users’ identities and transaction amounts. Most recently, a new RingCT protocol (called RingCT 2.0) was proposed by leveraging cryptographic accumulators, which can achieve a constant-size output theoretically but still far from being practical due to the heavy zero-knowledge associated with the accumulator. In this article, we revisit the design of ring confidential transaction protocol and put forward a more efficient privacy-preserving payment protocol, which is built upon an extended version of one-out-of-many proof and a special multi-signature. Compared with previous works, the new protocol is not only more practical, but also does not suffer from a trusted setup. Besides, we show that the protocol satisfies the security requirements provided that the underlying cryptographic primitives are secure in the random oracle model. We implement our new payment protocol in Java, and the experimental results show that it is efficient enough to be used in practice.",
+        "citation": "@article{jia2020sf,title={PBT: A new privacy-preserving payment protocol for blockchain transactions},author={Jia, Yanxue and Sun, Shi-Feng and Zhang, Yuncong and Zhang, Qingzhao and Ding, Ning and Liu, Zhiqiang and Liu, Joseph K and Gu, Dawu},journal={IEEE Transactions on Dependable and Secure Computing},volume={19},number={1},pages={647--662},year={2020},publisher={IEEE}}",
+        "linkToPaper": "https://ieeexplore.ieee.org/document/9103944",
+        "linkToCode": ""
+    }],
+    "preprints": [{
+            "title": "SoK: How Sensor Attacks Disrupt Autonomous Vehicles: An End-to-end Analysis, Challenges, and Missed Threats",
+            "authors": ["<strong>Qingzhao Zhang</strong>", "Shaocheng Luo", "Z Morley Mao", "Miroslav Pajic", "Michael K Reiter"],
             "conference": {
-                "name": "IEEE Transactions on Dependable and Secure Computing",
-                "short": "TDSC"
+                "name": "arXiv.org e-Print archive",
+                "short": "arXiv"
             },
-            "abstract": "Ring confidential transaction (RingCT) protocol is widely used in cryptocurrency to protect the privacy of both users’ identities and transaction amounts. Most recently, a new RingCT protocol (called RingCT 2.0) was proposed by leveraging cryptographic accumulators, which can achieve a constant-size output theoretically but still far from being practical due to the heavy zero-knowledge associated with the accumulator. In this article, we revisit the design of ring confidential transaction protocol and put forward a more efficient privacy-preserving payment protocol, which is built upon an extended version of one-out-of-many proof and a special multi-signature. Compared with previous works, the new protocol is not only more practical, but also does not suffer from a trusted setup. Besides, we show that the protocol satisfies the security requirements provided that the underlying cryptographic primitives are secure in the random oracle model. We implement our new payment protocol in Java, and the experimental results show that it is efficient enough to be used in practice.",
-            "citation": "@article{jia2020sf,title={PBT: A new privacy-preserving payment protocol for blockchain transactions},author={Jia, Yanxue and Sun, Shi-Feng and Zhang, Yuncong and Zhang, Qingzhao and Ding, Ning and Liu, Zhiqiang and Liu, Joseph K and Gu, Dawu},journal={IEEE Transactions on Dependable and Secure Computing},volume={19},number={1},pages={647--662},year={2020},publisher={IEEE}}",
-            "linkToPaper": "https://ieeexplore.ieee.org/document/9103944",
-            "linkToCode": ""
-        }
-    ],
-    "preprints": [
+            "abstract": "Autonomous vehicles, including self driving cars, ground robots, and drones, rely on multi-modal sensor pipelines for safe operation, yet remain vulnerable to adversarial sensor attacks. A critical gap is the lack of a systematic end-to-end view of how sensor induced errors traverse interconnected modules to affect the physical world. To bridge the gap, we provide a comprehensive survey across platforms, sensing modalities, attack methods, and countermeasures. At its core is Systematic Error Propagation Graph (SEPG), a graph-based illustrative framework that maps how attacks inject errors, the conditions for their propagation through modules from perception and localization to planning and control, and when they reach physical impact. From the systematic analysis, our study distills 8 key findings that highlight the feasibility challenges of sensor attacks and uncovers 12 previously overlooked attack vectors exploiting inter-module interactions, several of which we validate through proof-of-concept experiments.",
+            "citation": "",
+            "linkToPaper": "https://arxiv.org/abs/2509.11120",
+            "star": true
+        },
         {
             "title": "Exploring the Limits of ChatGPT in Software Security Applications",
             "authors": ["Fangzhou Wu", "<strong>Qingzhao Zhang</strong>", "Ati Priya Bajaj", "Tiffany Bao", "Ning Zhang", "Ruoyu Wang", "Chaowei Xiao"],
@@ -220,8 +228,7 @@
             "star": true
         }
     ],
-    "workshops": [
-        {
+    "workshops": [{
             "title": "Safeguard is a Double-edged Sword: Denial-of-service Attack on Large Language Models",
             "authors": ["<strong>Qingzhao Zhang</strong>", "Ziyang Xiong", "Z. Morley Mao"],
             "conference": {
@@ -234,7 +241,7 @@
             "linkToCode": "https://github.com/zqzqz/AdvLLM",
             "star": true
         },
-	{
+        {
             "title": "Stealthy Data Fabrication in Collaborative Vehicular Perception",
             "authors": ["<strong>Qingzhao Zhang</strong>", "Z. Morley Mao"],
             "conference": {
