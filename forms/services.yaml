@@ -1,0 +1,12 @@
+- role: Conference Committee Member
+  description: S&P 2027, AsiaCCS 2027, CCS 2026/2025
+- role: Conference Reviewer
+  description: NeurIPS 2026, COLM 2026, CVPR 2026, ECCV 2026, ICLR 2026/2025, ICRA 2025, ACM MM 2024, IV 2024/2023
+- role: Journal Reviewer
+  description: TDSC, IoT-J, Sensors, TIFS, ITSM
+- role: Workshop Committee Member
+  description: RICSS 2024, RICSS 2025
+- role: Artifact Reviewer
+  description: Usenix Security 2022
+- role: Pre-review Task Force
+  description: NSDI 2025

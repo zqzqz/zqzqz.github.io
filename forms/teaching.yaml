@@ -1,0 +1,15 @@
+- title: Course Instructor, University of Arizona
+  items:
+    - text: Spring 2026, ECE 402C/502C Operating System Design.
+      link: https://ece.engineering.arizona.edu/grad-programs/courses/ECE502C
+
+- title: Supervisor of Undergraduate Research, University of Michigan
+  date: '2022'
+  items:
+    - text: Multidisciplinary Design Program (MDP) at University of Michigan. Lead cybersecurity research and supervised a team of four students.
+
+- title: Research Mentorship, University of Michigan
+  date: 2020-2024
+  items:
+    - text: Research on program analysis, autonomous driving, adversarial machine learning.
+    - text: 'Mentees: Charles Ziegenbein Jr., Kevin Zhang, Andrew Wei, Xingyu Wang, Jingjia Peng, Ziyang Xiong, Runting Zhang.'

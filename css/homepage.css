@@ -139,3 +139,21 @@ code {
     padding: 40px 15px;
     /*text-align: center;*/
 }
+
+.publications-list {
+    margin-bottom: 20px;
+}
+
+.publication {
+    margin-bottom: 22px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.publication .conf-short {
+    font-weight: bold;
+}
+
+.publication .pub-links a {
+    color: inherit;
+}

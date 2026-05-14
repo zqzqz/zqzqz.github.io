@@ -20,6 +20,7 @@
 
     <script src="js/jquery/jquery-2.1.4.min.js"></script>
     <script src="js/bootstrap/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
 </head>
 
 <body data-spy="scroll" data-target="#navbar" data-offset="80">
@@ -125,107 +126,31 @@ Analytics"></a></div></noscript> -->
             <h2><b><a id="publications">Selected Publications</a></b> <small>(*: co-primary authors)</small></h2>
 
             <template id="publication-template">
-            <tr>
-                <td>
-                    <span class="label label-primary">INDEX</span>
-                </td>
-                <td>
-                    <h4 class="list-group-item-heading title">
-                        TITLE
-                        <span class="badge conf-tag" target="_blank">CONFERENCE</span>
-                    </h4>
-                    <p class="author">
-                        AUTHORS<br>
-                        CONFERENCE<br>
-                    </p>
-                    <button type="button" class="btn btn-success btn-xs collapse-button" data-target="" data-toggle="collapse">Abstract</button>
-                    <!-- <button type="button" class="btn btn-info btn-xs collapse-button" data-target="" data-toggle="collapse">Bib</button> -->
-                    <button type="button" class="btn btn-primary btn-xs paper-button" data-target="_blank"><a target="_blank" class="conf paper-link" href="#">Paper</a></button>
-                    <button type="button" class="btn btn-warning btn-xs code-button" data-target="_blank"><a target="_blank" class="conf code-link" href="#">Code</a></button>
-                    <p></p>
-                    <div class="abs collapse">
-                        <info>
-                            ABSTRACT
-                        </info>
-                    </div>
-                    <div class="bib collapse">
-                        BIB
-                    </div>
-                </td>
-            </tr>
+                <div class="publication" style="font-size:18px; margin-bottom:24px;">
+                    <div class="pub-title"><span style="font-weight:bold;">[<span class="conf-short"></span>]</span> <span class="title"></span></div>
+                    <div class="pub-authors"></div>
+                    <div class="pub-venue"></div>
+                    <div class="pub-links"></div>
+                </div>
             </template>
 
-            <h3><b><a class="publications-category" id="publications-conferences">Conference papers</a></b></h3>
-            <div class="panel panel-default">
-                <!--<div class="panel-body">-->
-                <table class="table table-hover">
-                    <tbody id="publications-conferences-list">
-                    </tbody>
-                </table>
-            </div>
-            <h3><b><a class="publications-category" id="publications-journals">Journal papers</a></b></h3>
-            <div class="panel panel-default">
-                <!--<div class="panel-body">-->
-                <table class="table table-hover">
-                    <tbody id="publications-journals-list">
-                    </tbody>
-                </table>
-            </div>
-            <h3><b><a class="publications-category" id="publications-preprints">Preprints</a></b></h3>
-            <div class="panel panel-default">
-                <!--<div class="panel-body">-->
-                <table class="table table-hover">
-                    <tbody id="publications-preprints-list">
-                    </tbody>
-                </table>
-            </div>
-            <h3><b><a class="publications-category" id="publications-workshops">Workshop papers</a></b></h3>
-            <div class="panel panel-default">
-                <!--<div class="panel-body">-->
-                <table class="table table-hover">
-                    <tbody id="publications-workshops-list">
-                    </tbody>
-                </table>
-            </div>
+            <h3><b><a class="publications-category" id="publications-recent">Recent</a></b></h3>
+            <div id="publications-recent-list" class="publications-list"></div>
+
+            <h3><b><a class="publications-category" id="publications-highlighted">Highlighted</a></b></h3>
+            <div id="publications-highlighted-list" class="publications-list"></div>
 
             <hr size="1" color="#800000">
             <h2><b><a id="services">Services</a></b></h2>
-            <ul>
-                <li style="font-size:18px" ;><strong>Program Committee</strong>: CCS 2025/2026, Workshop on Re-design Industrial Control Systems with Security (RICSS) 2024/2025
-                </li>
-                <li style="font-size:18px" ;><strong>Reviewer</strong>: ICLR 2025/2026, CVPR 2026, ICRA 2025, ACM Multimedia 2024, IEEE Internet of Things Journal, IEEE Transactions on Intelligent Vehicles (IV), Transactions on Dependable and Secure Computing (TDSC), IEEE Transactions
-                    on Information Forensics and Security (TIFS)
-                </li>
-                <li style="font-size:18px" ;><strong>Artifact Evaluation Reviewer</strong>: Usenix Security 2022
-                </li>
-                <li style="font-size:18px" ;><strong>Pre-Review Task Force</strong>: NSDI 2025
-                </li>
-            </ul>
+            <ul id="services-list"></ul>
 
             <hr size="1" color="#800000">
             <h2><b><a id="people">People</a></b></h2>
-            <ul>
-                <li style="font-size:18px" ;>
-                    PhD students
-                    <ul>
-                        <li><a href="https://www.linkedin.com/in/yutong-liu-1a9527243/">Yutong Liu</a> started in Fall 2025</li>
-                    </ul>
-                </li>
-            </ul>
+            <ul id="people-list"></ul>
 
             <hr size="1" color="#800000">
             <h2><b><a id="teaching">Teaching</a></b></h2>
-            <ul>
-                <li style="font-size:18px" ;>
-                    Supervisor, Multidisciplinary Design Program, University of Michigan, 2022-2023
-                </li>
-                <li style="font-size:18px" ;>
-                    Courses
-                    <ul>
-                        <li><a href="https://ece.engineering.arizona.edu/grad-programs/courses/ECE502C">ECE 402C/502C</a> Spring 2026</li>
-                    </ul>
-                </li>
-            </ul>
+            <ul id="teaching-list"></ul>
 
             <!-- <br>
         <p>
@@ -292,7 +217,7 @@ Analytics"></a></div></noscript> -->
 
     <script>
         $(function() {
-            const NEWS_JSON = "./forms/news.json";
+            const NEWS_YAML = "./forms/news.yaml";
             const MAX_NEWS = 8; // set to null to show all
 
             function parseNewsDate(d) {
@@ -347,9 +272,10 @@ Analytics"></a></div></noscript> -->
                 $hr.remove();
             }
 
-            fetch(NEWS_JSON)
-                .then(r => r.json())
-                .then(news => {
+            fetch(NEWS_YAML)
+                .then(r => r.text())
+                .then(text => {
+                    const news = jsyaml.load(text);
                     const items = Array.isArray(news) ? news : (news && Array.isArray(news.items) ? news.items : []);
                     const clean = items
                         .filter(x => x && typeof x === "object")
@@ -400,76 +326,167 @@ Analytics"></a></div></noscript> -->
 
     <script>
         $(document).ready(function() {
-            fetch("./forms/publications.json")
-                .then((response) => response.json())
-                .then((publications) => {
+            function renderPub(pub) {
+                const $entry = $($("#publication-template").html());
+
+                const shortName = pub.conference.short || "";
+                if (shortName.toLowerCase() === "arxiv") {
+                    $entry.find(".pub-title > span").first().remove();
+                    $entry.find(".pub-title").contents().filter(function() {
+                        return this.nodeType === 3;
+                    }).first().remove();
+                } else {
+                    $entry.find(".conf-short").text(shortName);
+                }
+                $entry.find(".title").html(pub.title);
+                $entry.find(".pub-authors").html(pub.authors.join(", "));
+                $entry.find(".pub-venue").text(pub.conference.name);
+
+                const $links = $entry.find(".pub-links");
+                const linkParts = [];
+                if (pub.linkToPaper) {
+                    linkParts.push('[<a href="' + pub.linkToPaper + '" target="_blank">Paper</a>]');
+                }
+                if (pub.linkToCode) {
+                    linkParts.push('[<a href="' + pub.linkToCode + '" target="_blank">Code</a>]');
+                }
+                if (linkParts.length) {
+                    $links.html(linkParts.join(" "));
+                } else {
+                    $links.remove();
+                }
+                return $entry;
+            }
+
+            function removeSubsection(anchorId, listId) {
+                const $headerAnchor = $("#" + anchorId);
+                $headerAnchor.closest("h3").remove();
+                $("#" + listId).remove();
+            }
+
+            fetch("./forms/publications.yaml")
+                .then((response) => response.text())
+                .then((text) => {
+                    const publications = jsyaml.load(text);
+                    // Flatten all categories into a single list, sorted by time desc
+                    const all = [];
                     for (const category in publications) {
-                        const $list = $("#publications-" + category + "-list");
-                        let hasPublication = false;
-
-                        publications[category].forEach((pub, index) => {
-                            // Skip if `star` is missing or false
-                            if (!pub.star) return;
-
-                            hasPublication = true;
-
-                            // Clone template
-                            const $entry = $($("#publication-template").html());
-
-                            // Fill in the data
-                            $entry.find(".label-primary").text(index + 1);
-
-                            $entry
-                                .find(".title")
-                                .contents()
-                                .filter(function() {
-                                    return this.nodeType === 3;
-                                })
-                                .first()
-                                .replaceWith(" " + pub.title + " ");
-
-                            $entry.find(".conf-tag").text(pub.conference.short);
-                            $entry
-                                .find(".author")
-                                .html(pub.authors.join(", ") + "<br>" + pub.conference.name);
-
-                            const abs_label = "abs-" + category + "-" + index;
-                            const bib_label = "bib-" + category + "-" + index;
-
-                            $entry.find(".abs").attr("id", abs_label).find("info").text(pub.abstract);
-                            // Skip citation
-                            // $entry.find(".bib").attr("id", bib_label).text(pub.citation);
-                            $entry.find(".btn-success").attr("data-target", "#" + abs_label);
-                            $entry.find(".btn-info").attr("data-target", "#" + bib_label);
-
-                            if (pub.linkToPaper) {
-                                $entry.find(".paper-link").attr("href", pub.linkToPaper);
-                            } else {
-                                $entry.find(".paper-button").remove();
-                            }
-
-                            if (pub.linkToCode) {
-                                $entry.find(".code-link").attr("href", pub.linkToCode);
-                            } else {
-                                $entry.find(".code-button").remove();
-                            }
-
-                            // Append row(s) to tbody
-                            $list.append($entry);
-                        });
-
-                        // If no rendered publications, remove the header and its panel
-                        if (!hasPublication) {
-                            // header anchor: <a id="publications-<category>">
-                            const $headerAnchor = $("#publications-" + category);
-                            const $header = $headerAnchor.closest("h3"); // your header wrapper
-                            const $panel = $header.next(".panel.panel-default"); // panel right after header
-
-                            $panel.remove();
-                            $header.remove();
-                        }
+                        (publications[category] || []).forEach(p => all.push(p));
                     }
+                    all.sort((a, b) => String(b.time || "").localeCompare(String(a.time || "")));
+
+                    const sections = [
+                        { flag: "recent",    anchorId: "publications-recent",      listId: "publications-recent-list" },
+                        { flag: "highlight", anchorId: "publications-highlighted", listId: "publications-highlighted-list" },
+                    ];
+
+                    const seen = new Set();
+                    sections.forEach(sec => {
+                        const $list = $("#" + sec.listId);
+                        const matching = all.filter(p => p && p[sec.flag] && !seen.has(p));
+                        if (!matching.length) {
+                            removeSubsection(sec.anchorId, sec.listId);
+                            return;
+                        }
+                        matching.forEach(p => {
+                            seen.add(p);
+                            $list.append(renderPub(p));
+                        });
+                    });
                 });
+        });
+    </script>
+
+    <script>
+        $(function() {
+            function removeSection(anchorId, listId) {
+                const $h2 = $("#" + anchorId).closest("h2");
+                $h2.prev("hr").remove();
+                $h2.remove();
+                $("#" + listId).remove();
+            }
+
+            function renderLinkedItem(item) {
+                // { name, link, note } -> "<a href=link>name</a> note"
+                const $span = $("<span></span>");
+                if (item.link) {
+                    $span.append($("<a></a>").attr("href", item.link).text(item.name || ""));
+                } else {
+                    $span.append(document.createTextNode(item.name || ""));
+                }
+                if (item.note) $span.append(document.createTextNode(" " + item.note));
+                return $span;
+            }
+
+            // Services: list of { role, description }
+            fetch("./forms/services.yaml")
+                .then(r => r.text())
+                .then(text => {
+                    const items = jsyaml.load(text) || [];
+                    const $list = $("#services-list").empty();
+                    if (!items.length) return removeSection("services", "services-list");
+                    items.forEach(item => {
+                        const $li = $('<li style="font-size:18px;"></li>');
+                        if (item.role) $li.append($("<strong></strong>").text(item.role));
+                        if (item.role && item.description) $li.append(document.createTextNode(": "));
+                        if (item.description) $li.append($("<span></span>").html(item.description));
+                        $list.append($li);
+                    });
+                })
+                .catch(() => removeSection("services", "services-list"));
+
+            // People: list of { group, members: [ { name, link, note } ] }
+            fetch("./forms/people.yaml")
+                .then(r => r.text())
+                .then(text => {
+                    const groups = jsyaml.load(text) || [];
+                    const $list = $("#people-list").empty();
+                    if (!groups.length) return removeSection("people", "people-list");
+                    groups.forEach(group => {
+                        const $li = $('<li style="font-size:18px;"></li>');
+                        if (group.group) $li.append(document.createTextNode(group.group));
+                        if (Array.isArray(group.members) && group.members.length) {
+                            const $sub = $("<ul></ul>");
+                            group.members.forEach(m => {
+                                $sub.append($("<li></li>").append(renderLinkedItem(m)));
+                            });
+                            $li.append($sub);
+                        }
+                        $list.append($li);
+                    });
+                })
+                .catch(() => removeSection("people", "people-list"));
+
+            // Teaching: list of { title, date?, items: [ { text, link? } ] }
+            fetch("./forms/teaching.yaml")
+                .then(r => r.text())
+                .then(text => {
+                    const entries = jsyaml.load(text) || [];
+                    const $list = $("#teaching-list").empty();
+                    if (!entries.length) return removeSection("teaching", "teaching-list");
+                    entries.forEach(entry => {
+                        const $li = $('<li style="font-size:18px;"></li>');
+                        if (entry.title) {
+                            $li.append($("<strong></strong>").text(entry.title));
+                            if (entry.date) $li.append(document.createTextNode(" (" + entry.date + ")"));
+                        }
+                        if (Array.isArray(entry.items) && entry.items.length) {
+                            const $sub = $("<ul></ul>");
+                            entry.items.forEach(it => {
+                                const $sli = $("<li></li>");
+                                if (it.link) {
+                                    $sli.append($("<a></a>").attr("href", it.link).html(it.text || ""));
+                                } else {
+                                    $sli.append($("<span></span>").html(it.text || ""));
+                                }
+                                $sub.append($sli);
+                            });
+                            $li.append($sub);
+                        }
+                        $list.append($li);
+                    });
+                })
+                .catch(() => removeSection("teaching", "teaching-list"));
         });
     </script>
 
