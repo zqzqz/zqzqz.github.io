@@ -303,6 +303,21 @@ journals:
   linkToCode: ''
   time: 2020-05
 preprints:
+- title: Adversarial Trust Poisoning in Vehicular Collaborative Perception
+  authors:
+  - Yutong Liu
+  - Chenyi Wang
+  - Ming F. Li
+  - <strong>Qingzhao Zhang</strong>
+  conference:
+    name: arXiv.org e-Print archive
+    short: arXiv
+  abstract: ''
+  citation: ''
+  linkToPaper: https://arxiv.org/pdf/2605.22122v1
+  linkToCode: ''
+  recent: true
+  time: 2026-05
 - title: 'From Stealthy Data Fabrication to Unsafe Driving: Realistic Scenario Attacks on Collaborative Perception'
   authors:
   - <strong>Qingzhao Zhang</strong>
