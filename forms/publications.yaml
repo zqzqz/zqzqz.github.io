@@ -303,6 +303,25 @@ journals:
   linkToCode: ''
   time: 2020-05
 preprints:
+- title: 'CLAP: Contrastive Latent-space Prompt Optimization for End-to-end Autonomous Driving'
+  authors:
+  - Ruiyang Zhu
+  - Yuehan He
+  - Boyuan Zheng
+  - Zesen Zhao
+  - Ahmad Chalhoub
+  - <strong>Qingzhao Zhang</strong>
+  - Z. Morley Mao
+  conference:
+    name: arXiv.org e-Print archive
+    short: arXiv
+  abstract: ''
+  citation: ''
+  linkToPaper: https://arxiv.org/pdf/2605.17284
+  linkToCode: ''
+  highlight: false
+  recent: true
+  time: 2026-05
 - title: Adversarial Trust Poisoning in Vehicular Collaborative Perception
   authors:
   - Yutong Liu
