@@ -27,8 +27,8 @@ conferences:
     short: S&P '26
   abstract: ''
   citation: ''
-  linkToPaper: ''
-  linkToCode: ''
+  linkToPaper: https://ieeexplore.ieee.org/abstract/document/11573942
+  linkToCode: https://github.com/U1ltra/Banshee
   highlight: true
   recent: true
   time: 2026-05
@@ -52,7 +52,7 @@ conferences:
     @article{jin2024adaptive,title={Adaptive skeleton graph decoding},author={Jin, Shuowei and Wu, Yongji and Zheng, Haizhong and Zhang, Qingzhao and Lentz, Matthew and Mao, Z Morley and Prakash, Atul and Qian, Feng and Zhuo, Danyang},journal={arXiv preprint arXiv:2402.12280},year={2024}}
   linkToPaper: https://arxiv.org/abs/2402.12280
   linkToCode: ''
-  highlight: true
+  highlight: false
   recent: false
   time: 2025-10
 - title: Compute Or Load KV Cache? Why Not Both?
@@ -70,7 +70,7 @@ conferences:
     @article{jin2024compute,title={Compute Or Load KV Cache? Why Not Both?},author={Jin, Shuowei and Liu, Xueshen and Zhang, Qingzhao and Mao, Z Morley},journal={arXiv preprint arXiv:2410.03065},year={2024}}
   linkToPaper: https://arxiv.org/abs/2410.03065
   linkToCode: ''
-  highlight: true
+  highlight: false
   recent: false
   time: 2025-07
 - title: 'Cocoon: Robust Multi-Modal Perception with Uncertainty-Aware Sensor Fusion'
@@ -92,7 +92,7 @@ conferences:
     @article{cho2024cocoon,title={Cocoon: Robust Multi-Modal Perception with Uncertainty-Aware Sensor Fusion},author={Cho, Minkyoung and Cao, Yulong and Sun, Jiachen and Zhang, Qingzhao and Pavone, Marco and Park, Jeong Joon and Yang, Heng and Mao, Z Morley},journal={arXiv preprint arXiv:2410.12592},year={2024}}
   linkToPaper: https://arxiv.org/abs/2410.12592
   linkToCode: ''
-  highlight: true
+  highlight: false
   recent: false
   time: 2025-04
 - title: 'On Data Fabrication in Collaborative Vehicular Perception: Attacks and Countermeasures'
@@ -132,7 +132,7 @@ conferences:
     @article{sun2023calico,title={CALICO: Self-Supervised Camera-LiDAR Contrastive Pre-training for BEV Perception},author={Sun, Jiachen and Zheng, Haizhong and Zhang, Qingzhao and Prakash, Atul and Mao, Z Morley and Xiao, Chaowei},journal={arXiv preprint arXiv:2306.00349},year={2023}}
   linkToPaper: https://arxiv.org/abs/2306.00349
   linkToCode: ''
-  highlight: true
+  highlight: false
   time: 2024-05
 - title: Robust Real-time Multi-vehicle Collaboration on Asynchronous Sensors
   authors:
