@@ -110,6 +110,26 @@ conferences:
   highlight: false
   recent: false
   time: 2025-04
+- title: 'VFix: Facilitating Software Maintenance of Smart Contracts via Automatically Fixing Vulnerabilities'
+  authors:
+  - Pengcheng Fang
+  - Peng Gao
+  - Yun Peng
+  - <strong>Qingzhao Zhang</strong>
+  - Tao Xie
+  - Dawn Song
+  - Prateek Mittal
+  - Sanjeev R. Kulkarni
+  - Zhuotao Liu
+  - Xusheng Xiao
+  conference:
+    name: The 40th IEEE International Conference on Software Maintenance and Evolution
+    short: ICSME '24
+  abstract: ''
+  citation: ''
+  linkToPaper: https://ieeexplore.ieee.org/abstract/document/10795093
+  linkToCode: ''
+  time: 2024-10
 - title: 'On Data Fabrication in Collaborative Vehicular Perception: Attacks and Countermeasures'
   authors:
   - <strong>Qingzhao Zhang</strong>
@@ -297,6 +317,23 @@ conferences:
   linkToCode: ''
   time: 2020-02
 journals:
+- title: 'RAO++: Realistic Real-time Multi-vehicle Collaboration on Asynchronous Sensors'
+  authors:
+  - Ruiyang Zhu
+  - <strong>Qingzhao Zhang</strong>
+  - Xumiao Zhang
+  - Mohammad Naserian
+  - Fan Bai
+  - Shuqing Zeng
+  - Z. Morley Mao
+  conference:
+    name: ACM Transactions on Sensor Networks
+    short: TOSN
+  abstract: ''
+  citation: ''
+  linkToPaper: https://dl.acm.org/doi/abs/10.1145/3839235
+  linkToCode: ''
+  time: 2026-01
 - title: 'PBT: A New Privacy-Preserving Payment Protocol for Blockchain Transactions'
   authors:
   - Yanxue Jia
@@ -367,6 +404,17 @@ preprints:
   highlight: false
   recent: true
   time: 2026-08
+- title: Revisiting the Adversarial Robustness of Graph-Based Traffic Forecasting
+  authors:
+  - <strong>Qingzhao Zhang</strong>
+  conference:
+    name: arXiv.org e-Print archive
+    short: arXiv
+  abstract: ''
+  citation: ''
+  linkToPaper: https://arxiv.org/abs/2607.27604
+  linkToCode: ''
+  time: 2026-07
 - title: 'Still Camouflage, Moving Illusion: View-Induced Trajectory Manipulation in Autonomous Driving'
   authors:
   - Shuo Ju
@@ -460,6 +508,18 @@ preprints:
   highlight: false
   time: 2022-01
 workshops:
+- title: Towards LLM-guided Semantic Validation of Autonomous Driving Safety Policies
+  authors:
+  - <strong>Qingzhao Zhang</strong>
+  - Z. Morley Mao
+  conference:
+    name: Proceedings of the 3rd International Workshop on Large Language Models For Code
+    short: LLM4Code '26
+  abstract: ''
+  citation: ''
+  linkToPaper: https://dl.acm.org/doi/abs/10.1145/3786181.3788713
+  linkToCode: ''
+  time: 2026-04
 - title: 'Safeguard is a Double-edged Sword: Denial-of-service Attack on Large Language Models'
   authors:
   - <strong>Qingzhao Zhang</strong>
