@@ -1,4 +1,19 @@
 conferences:
+- title: 'From Stealthy Data Fabrication to Unsafe Driving: Realistic Scenario Attacks on Collaborative Perception'
+  authors:
+  - <strong>Qingzhao Zhang</strong>
+  - Runting Zhang
+  - Z. Morley Mao
+  conference:
+    name: The 33rd ACM Conference on Computer and Communications Security
+    short: CCS '26
+  abstract: ''
+  citation: ''
+  linkToPaper: https://arxiv.org/abs/2605.01301
+  linkToCode: ''
+  highlight: true
+  recent: true
+  time: 2026-10
 - title: Automatic Teller Machines for Offline Ecash
   authors:
   - Anrin Chakraborti
@@ -337,20 +352,21 @@ preprints:
   linkToCode: ''
   recent: true
   time: 2026-05
-- title: 'From Stealthy Data Fabrication to Unsafe Driving: Realistic Scenario Attacks on Collaborative Perception'
+- title: Adversarial Calibration Attack on Autonomous Vehicles
   authors:
+  - Liangkai Liu
   - <strong>Qingzhao Zhang</strong>
-  - Runting Zhang
-  - Z. Morley Mao
+  - Kang G. Shin
   conference:
     name: arXiv.org e-Print archive
     short: arXiv
   abstract: ''
   citation: ''
-  linkToPaper: https://arxiv.org/abs/2605.01301
+  linkToPaper: https://arxiv.org/abs/2608.28778
   linkToCode: ''
+  highlight: false
   recent: true
-  time: 2026-05
+  time: 2026-08
 - title: 'Still Camouflage, Moving Illusion: View-Induced Trajectory Manipulation in Autonomous Driving'
   authors:
   - Shuo Ju
