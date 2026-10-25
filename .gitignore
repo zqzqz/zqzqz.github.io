@@ -1,2 +1,11 @@
-# CV repo is cloned locally for resume builds; not tracked in the website repo.
-cv/
+# Separately tracked document repos (CV, research statement, ...) are cloned
+# under repos/ for local builds; their compiled PDFs are copied into files/.
+repos/
+
+# LaTeX build artifacts, in case anything is compiled at the root
+*.aux
+*.log
+*.out
+*.bbl
+*.blg
+*.synctex.gz
