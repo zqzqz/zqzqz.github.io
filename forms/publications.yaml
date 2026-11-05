@@ -1,4 +1,22 @@
 conferences:
+- title: 'Say the Same, Act Differently: Diagnosing and Steering Text-Action Divergence in Reasoning VLAs'
+  authors:
+  - Zihao Feng
+  - <strong>Qingzhao Zhang</strong>
+  - Chunyu Xia
+  - Bo Yu
+  - Z. Morley Mao
+  - Ramesh Govindan
+  conference:
+    name: The 40th Annual Conference on Neural Information Processing Systems
+    short: NeurIPS '26
+  abstract: ''
+  citation: ''
+  linkToPaper: ''
+  linkToCode: ''
+  highlight: true
+  recent: true
+  time: 2026-12
 - title: 'From Stealthy Data Fabrication to Unsafe Driving: Realistic Scenario Attacks on Collaborative Perception'
   authors:
   - <strong>Qingzhao Zhang</strong>
