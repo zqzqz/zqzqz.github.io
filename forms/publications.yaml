@@ -28,7 +28,7 @@ conferences:
   abstract: ''
   citation: ''
   linkToPaper: https://arxiv.org/abs/2605.01301
-  linkToCode: ''
+  linkToCode: https://github.com/zqzqz/PosePert
   highlight: true
   recent: true
   time: 2026-10
@@ -44,7 +44,7 @@ conferences:
     short: ACNS '26
   abstract: ''
   citation: ''
-  linkToPaper: ''
+  linkToPaper: https://link.springer.com/chapter/10.1007/978-3-032-32575-4_3
   linkToCode: ''
   highlight: false
   recent: true
