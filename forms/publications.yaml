@@ -253,7 +253,7 @@ conferences:
     https://openaccess.thecvf.com/content/CVPR2022/papers/Zhang_On_Adversarial_Robustness_of_Trajectory_Prediction_for_Autonomous_Vehicles_CVPR_2022_paper.pdf
   linkToCode: https://github.com/zqzqz/AdvTrajectoryPrediction
   highlight: true
-  research_areas: [embodied]
+  research_areas: [cps]
   time: 2022-06
 - title: 'AVMaestro: A Centralized Policy Enforcement Framework for Safe Autonomous-driving Environments'
   authors:
@@ -415,7 +415,7 @@ preprints:
   time: 2026-05
 - title: Adversarial Trust Poisoning in Vehicular Collaborative Perception
   authors:
-  - Yutong Liu
+  - <u>Yutong Liu</u>
   - Chenyi Wang
   - Ming F. Li
   - <strong>Qingzhao Zhang</strong>
@@ -426,6 +426,7 @@ preprints:
   citation: ''
   linkToPaper: https://arxiv.org/pdf/2605.22122v1
   linkToCode: ''
+  highlight: true
   recent: true
   research_areas: [cp]
   time: 2026-05

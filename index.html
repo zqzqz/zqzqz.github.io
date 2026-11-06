@@ -122,7 +122,7 @@ Analytics"></a></div></noscript> -->
             <ul id="news-list"></ul>
 
             <hr size="1" color="#800000">
-            <h2><b><a id="publications">Selected Publications</a></b> <small>(*: co-primary authors)</small></h2>
+            <h2><b><a id="publications">Selected Publications</a></b> <small>(*: co-primary authors; <u>underlined</u>: students I supervise or mentor)</small></h2>
 
             <template id="publication-template">
                 <div class="publication" style="font-size:18px; margin-bottom:24px;">
@@ -132,9 +132,6 @@ Analytics"></a></div></noscript> -->
                     <div class="pub-links"></div>
                 </div>
             </template>
-
-            <h3><b><a class="publications-category" id="publications-recent">Recent</a></b></h3>
-            <div id="publications-recent-list" class="publications-list"></div>
 
             <!-- One subsection per research area, filled from the research_areas tags in publications.yaml -->
             <div id="publications-areas"></div>
@@ -357,12 +354,6 @@ Analytics"></a></div></noscript> -->
                 return $entry;
             }
 
-            function removeSubsection(anchorId, listId) {
-                const $headerAnchor = $("#" + anchorId);
-                $headerAnchor.closest("h3").remove();
-                $("#" + listId).remove();
-            }
-
             fetch("./forms/publications.yaml")
                 .then((response) => response.text())
                 .then((text) => {
@@ -374,17 +365,10 @@ Analytics"></a></div></noscript> -->
                     }
                     all.sort((a, b) => String(b.time || "").localeCompare(String(a.time || "")));
 
-                    // Recent: papers flagged `recent`, newest first.
-                    const recent = all.filter(p => p && p.recent);
-                    if (recent.length) {
-                        recent.forEach(p => $("#publications-recent-list").append(renderPub(p)));
-                    } else {
-                        removeSubsection("publications-recent", "publications-recent-list");
-                    }
-
                     // Research areas: one subsection per tag, listing papers flagged
                     // `highlight` whose `research_areas` include that tag. A paper with
-                    // several tags appears under each of them.
+                    // several tags appears under each of them. (The `recent` flag in the
+                    // YAML is no longer rendered on this page.)
                     const RESEARCH_AREAS = [
                         { tag: "embodied", label: "Embodied AI Security" },
                         { tag: "cps",      label: "Sensor and CPS Security" },
