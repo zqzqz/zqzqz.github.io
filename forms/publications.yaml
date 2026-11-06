@@ -394,6 +394,23 @@ journals:
   research_areas: []
   time: 2020-05
 preprints:
+- title: 'Don''t Let One Lie Survive A Hundred Truths: A Selective Bayesian Trust Estimator for Collaborative Perception'
+  authors:
+  - <u>Yutong Liu</u>
+  - Chenyi Wang
+  - Ming F. Li
+  - <strong>Qingzhao Zhang</strong>
+  conference:
+    name: arXiv.org e-Print archive
+    short: arXiv
+  abstract: ''
+  citation: ''
+  linkToPaper: https://arxiv.org/abs/2610.07875
+  linkToCode: ''
+  highlight: true
+  recent: true
+  research_areas: [cp]
+  time: 2026-10
 - title: 'CLAP: Contrastive Latent-space Prompt Optimization for End-to-end Autonomous Driving'
   authors:
   - Ruiyang Zhu
