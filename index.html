@@ -119,7 +119,10 @@ Analytics"></a></div></noscript> -->
 
             <hr size="1" color="#800000">
             <h2><b><a id="news">News</a></b></h2>
-            <ul id="news-list"></ul>
+            <!-- All news items are rendered; the box scrolls once it exceeds its max height. -->
+            <div id="news-scroll" class="news-scroll">
+                <ul id="news-list"></ul>
+            </div>
 
             <hr size="1" color="#800000">
             <h2><b><a id="publications">Selected Publications</a></b> <small>(*: co-primary authors; <u>underlined</u>: students I supervise or mentor)</small></h2>
@@ -214,7 +217,7 @@ Analytics"></a></div></noscript> -->
     <script>
         $(function() {
             const NEWS_YAML = "./forms/news.yaml";
-            const MAX_NEWS = 8; // set to null to show all
+            const MAX_NEWS = null; // show all; the #news-scroll box scrolls past its max height
 
             function parseNewsDate(d) {
                 if (!d || typeof d !== "string") return new Date(0);
@@ -261,7 +264,7 @@ Analytics"></a></div></noscript> -->
                 const $anchor = $("#news");
                 const $h2 = $anchor.closest("h2");
                 const $hr = $h2.prev("hr");
-                const $ul = $("#news-list");
+                const $ul = $("#news-scroll");
 
                 $ul.remove();
                 $h2.remove();
