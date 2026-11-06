@@ -217,7 +217,7 @@ Analytics"></a></div></noscript> -->
     <script>
         $(function() {
             const NEWS_YAML = "./forms/news.yaml";
-            const MAX_NEWS = null; // show all; the #news-scroll box scrolls past its max height
+            const MAX_NEWS = 10; // newest 10 items; the #news-scroll box scrolls past its max height
 
             function parseNewsDate(d) {
                 if (!d || typeof d !== "string") return new Date(0);
