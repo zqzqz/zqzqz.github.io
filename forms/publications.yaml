@@ -16,7 +16,7 @@ conferences:
   linkToCode: ''
   highlight: true
   recent: true
-  research_areas: [embodied]
+  research_areas: [physical-ai]
   time: 2026-12
 - title: 'From Stealthy Data Fabrication to Unsafe Driving: Realistic Scenario Attacks on Collaborative Perception'
   authors:
@@ -411,7 +411,7 @@ preprints:
   linkToCode: ''
   highlight: true
   recent: true
-  research_areas: [embodied]
+  research_areas: [physical-ai]
   time: 2026-05
 - title: Adversarial Trust Poisoning in Vehicular Collaborative Perception
   authors:
@@ -477,7 +477,7 @@ preprints:
   linkToPaper: https://arxiv.org/abs/2605.12743
   linkToCode: ''
   recent: true
-  research_areas: [embodied]
+  research_areas: [physical-ai]
   time: 2026-05
 - title: 'SoK: How Sensor Attacks Disrupt Autonomous Vehicles: An End-to-end Analysis, Challenges, and Missed Threats'
   authors:
@@ -553,7 +553,7 @@ preprints:
   linkToPaper: https://arxiv.org/abs/2201.12296
   linkToCode: https://github.com/jiachens/ModelNet40-C
   highlight: false
-  research_areas: [embodied]
+  research_areas: [physical-ai]
   time: 2022-01
 workshops:
 - title: Towards LLM-guided Semantic Validation of Autonomous Driving Safety Policies
@@ -601,7 +601,7 @@ workshops:
   linkToPaper: https://www.usenix.org/conference/vehiclesec25/presentation/li-jiarui
   linkToCode: ''
   recent: false
-  research_areas: [embodied]
+  research_areas: [physical-ai]
   time: 2025-08
 - title: Stealthy Data Fabrication in Collaborative Vehicular Perception
   authors:
@@ -636,7 +636,7 @@ workshops:
     @inproceedings{sun2022modelnet40,title={ModelNet40-C: a robustness benchmark for 3D point cloud recognition under corruption},author={Sun, Jiachen and Zhang, Qingzhao and Kailkhura, Bhavya and Yu, Zhiding and Xiao, Chaowei and Mao, Z Morley},booktitle={ICLR 2022 Workshop on Socially Responsible Machine Learning},volume={7},year={2022}}
   linkToPaper: https://iclrsrml.github.io/files/jiachen.pdf
   linkToCode: https://github.com/jiachens/ModelNet40-C
-  research_areas: [embodied]
+  research_areas: [physical-ai]
   time: 2022-04
 - title: Automatic Feature Isolation in Network Protocol Software Implementations
   authors:
