@@ -136,8 +136,8 @@ Analytics"></a></div></noscript> -->
             <h3><b><a class="publications-category" id="publications-recent">Recent</a></b></h3>
             <div id="publications-recent-list" class="publications-list"></div>
 
-            <h3><b><a class="publications-category" id="publications-highlighted">Highlighted</a></b></h3>
-            <div id="publications-highlighted-list" class="publications-list"></div>
+            <!-- One subsection per research area, filled from the research_areas tags in publications.yaml -->
+            <div id="publications-areas"></div>
 
             <hr size="1" color="#800000">
             <h2><b><a id="services">Services</a></b></h2>
@@ -374,23 +374,36 @@ Analytics"></a></div></noscript> -->
                     }
                     all.sort((a, b) => String(b.time || "").localeCompare(String(a.time || "")));
 
-                    const sections = [
-                        { flag: "recent",    anchorId: "publications-recent",      listId: "publications-recent-list" },
-                        { flag: "highlight", anchorId: "publications-highlighted", listId: "publications-highlighted-list" },
-                    ];
+                    // Recent: papers flagged `recent`, newest first.
+                    const recent = all.filter(p => p && p.recent);
+                    if (recent.length) {
+                        recent.forEach(p => $("#publications-recent-list").append(renderPub(p)));
+                    } else {
+                        removeSubsection("publications-recent", "publications-recent-list");
+                    }
 
-                    const seen = new Set();
-                    sections.forEach(sec => {
-                        const $list = $("#" + sec.listId);
-                        const matching = all.filter(p => p && p[sec.flag] && !seen.has(p));
-                        if (!matching.length) {
-                            removeSubsection(sec.anchorId, sec.listId);
-                            return;
-                        }
-                        matching.forEach(p => {
-                            seen.add(p);
-                            $list.append(renderPub(p));
-                        });
+                    // Research areas: one subsection per tag, listing papers flagged
+                    // `highlight` whose `research_areas` include that tag. A paper with
+                    // several tags appears under each of them.
+                    const RESEARCH_AREAS = [
+                        { tag: "embodied", label: "Embodied AI Security" },
+                        { tag: "cps",      label: "Sensor and CPS Security" },
+                        { tag: "cp",       label: "Collaborative Perception" },
+                        { tag: "software", label: "CPS Software" },
+                    ];
+                    const $areas = $("#publications-areas");
+                    RESEARCH_AREAS.forEach(area => {
+                        const matching = all.filter(p =>
+                            p && p.highlight && Array.isArray(p.research_areas) && p.research_areas.includes(area.tag));
+                        if (!matching.length) return;
+                        const anchorId = "publications-" + area.tag;
+                        $areas.append(
+                            $("<h3></h3>").append(
+                                $("<b></b>").append(
+                                    $("<a></a>").addClass("publications-category").attr("id", anchorId).text(area.label))));
+                        const $list = $("<div></div>").addClass("publications-list");
+                        matching.forEach(p => $list.append(renderPub(p)));
+                        $areas.append($list);
                     });
                 });
         });

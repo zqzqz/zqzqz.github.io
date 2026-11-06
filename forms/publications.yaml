@@ -16,6 +16,7 @@ conferences:
   linkToCode: ''
   highlight: true
   recent: true
+  research_areas: [embodied]
   time: 2026-12
 - title: 'From Stealthy Data Fabrication to Unsafe Driving: Realistic Scenario Attacks on Collaborative Perception'
   authors:
@@ -31,6 +32,7 @@ conferences:
   linkToCode: https://github.com/zqzqz/PosePert
   highlight: true
   recent: true
+  research_areas: [cp]
   time: 2026-10
 - title: Automatic Teller Machines for Offline Ecash
   authors:
@@ -48,6 +50,7 @@ conferences:
   linkToCode: ''
   highlight: false
   recent: true
+  research_areas: []
   time: 2026-06
 - title: 'Banshee: Target Switch Attacks on Gimbal-Stabilized Visual Tracking Systems via Acoustic Injection'
   authors:
@@ -64,6 +67,7 @@ conferences:
   linkToCode: https://github.com/U1ltra/Banshee
   highlight: true
   recent: true
+  research_areas: [cps]
   time: 2026-05
 - title: 'Plato: Plan to Efficiently Decode for Large Language Model Inference'
   authors:
@@ -87,6 +91,7 @@ conferences:
   linkToCode: ''
   highlight: false
   recent: false
+  research_areas: []
   time: 2025-10
 - title: Compute Or Load KV Cache? Why Not Both?
   authors:
@@ -105,6 +110,7 @@ conferences:
   linkToCode: ''
   highlight: false
   recent: false
+  research_areas: []
   time: 2025-07
 - title: 'Cocoon: Robust Multi-Modal Perception with Uncertainty-Aware Sensor Fusion'
   authors:
@@ -127,6 +133,7 @@ conferences:
   linkToCode: ''
   highlight: false
   recent: false
+  research_areas: [cps]
   time: 2025-04
 - title: 'VFix: Facilitating Software Maintenance of Smart Contracts via Automatically Fixing Vulnerabilities'
   authors:
@@ -147,6 +154,7 @@ conferences:
   citation: ''
   linkToPaper: https://ieeexplore.ieee.org/abstract/document/10795093
   linkToCode: ''
+  research_areas: []
   time: 2024-10
 - title: 'On Data Fabrication in Collaborative Vehicular Perception: Attacks and Countermeasures'
   authors:
@@ -167,6 +175,7 @@ conferences:
   linkToPaper: https://arxiv.org/abs/2309.12955
   linkToCode: https://github.com/zqzqz/AdvCollaborativePerception
   highlight: true
+  research_areas: [cp]
   time: 2024-08
 - title: 'CALICO: Self-Supervised Camera-LiDAR Contrastive Pre-training for BEV Perception'
   authors:
@@ -186,6 +195,7 @@ conferences:
   linkToPaper: https://arxiv.org/abs/2306.00349
   linkToCode: ''
   highlight: false
+  research_areas: [cps]
   time: 2024-05
 - title: Robust Real-time Multi-vehicle Collaboration on Asynchronous Sensors
   authors:
@@ -205,6 +215,7 @@ conferences:
   linkToPaper: https://dl.acm.org/doi/10.1145/3570361.3613271
   linkToCode: ''
   highlight: true
+  research_areas: [cp]
   time: 2023-10
 - title: Automated Runtime Mitigation for Misconfiguration Vulnerabilities in Industrial Control Systems
   authors:
@@ -222,6 +233,7 @@ conferences:
   linkToPaper: https://dl.acm.org/doi/pdf/10.1145/3545948.3545954
   linkToCode: ''
   highlight: true
+  research_areas: [software]
   time: 2022-10
 - title: On adversarial robustness of trajectory prediction for autonomous vehicles
   authors:
@@ -241,6 +253,7 @@ conferences:
     https://openaccess.thecvf.com/content/CVPR2022/papers/Zhang_On_Adversarial_Robustness_of_Trajectory_Prediction_for_Autonomous_Vehicles_CVPR_2022_paper.pdf
   linkToCode: https://github.com/zqzqz/AdvTrajectoryPrediction
   highlight: true
+  research_areas: [embodied]
   time: 2022-06
 - title: 'AVMaestro: A Centralized Policy Enforcement Framework for Safe Autonomous-driving Environments'
   authors:
@@ -261,6 +274,7 @@ conferences:
     @inproceedings{zhang2022avmaestro,title={Avmaestro: A centralized policy enforcement framework for safe autonomous-driving environments},author={Zhang, Ze and Singapuram, Sanjay Sri Vallabh and Zhang, Qingzhao and Hong, David Ke and Nguyen, Brandon and Mao, Z Morley and Mahlke, Scott and Chen, Qi Alfred},booktitle={2022 IEEE Intelligent Vehicles Symposium (IV)},pages={1333--1339},year={2022},organization={IEEE}}
   linkToPaper: https://ieeexplore.ieee.org/abstract/document/9827092
   linkToCode: ''
+  research_areas: [software]
   time: 2022-06
 - title: 'GateKeeper: A Gateway-based Broadcast Authentication Protocol for the In-vehicle Ethernet'
   authors:
@@ -277,6 +291,7 @@ conferences:
     @inproceedings{hu2022gatekeeper,title={Gatekeeper: A gateway-based broadcast authentication protocol for the in-vehicle Ethernet},author={Hu, Shengtuo and Zhang, Qingzhao and Weimerskirch, Andre and Mao, Z Morley},booktitle={Proceedings of the 2022 ACM on Asia Conference on Computer and Communications Security},pages={494--507},year={2022}}
   linkToPaper: https://dl.acm.org/doi/abs/10.1145/3488932.3517396
   linkToCode: ''
+  research_areas: [cps]
   time: 2022-05
 - title: A systematic framework to identify violations of scenario-dependent driving rules in autonomous vehicle software
   authors:
@@ -296,6 +311,7 @@ conferences:
   linkToPaper: https://dl.acm.org/doi/pdf/10.1145/3460082
   linkToCode: https://github.com/zqzqz/AVChecker
   highlight: true
+  research_areas: [software]
   time: 2021-06
 - title: 'Ethploit: From fuzzing to efficient exploit generation against smart contracts'
   authors:
@@ -312,6 +328,7 @@ conferences:
     @inproceedings{zhang2020ethploit, title={Ethploit: From fuzzing to efficient exploit generation against smart contracts}, author={Zhang, Qingzhao and Wang, Yizhuo and Li, Juanru and Ma, Siqi}, booktitle={2020 IEEE 27th International Conference on Software Analysis, Evolution and Reengineering (SANER)}, pages={116--126}, year={2020}, organization={IEEE} }
   linkToPaper: https://ieeexplore.ieee.org/abstract/document/9054822
   linkToCode: https://github.com/zqzqz/contract-fuzzer
+  research_areas: []
   time: 2020-02
 - title: 'Ringct 3.0 for blockchain confidential transaction: Shorter size and stronger security'
   authors:
@@ -333,6 +350,7 @@ conferences:
     @inproceedings{yuen2020ringct,title={Ringct 3.0 for blockchain confidential transaction: Shorter size and stronger security},author={Yuen, Tsz Hon and Sun, Shi-feng and Liu, Joseph K and Au, Man Ho and Esgin, Muhammed F and Zhang, Qingzhao and Gu, Dawu},booktitle={Financial Cryptography and Data Security: 24th International Conference, FC 2020, Kota Kinabalu, Malaysia, February 10--14, 2020 Revised Selected Papers 24},pages={464--483},year={2020},organization={Springer}}
   linkToPaper: https://link.springer.com/chapter/10.1007/978-3-030-51280-4_25
   linkToCode: ''
+  research_areas: []
   time: 2020-02
 journals:
 - title: 'RAO++: Realistic Real-time Multi-vehicle Collaboration on Asynchronous Sensors'
@@ -351,6 +369,7 @@ journals:
   citation: ''
   linkToPaper: https://dl.acm.org/doi/abs/10.1145/3839235
   linkToCode: ''
+  research_areas: [cp]
   time: 2026-01
 - title: 'PBT: A New Privacy-Preserving Payment Protocol for Blockchain Transactions'
   authors:
@@ -371,6 +390,7 @@ journals:
     @article{jia2020sf,title={PBT: A new privacy-preserving payment protocol for blockchain transactions},author={Jia, Yanxue and Sun, Shi-Feng and Zhang, Yuncong and Zhang, Qingzhao and Ding, Ning and Liu, Zhiqiang and Liu, Joseph K and Gu, Dawu},journal={IEEE Transactions on Dependable and Secure Computing},volume={19},number={1},pages={647--662},year={2020},publisher={IEEE}}
   linkToPaper: https://ieeexplore.ieee.org/document/9103944
   linkToCode: ''
+  research_areas: []
   time: 2020-05
 preprints:
 - title: 'CLAP: Contrastive Latent-space Prompt Optimization for End-to-end Autonomous Driving'
@@ -389,8 +409,9 @@ preprints:
   citation: ''
   linkToPaper: https://arxiv.org/pdf/2605.17284
   linkToCode: ''
-  highlight: false
+  highlight: true
   recent: true
+  research_areas: [embodied]
   time: 2026-05
 - title: Adversarial Trust Poisoning in Vehicular Collaborative Perception
   authors:
@@ -406,6 +427,7 @@ preprints:
   linkToPaper: https://arxiv.org/pdf/2605.22122v1
   linkToCode: ''
   recent: true
+  research_areas: [cp]
   time: 2026-05
 - title: Adversarial Calibration Attack on Autonomous Vehicles
   authors:
@@ -421,6 +443,7 @@ preprints:
   linkToCode: ''
   highlight: false
   recent: true
+  research_areas: [cps]
   time: 2026-08
 - title: Revisiting the Adversarial Robustness of Graph-Based Traffic Forecasting
   authors:
@@ -432,6 +455,7 @@ preprints:
   citation: ''
   linkToPaper: https://arxiv.org/abs/2607.27604
   linkToCode: ''
+  research_areas: [cps]
   time: 2026-07
 - title: 'Still Camouflage, Moving Illusion: View-Induced Trajectory Manipulation in Autonomous Driving'
   authors:
@@ -452,6 +476,7 @@ preprints:
   linkToPaper: https://arxiv.org/abs/2605.12743
   linkToCode: ''
   recent: true
+  research_areas: [embodied]
   time: 2026-05
 - title: 'SoK: How Sensor Attacks Disrupt Autonomous Vehicles: An End-to-end Analysis, Challenges, and Missed Threats'
   authors:
@@ -467,8 +492,9 @@ preprints:
     Autonomous vehicles, including self driving cars, ground robots, and drones, rely on multi-modal sensor pipelines for safe operation, yet remain vulnerable to adversarial sensor attacks. A critical gap is the lack of a systematic end-to-end view of how sensor induced errors traverse interconnected modules to affect the physical world. To bridge the gap, we provide a comprehensive survey across platforms, sensing modalities, attack methods, and countermeasures. At its core is Systematic Error Propagation Graph (SEPG), a graph-based illustrative framework that maps how attacks inject errors, the conditions for their propagation through modules from perception and localization to planning and control, and when they reach physical impact. From the systematic analysis, our study distills 8 key findings that highlight the feasibility challenges of sensor attacks and uncovers 12 previously overlooked attack vectors exploiting inter-module interactions, several of which we validate through proof-of-concept experiments.
   citation: ''
   linkToPaper: https://arxiv.org/abs/2509.11120
-  highlight: false
+  highlight: true
   recent: true
+  research_areas: [cps]
   time: 2025-09
 - title: Exploring the Limits of ChatGPT in Software Security Applications
   authors:
@@ -488,6 +514,7 @@ preprints:
     @article{wu2023exploring,title={Exploring the Limits of ChatGPT in Software Security Applications},author={Wu, Fangzhou and Zhang, Qingzhao and Bajaj, Ati Priya and Bao, Tiffany and Zhang, Ning and Wang, Ruoyu and Xiao, Chaowei and others},journal={arXiv preprint arXiv:2312.05275},year={2023}}
   linkToPaper: https://arxiv.org/abs/2312.05275
   linkToCode: ''
+  research_areas: []
   time: 2023-12
 - title: Partial-Information, Longitudinal Cyber Attacks on LiDAR in Autonomous Vehicles
   authors:
@@ -505,6 +532,7 @@ preprints:
   linkToPaper: https://arxiv.org/abs/2303.03470
   linkToCode: ''
   highlight: false
+  research_areas: [cps]
   time: 2023-03
 - title: Benchmarking Robustness of 3D Point Cloud Recognition Against Common Corruptions
   authors:
@@ -524,6 +552,7 @@ preprints:
   linkToPaper: https://arxiv.org/abs/2201.12296
   linkToCode: https://github.com/jiachens/ModelNet40-C
   highlight: false
+  research_areas: [embodied]
   time: 2022-01
 workshops:
 - title: Towards LLM-guided Semantic Validation of Autonomous Driving Safety Policies
@@ -537,6 +566,7 @@ workshops:
   citation: ''
   linkToPaper: https://dl.acm.org/doi/abs/10.1145/3786181.3788713
   linkToCode: ''
+  research_areas: [software]
   time: 2026-04
 - title: 'Safeguard is a Double-edged Sword: Denial-of-service Attack on Large Language Models'
   authors:
@@ -554,6 +584,7 @@ workshops:
   linkToCode: https://github.com/zqzqz/AdvLLM
   highlight: false
   recent: false
+  research_areas: []
   time: 2025-10
 - title: 'WIP: Hijacking Attacks on UAV Follow-Me Systems in Realistic Scenarios'
   authors:
@@ -569,6 +600,7 @@ workshops:
   linkToPaper: https://www.usenix.org/conference/vehiclesec25/presentation/li-jiarui
   linkToCode: ''
   recent: false
+  research_areas: [embodied]
   time: 2025-08
 - title: Stealthy Data Fabrication in Collaborative Vehicular Perception
   authors:
@@ -584,6 +616,7 @@ workshops:
   linkToPaper: https://dl.acm.org/doi/abs/10.1145/3690134.3694822
   linkToCode: ''
   highlight: false
+  research_areas: [cp]
   time: 2024-10
 - title: 'ModelNet40-C: a robustness benchmark for 3D point cloud recognition under corruption'
   authors:
@@ -602,6 +635,7 @@ workshops:
     @inproceedings{sun2022modelnet40,title={ModelNet40-C: a robustness benchmark for 3D point cloud recognition under corruption},author={Sun, Jiachen and Zhang, Qingzhao and Kailkhura, Bhavya and Yu, Zhiding and Xiao, Chaowei and Mao, Z Morley},booktitle={ICLR 2022 Workshop on Socially Responsible Machine Learning},volume={7},year={2022}}
   linkToPaper: https://iclrsrml.github.io/files/jiachen.pdf
   linkToCode: https://github.com/jiachens/ModelNet40-C
+  research_areas: [embodied]
   time: 2022-04
 - title: Automatic Feature Isolation in Network Protocol Software Implementations
   authors:
@@ -620,4 +654,5 @@ workshops:
     @inproceedings{zhang2020automatic,title={Automatic Feature Isolation in Network Protocol Software Implementations},author={Zhang, Ze and Zhang, Qingzhao and Nguyen, Brandon and Singapuram, Sanjay Sri Vallabh and Mao, Z Morley and Mahlke, Scott},booktitle={Proceedings of the 2020 ACM Workshop on Forming an Ecosystem Around Software Transformation},pages={29--34},year={2020}}
   linkToPaper: https://dl.acm.org/doi/abs/10.1145/3411502.3418425
   linkToCode: ''
+  research_areas: []
   time: 2020-11
