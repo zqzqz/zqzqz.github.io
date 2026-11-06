@@ -174,6 +174,7 @@ conferences:
     @inproceedings{zhang2024on, title={On Data Fabrication in Collaborative Vehicular Perception: Attacks and Countermeasures}, author={Zhang, Qingzhao and Jin, Shuowei and Sun, Jiachen and Zhang, Xumiao and Zhu, Ruiyang and Chen, Qi Alfred and Mao, Z Morley}, booktitle={33nd USENIX Security Symposium (USENIX Security 24)}, year={2024} }
   linkToPaper: https://arxiv.org/abs/2309.12955
   linkToCode: https://github.com/zqzqz/AdvCollaborativePerception
+  linkToNews: https://cse.engin.umich.edu/stories/protecting-connected-self-driving-vehicles-from-hackers
   highlight: true
   research_areas: [cp]
   time: 2024-08

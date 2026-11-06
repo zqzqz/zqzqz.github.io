@@ -349,6 +349,9 @@ Analytics"></a></div></noscript> -->
                 if (pub.linkToCode) {
                     linkParts.push('[<a href="' + pub.linkToCode + '" target="_blank">Code</a>]');
                 }
+                if (pub.linkToNews) {
+                    linkParts.push('[<a href="' + pub.linkToNews + '" target="_blank">News</a>]');
+                }
                 if (linkParts.length) {
                     $links.html(linkParts.join(" "));
                 } else {
