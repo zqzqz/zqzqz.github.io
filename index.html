@@ -369,6 +369,11 @@ Analytics"></a></div></noscript> -->
                     // `highlight` whose `research_areas` include that tag. A paper with
                     // several tags appears under each of them. (The `recent` flag in the
                     // YAML is no longer rendered on this page.)
+                    // A paper counts as highlighted if it is flagged `highlight` or if any
+                    // author is a mentored student (marked with <u>...</u> in the YAML).
+                    const isHighlighted = p =>
+                        !!p.highlight || (p.authors || []).some(a => /<u>/i.test(String(a)));
+
                     const RESEARCH_AREAS = [
                         { tag: "embodied", label: "Embodied AI Security" },
                         { tag: "cps",      label: "Sensor and CPS Security" },
@@ -378,7 +383,7 @@ Analytics"></a></div></noscript> -->
                     const $areas = $("#publications-areas");
                     RESEARCH_AREAS.forEach(area => {
                         const matching = all.filter(p =>
-                            p && p.highlight && Array.isArray(p.research_areas) && p.research_areas.includes(area.tag));
+                            p && isHighlighted(p) && Array.isArray(p.research_areas) && p.research_areas.includes(area.tag));
                         if (!matching.length) return;
                         const anchorId = "publications-" + area.tag;
                         $areas.append(
