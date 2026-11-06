@@ -165,8 +165,8 @@ code {
 
 /* News: show every item inside a fixed-height box that scrolls. */
 .news-scroll {
-    /* ~7 single-line items at 18px; 10 items always overflow so the box scrolls. */
-    max-height: 200px;
+    /* ~14 single-line items at 18px; a 10-item list scrolls once items wrap. */
+    max-height: 400px;
     overflow-y: scroll; /* always show the scrollbar track (overlay scrollbars on macOS still auto-hide) */
     padding: 12px 16px 12px 0;
     margin-bottom: 20px;
