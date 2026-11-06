@@ -154,8 +154,13 @@ code {
     font-weight: bold;
 }
 
-.publication .pub-links a {
-    color: inherit;
+.publication .pub-links a,
+.publication .pub-links a:visited {
+    color: #337ab7; /* Bootstrap link blue */
+}
+
+.publication .pub-links a:hover {
+    color: #23527c;
 }
 
 /* News: show every item inside a fixed-height box that scrolls. */
