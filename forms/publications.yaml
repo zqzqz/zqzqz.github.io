@@ -590,7 +590,7 @@ workshops:
 - title: 'Safeguard is a Double-edged Sword: Denial-of-service Attack on Large Language Models'
   authors:
   - <strong>Qingzhao Zhang</strong>
-  - Ziyang Xiong
+  - <u>Ziyang Xiong</u>
   - Z. Morley Mao
   conference:
     name: 2nd ACM Workshop on Large AI Systems and Models with Privacy and Safey Analysis
