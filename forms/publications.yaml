@@ -21,7 +21,7 @@ conferences:
 - title: 'From Stealthy Data Fabrication to Unsafe Driving: Realistic Scenario Attacks on Collaborative Perception'
   authors:
   - <strong>Qingzhao Zhang</strong>
-  - Runting Zhang
+  - <u>Runting Zhang</u>
   - Z. Morley Mao
   conference:
     name: The 33rd ACM Conference on Computer and Communications Security
@@ -38,7 +38,7 @@ conferences:
   authors:
   - Anrin Chakraborti
   - <strong>Qingzhao Zhang</strong>
-  - Jingjia Peng
+  - <u>Jingjia Peng</u>
   - Z. Morley Mao
   - Michael K. Reiter
   conference:
