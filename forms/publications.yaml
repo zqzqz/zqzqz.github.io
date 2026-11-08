@@ -12,7 +12,7 @@ conferences:
     short: NeurIPS '26
   abstract: ''
   citation: ''
-  linkToPaper: ''
+  linkToPaper: https://arxiv.org/pdf/2611.04166
   linkToCode: ''
   highlight: true
   recent: true
