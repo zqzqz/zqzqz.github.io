@@ -155,6 +155,7 @@ conferences:
   linkToPaper: https://ieeexplore.ieee.org/abstract/document/10795093
   linkToCode: ''
   research_areas: []
+  cv: false  # omitted from the CV, still listed on the website
   time: 2024-10
 - title: 'On Data Fabrication in Collaborative Vehicular Perception: Attacks and Countermeasures'
   authors:

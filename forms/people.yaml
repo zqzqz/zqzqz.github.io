@@ -9,7 +9,14 @@
     - name: Xianwu Zhao
       link: https://www.linkedin.com/in/xianwuzhao/
       note: started in Fall 2026
+    - name: Jing Shao
+      link: https://scholar.google.com.tr/citations?user=cqqQyRYAAAAJ&hl=en
+      note: (co-advised with Dr. Xiaolong Ma), started in Fall 2026
 - group: Undergraduate students
+  # CV-only fields: how build.py renders this group in the Teaching and Mentorship section.
+  cv_title: Supervisor of Undergraduate Research, University of Arizona
+  date: '2026'
+  program: Undergraduate Research Opportunities Consortium (UROC)
   members:
     - name: Ahmed Mokhtar Abakar
       link: https://www.linkedin.com/in/ahmed-abakar-714551276/
