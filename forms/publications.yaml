@@ -56,8 +56,8 @@ conferences:
   authors:
   - Jiarui Li
   - Joey Brewington
-  - <strong>Qingzhao Zhang</strong>
-  - Z. Morley Mao
+  - <strong>Qingzhao Zhang</strong><sup>✉</sup>
+  - Z. Morley Mao<sup>✉</sup>
   conference:
     name: The 47th IEEE Symposium on Security and Privacy
     short: S&P '26
@@ -395,6 +395,23 @@ journals:
   research_areas: []
   time: 2020-05
 preprints:
+- title: 'StealthDrift: Stealthy Physical Mislocation Attack against Vision-based Autonomous Driving Systems'
+  authors:
+  - Jiarui Li
+  - Joey Brewington
+  - <strong>Qingzhao Zhang</strong>
+  - Z. Morley Mao
+  conference:
+    name: Under review
+    short: ''
+  abstract: ''
+  citation: ''
+  linkToPaper: ''
+  linkToCode: ''
+  highlight: false
+  recent: true
+  research_areas: [cps]
+  time: 2026-11
 - title: 'Don''t Let One Lie Survive A Hundred Truths: A Selective Bayesian Trust Estimator for Collaborative Perception'
   authors:
   - <u>Yutong Liu</u>
@@ -412,6 +429,23 @@ preprints:
   recent: true
   research_areas: [cp]
   time: 2026-10
+- title: Investigating Adversarial Robustness of Heterogeneous Cooperative Perception
+  authors:
+  - Chenyi Wang
+  - <u>Yutong Liu</u>
+  - <strong>Qingzhao Zhang</strong>
+  - Ming F. Li
+  conference:
+    name: arXiv.org e-Print archive
+    short: arXiv
+  abstract: ''
+  citation: ''
+  linkToPaper: https://arxiv.org/abs/2609.17856
+  linkToCode: ''
+  highlight: true
+  recent: true
+  research_areas: [cp]
+  time: 2026-09
 - title: 'CLAP: Contrastive Latent-space Prompt Optimization for End-to-end Autonomous Driving'
   authors:
   - Ruiyang Zhu

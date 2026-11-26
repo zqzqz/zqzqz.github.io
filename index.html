@@ -125,7 +125,7 @@ Analytics"></a></div></noscript> -->
             </div>
 
             <hr size="1" color="#800000">
-            <h2><b><a id="publications">Selected Publications</a></b> <small>(*: co-primary authors; <u>underlined</u>: students I supervise or mentor)</small></h2>
+            <h2><b><a id="publications">Selected Publications</a></b> <small>(*: co-primary authors; ✉: corresponding authors; <u>underlined</u>: students I supervise or mentor)</small></h2>
 
             <template id="publication-template">
                 <div class="publication" style="font-size:18px; margin-bottom:24px;">
@@ -329,7 +329,8 @@ Analytics"></a></div></noscript> -->
                 const $entry = $($("#publication-template").html());
 
                 const shortName = pub.conference.short || "";
-                if (shortName.toLowerCase() === "arxiv") {
+                // Preprints and under-review papers (short venue "arXiv" or empty) show no venue tag.
+                if (!shortName || shortName.toLowerCase() === "arxiv") {
                     $entry.find(".pub-title > span").first().remove();
                     $entry.find(".pub-title").contents().filter(function() {
                         return this.nodeType === 3;
